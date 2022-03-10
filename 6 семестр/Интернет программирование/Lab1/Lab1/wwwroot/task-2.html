@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа 1</title>
+    <style type="text/css">
+        .header, .footer {
+            background: #a7a7a7;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .layout {
+            overflow: hidden;
+            min-width: 600px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .leftCol {
+            background: #ff0000;
+            width: 100%;
+            margin: 0 360px 0 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .centerCol {
+            background: #00ff00;
+            width: 180px;
+            float: right;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .rightCol {
+            background: #0000ff;
+            width: 180px;
+            float: right;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        @media screen and (max-width: 600px) {
+            .layout {
+                display: flex;
+                flex-direction: column;
+                min-width: 0px;
+            }
+
+            .leftCol {
+                order: 1;
+            }
+
+            .centerCol {
+                order: 2;
+            }
+
+            .rightCol {
+                order: 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Хэдер</div>
+    <div class="layout">
+        <div class="rightCol">Колонка 3</div>
+        <div class="centerCol">Колонка 2</div>
+        <div class="leftCol">Колонка 1</div>
+    </div>
+    <div class="footer">Футер</div>
+</body>
+</html>

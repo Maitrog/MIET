@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="lab_1.AbstractFactory.BoardAnyCar">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgQAABAAAAAAAgABAAAAgAAACAAAAUAIAAA=</HashCode>
+      <FileName>AbstractFactory\BoardAnyCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_1.AbstractFactory.BusBoard">
+    <Position X="4.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>AbstractFactory\BusBoard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_1.AbstractFactory.TaxiBoard">
+    <Position X="0.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>AbstractFactory\TaxiBoard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_1.AbstractFactory.BusDriver">
+    <Position X="6.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\BusDriver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_1.AbstractFactory.Driver">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AbstractFactory\Driver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_1.AbstractFactory.Passenger" Collapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\Passenger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_1.AbstractFactory.TaxiDriver">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\TaxiDriver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_1.AbstractFactory.Fridge" Collapsed="true">
+    <Position X="7.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\Fridge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_1.AbstractFactory.TrackBoard">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>AbstractFactory\TrackBoard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_1.AbstractFactory.TrackDriver">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\TrackDriver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

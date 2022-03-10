@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Макет 3 колонки</title>
+    <style type="text/css">
+        .header, .footer {
+            background: #a7a7a7;
+            width: 100%
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            min-width: 0;
+            height: auto;
+        }
+
+        div#f1 {
+            background: #ff0000;
+            flex: 1 1 auto;
+            order: 1;
+            font-family: 'IBM Plex Serif', serif;
+        }
+
+        div#f2 {
+            background: #00ff00;
+            width: 180px;
+            order: 2;
+            font-family: 'IBM Plex Serif', serif;
+        }
+
+        div#f3 {
+            background: #0000ff;
+            width: 180px;
+            order: 3;
+            font-family: 'IBM Plex Serif', serif;
+        }
+
+        @media screen and (max-width: 600px) {
+            .flex-container {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                min-width: 0;
+            }
+
+            div#f1 {
+                width: 100%;
+            }
+
+            div#f2 {
+                width: 180px;
+            }
+
+            div#f3 {
+                width: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">header</div>
+    <div class="flex-container">
+        <div id=f1>Колонка 1</div>
+        <div id=f2>Колонка 2</div>
+        <div id=f3>Колонка 3 </div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>
