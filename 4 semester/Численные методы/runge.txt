@@ -1,0 +1,44 @@
+function sum = simpson(f, a, b, eps)
+    n=1;
+    
+    h=(b-a)/n;
+    sum1 = 0;
+    sum2 = 0;
+    for i = a+h:2*h:b-h
+        sum1 = sum1 + subs(f, i);
+    end
+    for i = a+2*h:2*h:b-2*h
+        sum2 = sum2 + subs(f, i);
+    end
+    sumi1 = (h/3)*(subs(f, a) + 4*sum1 + 2*sum2 + subs(f, b));
+    
+    h=(b-a)/(2*n);
+    sum1 = 0;
+    sum2 = 0;
+    for i = a+h:2*h:b-h
+        sum1 = sum1 + subs(f, i);
+    end
+    for i = a+2*h:2*h:b-2*h
+        sum2 = sum2 + subs(f, i);
+    end
+    sumi2 = (h/3)*(subs(f, a) + 4*sum1 + 2*sum2 + subs(f, b));
+    
+    while abs(sumi1-sumi2)>eps
+        n = n*2;
+        sumi1 = sumi2;
+    
+        h=(b-a)/(2*n);
+        sum1 = 0;
+        sum2 = 0;
+        for i = a+h:2*h:b-h
+            sum1 = sum1 + subs(f, i);
+        end
+        for i = a+2*h:2*h:b-2*h
+            sum2 = sum2 + subs(f, i);
+        end
+        sumi2 = (h/3)*(subs(f, a) + 4*sum1 + 2*sum2 + subs(f, b));
+    end
+    disp('Количество отрезков: ')
+    disp(n)
+    sum = sumi2;
+end
