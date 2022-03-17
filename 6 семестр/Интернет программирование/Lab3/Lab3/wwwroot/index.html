@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.16.1/dist/umd/popper.js"></script>
+    <style>
+        body {
+            padding: 25px;
+        }
+
+        #messages, #log {
+            width: 100%;
+            height: 200px;
+            border: 1px #787878 solid;
+            padding: 5px;
+            overflow: auto;
+        }
+
+        #messages {
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/index.js"></script>
+
+    <h1>Пример чата</h1>
+    <hr>
+    <form name="publish">
+        <div id="ConnectBlock">
+            Имя в чате: 
+            <input type="text" name="name" id="name"> 
+            <input id="ConnectOpen" type="button" value="Открыть соединение">
+        </div>
+        <div id="MessageBlock" style="display:none;">
+            Вы подключились как
+            <b><span id="MyName"></span></b><br />
+            <input id="ConnectClose" type="button" value="Отключиться" /><br />
+            Сообщение:
+            <input type="text" name="message" id="message" style="width:30%;">
+            <input type="submit" id="BSubmit" value="Отправить" disabled>
+        </div>
+    </form>
+
+    <!-- div с сообщениями -->
+    Сообщения
+    <div id="messages"></div>
+    <!-- log с сервера -->
+    Лог
+    <div id="log"></div>
+
+</body>
+</html>

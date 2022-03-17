@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа 2</title>
+    <style type="text/css">
+        .layout {
+            overflow: hidden;
+            min-width: 600px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .leftCol {
+            background: #ff0000;
+            width: 25%;
+            float: left;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .centerCol {
+            background: #00ff00;
+            margin: 0 180px 0 25%;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .rightCol {
+            background: #0000ff;
+            width: 180px;
+            float: right;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .error{
+            color: darkred;
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .layout {
+                display: flex;
+                flex-direction: column;
+                min-width: 0px;
+            }
+
+            .leftCol {
+                order: 1;
+            }
+
+            .centerCol {
+                order: 2;
+            }
+
+            .rightCol {
+                order: 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="rightCol">Column 3</div>
+        <div class="leftCol">Column 1</div>
+        <div class="centerCol">
+            <form method="get" action="index.html" name="myForm" id="myForm">
+                <label>Input text</label>
+                <p><input type="text" name="userText" id="userText" required /></p>
+                <p><label for="userText" class="error"></label></p>
+
+                <label for="checkBoxes">Checkboxes</label>
+                <div id="checkBoxes">
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" id="checkBox1" value="1" />
+                            Checkbox 1
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" id="checkBox2" value="2" />
+                            Checkbox 2
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" id="checkBox3" value="3" />
+                            Checkbox 3
+                        </label>
+                    </p>
+                </div>
+
+                <p><label for="checkbox" class="error"></label></p>
+
+                <label>Radio</label>
+                <p>
+                    <label>
+                        <input type="radio" name="radio" id="radio" value="1" />
+                        Radio 1
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="radio" id="radio" value="2" />
+                        Radio 2
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="radio" id="radio" value="3" />
+                        Radio 3
+                    </label>
+                </p>
+                <p><label for="radio" class="error"></label></p>
+
+                <input type="submit" name="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/save.local.storage.js"></script>
+    <script src="js/resize.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "websocketexample",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ws": "^8.5.0"
+  },
+  "scripts": {
+    "start": "node main.js"
+  }
+}
