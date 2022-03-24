@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="lab3.Composite.Airplane">
+    <Position X="17.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAACEACgAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAA=</HashCode>
+      <FileName>Composite\Airplane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3.Composite.BuisnesClass">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAAACgAAAAAAAAAAAAACAAAAAAAACAAAAEAAAAA=</HashCode>
+      <FileName>Composite\BuisnesClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3.Composite.EconomyСlass">
+    <Position X="12.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAAACgIAAAAAAAAABAACAAAAAAAACAAAAEAAAAA=</HashCode>
+      <FileName>Composite\EconomyСlass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3.Composite.FirstClass">
+    <Position X="8" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAAACgAAAAAAAAAAAAACAAAAAAAACAAAAEAAAAA=</HashCode>
+      <FileName>Composite\FirstClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3.Composite.Passenger">
+    <Position X="12.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAAACAAAAgAAAAAABAAAAAAAAAAACAACAEAAAAA=</HashCode>
+      <FileName>Composite\Passenger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3.Composite.Pilot">
+    <Position X="17" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Composite\Pilot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab3.Composite.Stewardess">
+    <Position X="14.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Composite\Stewardess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
