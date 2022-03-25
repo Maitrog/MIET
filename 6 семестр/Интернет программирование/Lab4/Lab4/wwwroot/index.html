@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Лабораторная работа 4</title>
+</head>
+<body>
+    <div id="userInfo" style="display:none;">
+        <p>Добро пожаловать <span id="userName"></span>!</p>
+        <input type="button" value="Выйти" id="logOut" />
+    </div>
+    <div id="loginForm">
+        <h3>Вход на сайт</h3>
+        <p>
+            <label>Введите логин</label><br />
+            <input type="text" id="login" />
+        </p>
+        <p>
+            <label>Введите пароль</label><br />
+            <input type="password" id="password" />
+        </p>
+        <input type="submit" id="submitLogin" value="Логин" />
+        <input type="button" value="Регистрация" id="register" onclick='location.href="/register"'/>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

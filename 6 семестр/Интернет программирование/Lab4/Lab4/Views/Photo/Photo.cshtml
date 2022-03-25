@@ -1,0 +1,36 @@
+﻿@using Microsoft.AspNetCore.Hosting
+@inject IWebHostEnvironment appEnvironment
+@{
+    ViewData["Title"] = "Галерея";
+}
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<link rel="stylesheet" href="/css/photo.css" />
+<div id="loadPhoto">
+    <form method="POST" enctype="multipart/form-data" .>
+        <fieldset>
+            <legend>Отправка файла</legend>
+            <p>
+                <label for="userPhoto">Файл<em>*</em></label>
+                <input type="file" name="userPhoto" id="userPhoto" onchange="choosePhoto(this);" accept=".png, .jpg, .jpeg, .bmp"><br />
+            </p>
+            <img id="myImg" class="myImage" height="150">
+            <div id="myModal" class="modal">
+                <img class="modal-content" id="img01">
+            </div>
+        </fieldset>
+        <p><input type="submit" id="submit" value="Отправить"></p>
+    </form>
+</div>
+
+@{
+    var path = appEnvironment.WebRootPath + "\\Images";
+    var files = Directory.GetFiles(path);
+    foreach (var file in files)
+    {
+        var imagePath = @"~/Images/" + file.Split("\\").Last();
+        <img class="myImage" height="150" src="@Url.Content(imagePath)">
+    }
+}
+<script src="~/js/photo.js"></script>
