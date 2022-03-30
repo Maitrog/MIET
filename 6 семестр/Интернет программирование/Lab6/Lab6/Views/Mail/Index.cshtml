@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Отпаравка сообщения";
+}
+
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <form method="post" action="/Mail/Index" enctype="multipart/form-data">
+        <label for="dateTime">Дата</label>
+        <input type="text" name="dateTime" />
+        <br />
+        <label for="subject">Кому</label>
+        <input type="text" name="subject" />
+        <br />
+        <label for="from">От кого</label>
+        <input type="text" name="from" />
+        <br />
+        <label for="message">Сообщение</label>
+        <input type="text" name="message" />
+        <br />
+        <label for="file">Файл<em>*</em></label>
+        <input type="file" name="file" id="file">
+        <br />
+        <p><input type="submit" id="submit" value="Отправить"></p>
+    </form>
+</body>

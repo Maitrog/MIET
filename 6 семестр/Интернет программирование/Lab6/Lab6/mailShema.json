@@ -1,0 +1,23 @@
+{
+  "description": "A schema for mail",
+  "type": "object",
+  "properties": {
+    "datetime": {
+      "description": "Дата и время",
+      "type": "string"
+    },
+    "subject": {
+      "description": "Подпись по оси X",
+      "type": "string"
+    },
+    "from": {
+      "description": "Подпись по оси Y",
+      "type": "string"
+    },
+    "message": {
+      "description": "Тип данных по оси X",
+      "type": "string"
+    }
+  },
+  "required": [ "datetime", "subject", "from", "message" ]
+}
