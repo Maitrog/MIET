@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Lab_7.Models.Cell" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IgQAAAAAAAAAIAIAAAIAAAAAAIACAABAAAAAAABAQgA=</HashCode>
+      <FileName>Models\Cell.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lab_7.Models.Field">
+    <Position X="8.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAEAAAAAAAAIAAAQAAAAAAAAAAAAAAABCAAA=</HashCode>
+      <FileName>Models\Field.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab_7.Models.FieldProperties">
+    <Position X="8.25" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAABIAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\FieldProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab_7.Models.Stopwatch" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAACAgBIAAAAAAAAQAhAAAAAABIAAAAAAAAAA=</HashCode>
+      <FileName>Models\Stopwatch.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Lab_7.Models.IObservable">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAIAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IObservable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lab_7.Models.IObserver">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
