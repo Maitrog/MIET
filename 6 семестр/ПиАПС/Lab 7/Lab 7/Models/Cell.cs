@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lab_7.Models
 {
-    internal class Cell : IObservable, IObserver
+    internal class Cell : IObservable, IObserver, IPrototype
     {
-        public List<Cell> Cells { get; set; } = new List<Cell>();
+        public List<Cell> Cells { get; init; } = new List<Cell>();
         public bool IsBomb { get; set; } = false;
         public bool IsMark { get; set; } = false;
         public bool IsOpen { get; private set; } = false;
@@ -79,6 +79,16 @@ namespace Lab_7.Models
             IsBomb = false;
             IsMark = false;
             Cells.Clear();
+        }
+
+        public IPrototype Clone()
+        {
+            Cell cell = new() { IsBomb = IsBomb, IsMark = IsMark, IsOpen = IsOpen };
+            foreach(var c in Cells)
+            {
+                cell.Cells.Add(c);
+            }
+            return cell;
         }
     }
 }

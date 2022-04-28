@@ -12,10 +12,13 @@ namespace Lab_7
     /// </summary>
     public partial class MainWindow : Window
     {
-        readonly Field field = new Field();
+        readonly FieldProperties _fieldProperties = new FieldProperties() { Row = 15, Column = 20, BombDensity = 0.1};
+        readonly Field _field;
         readonly Stopwatch _stopwatch = Stopwatch.GetInstance();
+
         public MainWindow()
         {
+            _field = new Field(_fieldProperties);
             InitializeComponent();
             DataContext = _stopwatch;
             Loaded += MainWindow_Loaded;
@@ -23,11 +26,11 @@ namespace Lab_7
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            for (int i = 0; i < field.Properties.Row; i++)
+            for (int i = 0; i < _field.Properties.Row; i++)
             {
                 Field.RowDefinitions.Add(new RowDefinition());
             }
-            for (int i = 0; i < field.Properties.Column; i++)
+            for (int i = 0; i < _field.Properties.Column; i++)
             {
                 Field.ColumnDefinitions.Add(new ColumnDefinition());
             }
@@ -40,28 +43,28 @@ namespace Lab_7
             int currentRow = Grid.GetRow(buttonSender);
             int currentColumn = Grid.GetColumn(buttonSender);
 
-            if (!field.Cells[currentRow, currentColumn].IsMark)
+            if (!_field.Cells[currentRow, currentColumn].IsMark)
             {
-                if (field.Cells[currentRow, currentColumn].IsBomb)
+                if (_field.Cells[currentRow, currentColumn].IsBomb)
                 {
                     ShowBomb();
                     GameOver("YOU LOOOOSE");
                     return;
                 }
 
-                field.Cells[currentRow, currentColumn].Click();
+                _field.Cells[currentRow, currentColumn].Click();
                 foreach (Button button in Field.Children)
                 {
                     currentRow = Grid.GetRow(button);
                     currentColumn = Grid.GetColumn(button);
-                    if (field.Cells[currentRow, currentColumn].IsOpen && !field.Cells[currentRow, currentColumn].IsBomb)
+                    if (_field.Cells[currentRow, currentColumn].IsOpen && !_field.Cells[currentRow, currentColumn].IsBomb)
                     {
-                        int bombCount = field.Cells[currentRow, currentColumn].GetBombCount();
+                        int bombCount = _field.Cells[currentRow, currentColumn].GetBombCount();
                         if (bombCount == 0)
                         {
                             button.IsEnabled = false;
                             button.Content = new TextBlock();
-                            field.Cells[currentRow, currentColumn].IsMark = false;
+                            _field.Cells[currentRow, currentColumn].IsMark = false;
                         }
                         else
                         {
@@ -79,7 +82,7 @@ namespace Lab_7
                     }
                 }
 
-                if (field.IsWin())
+                if (_field.IsWin())
                 {
                     GameOver("YOU WIN");
                 }
@@ -92,10 +95,10 @@ namespace Lab_7
             int currentRow = Grid.GetRow(buttonSender);
             int currentColumn = Grid.GetColumn(buttonSender);
 
-            field.Cells[currentRow, currentColumn].IsMark = !field.Cells[currentRow, currentColumn].IsMark;
-            if (!field.Cells[currentRow, currentColumn].IsOpen)
+            _field.Cells[currentRow, currentColumn].IsMark = !_field.Cells[currentRow, currentColumn].IsMark;
+            if (!_field.Cells[currentRow, currentColumn].IsOpen)
             {
-                if (field.Cells[currentRow, currentColumn].IsMark)
+                if (_field.Cells[currentRow, currentColumn].IsMark)
                 {
                     buttonSender.Content = new TextBlock { Text = "🚩", Foreground = Brushes.Red };
                 }
@@ -117,15 +120,15 @@ namespace Lab_7
         private void ClearField()
         {
             Field.Children.Clear();
-            field.Clear();
+            _field.Clear();
         }
 
         private void CreateField()
         {
-            field.FillBomb();
-            for (int i = 0; i < field.Properties.Row; i++)
+            _field.FillBomb();
+            for (int i = 0; i < _field.Properties.Row; i++)
             {
-                for (int j = 0; j < field.Properties.Column; j++)
+                for (int j = 0; j < _field.Properties.Column; j++)
                 {
                     Button button = new Button();
                     button.Click += new RoutedEventHandler(Cell_Click);
@@ -133,7 +136,7 @@ namespace Lab_7
                     Field.Children.Add(button);
                     Grid.SetRow(button, i);
                     Grid.SetColumn(button, j);
-                    field.SubscribeObservers(i, j);
+                    _field.SubscribeObservers(i, j);
                 }
             }
         }
@@ -154,11 +157,11 @@ namespace Lab_7
             {
                 int currentRow = Grid.GetRow(button);
                 int currentColumn = Grid.GetColumn(button);
-                if (field.Cells[currentRow, currentColumn].IsBomb && !field.Cells[currentRow, currentColumn].IsMark)
+                if (_field.Cells[currentRow, currentColumn].IsBomb && !_field.Cells[currentRow, currentColumn].IsMark)
                 {
                     button.Content = new TextBlock() { Text = "💣" };
                 }
-                if (!field.Cells[currentRow, currentColumn].IsBomb && field.Cells[currentRow, currentColumn].IsMark)
+                if (!_field.Cells[currentRow, currentColumn].IsBomb && _field.Cells[currentRow, currentColumn].IsMark)
                 {
                     button.Content = new TextBlock() { Text = "❌", Foreground = Brushes.Red };
                 }

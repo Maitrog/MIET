@@ -1,47 +1,77 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
-  <Class Name="Lab_7.Models.Cell" BaseTypeListCollapsed="true">
-    <Position X="4.25" Y="2.5" Width="1.75" />
+  <Class Name="Lab_7.Models.BombCell" BaseTypeListCollapsed="true">
+    <Position X="1" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IgQAAAAAAAAAIAIAAAIAAAAAAIACAABAAAAAAABAQgA=</HashCode>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\BombCell.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lab_7.Models.Cell" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IgQAAAAAAAAAIAIAAAIAAAAAAIACAABAAAAAAABAQhA=</HashCode>
       <FileName>Models\Cell.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Lab_7.Models.Field">
-    <Position X="8.25" Y="0.5" Width="2.25" />
+    <Position X="10" Y="0.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAgAAEAAAAAAAAIAAAQAAAAAAAAAAAAAAABCAAA=</HashCode>
+      <HashCode>AAABAAgAAEAAAAAAAAIAAAQAAAAAAAAAAAAAAABCAAA=</HashCode>
       <FileName>Models\Field.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lab_7.Models.FieldProperties">
-    <Position X="8.25" Y="3.5" Width="2" />
+    <Position X="10" Y="3.75" Width="2" />
     <TypeIdentifier>
       <HashCode>ACAAAAAAAAAAAAAAAABIAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\FieldProperties.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Lab_7.Models.ProxyBomb" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ProxyBomb.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Class Name="Lab_7.Models.Stopwatch" BaseTypeListCollapsed="true">
-    <Position X="11.25" Y="0.5" Width="2.5" />
+    <Position X="12.5" Y="1" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAACAgBIAAAAAAAAQAhAAAAAABIAAAAAAAAAA=</HashCode>
       <FileName>Models\Stopwatch.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
+  <Interface Name="Lab_7.Models.IBomb">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IBomb.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Interface Name="Lab_7.Models.IObservable">
-    <Position X="3.5" Y="0.5" Width="1.5" />
+    <Position X="4.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAIAAAABAAAAAAAAAAAA=</HashCode>
       <FileName>Models\IObservable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Lab_7.Models.IObserver">
-    <Position X="5.25" Y="0.5" Width="1.5" />
+    <Position X="6.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\IObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lab_7.Models.IPrototype">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Models\IPrototype.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

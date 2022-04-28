@@ -8,18 +8,20 @@ namespace Lab_7.Models
 {
     internal class Field
     {
-        public FieldProperties Properties { get; set; }
-        public Cell[,] Cells { get; set; }
+        public FieldProperties Properties { get; init; }
+        public Cell[,] Cells { get; init; }
+        readonly IBomb _bomb = new BombCell();
 
         public Field()
         {
             Properties = new FieldProperties() { Row = 15, Column = 20, BombDensity = 0.13 };
             Cells = new Cell[Properties.Row, Properties.Column];
+            Cell cell = new();
             for (int i = 0; i < Properties.Row; i++)
             {
                 for (int j = 0; j < Properties.Column; j++)
                 {
-                    Cells[i, j] = new Cell();
+                    Cells[i, j] = (Cell)cell.Clone();
                 }
             }
         }
@@ -60,7 +62,7 @@ namespace Lab_7.Models
                 }
                 else
                 {
-                    Cells[cellNumber / Properties.Column, cellNumber % Properties.Column].IsBomb = true;
+                    Cells[cellNumber / Properties.Column, cellNumber % Properties.Column] = _bomb.GetBomb();
                 }
             }
         }
