@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lab_7.Models
 {
-    internal interface IBomb
+    internal abstract class BaseCellCreator
     {
-        public BaseCell GetBomb();
+        public abstract BaseCell CreateCell();
     }
 }

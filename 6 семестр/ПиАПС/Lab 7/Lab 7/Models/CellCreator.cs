@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab_7.Models
 {
-    internal interface IPrototype
+    internal class CellCreator : BaseCellCreator
     {
-        public IPrototype Clone();
+        public override BaseCell CreateCell()
+        {
+            return new Cell();
+        }
     }
 }

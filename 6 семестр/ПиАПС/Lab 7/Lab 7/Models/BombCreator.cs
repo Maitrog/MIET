@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab_7.Models
 {
-    internal interface IBomb
+    internal class BombCreator : BaseCellCreator
     {
-        public BaseCell GetBomb();
+        public override BaseCell CreateCell()
+        {
+            return new BombCell();
+        }
     }
 }

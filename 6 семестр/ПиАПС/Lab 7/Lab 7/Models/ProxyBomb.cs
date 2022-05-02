@@ -8,15 +8,20 @@ namespace Lab_7.Models
 {
     internal class ProxyBomb : IBomb
     {
-        private BombCell _realBombCell;
+        private readonly BaseCellCreator _cellCreator;
+        private BaseCell _realBombCell;
 
-        public Cell GetBomb()
+        public ProxyBomb()
+        {
+            _cellCreator = new BombCreator();
+        }
+        public BaseCell GetBomb()
         {
             if(_realBombCell == null)
             {
-                _realBombCell = new BombCell();
+                _realBombCell = _cellCreator.CreateCell();
             }
-            return _realBombCell.GetBomb();
+            return ((BombCell)_realBombCell).GetBomb();
         }
     }
 }

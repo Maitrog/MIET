@@ -8,46 +8,40 @@ namespace Lab_7.Models
 {
     internal class Field
     {
+        private readonly CellCreator _cellCreator;
         public FieldProperties Properties { get; init; }
-        public Cell[,] Cells { get; init; }
-        readonly IBomb _bomb = new BombCell();
+        public BaseCell[,] Cells { get; init; }
 
         public Field()
         {
             Properties = new FieldProperties() { Row = 15, Column = 20, BombDensity = 0.13 };
-            Cells = new Cell[Properties.Row, Properties.Column];
-            Cell cell = new();
-            for (int i = 0; i < Properties.Row; i++)
-            {
-                for (int j = 0; j < Properties.Column; j++)
-                {
-                    Cells[i, j] = (Cell)cell.Clone();
-                }
-            }
+            _cellCreator = new CellCreator();
+            Cells = new BaseCell[Properties.Row, Properties.Column];
+            CreateField();
         }
 
         public Field(FieldProperties properties)
         {
             Properties = properties;
-            Cells = new Cell[Properties.Row, Properties.Column];
+            _cellCreator = new CellCreator();
+            Cells = new BaseCell[Properties.Row, Properties.Column];
+            CreateField();
+        }
+        private void CreateField()
+        {
             for (int i = 0; i < Properties.Row; i++)
             {
                 for (int j = 0; j < Properties.Column; j++)
                 {
-                    Cells[i, j] = new Cell();
+                    Cells[i, j] = _cellCreator.CreateCell();
                 }
             }
         }
 
         public void Clear()
         {
-            for (int i = 0; i < Properties.Row; i++)
-            {
-                for (int j = 0; j < Properties.Column; j++)
-                {
-                    Cells[i, j].Clear();
-                }
-            }
+            Array.Clear(Cells);
+            CreateField();
         }
 
         public void FillBomb()
@@ -62,7 +56,8 @@ namespace Lab_7.Models
                 }
                 else
                 {
-                    Cells[cellNumber / Properties.Column, cellNumber % Properties.Column] = _bomb.GetBomb();
+                    IBomb bomb = new BombCell();
+                    Cells[cellNumber / Properties.Column, cellNumber % Properties.Column] = bomb.GetBomb();
                 }
             }
         }

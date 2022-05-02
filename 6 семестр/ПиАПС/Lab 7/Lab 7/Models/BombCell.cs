@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace Lab_7.Models
 {
-    internal class BombCell : IBomb
+    internal class BombCell : BaseCell, IBomb
     {
-        public Cell GetBomb()
+        public BombCell()
         {
-            return new Cell() { IsBomb = true };
+            Cells = new List<BaseCell>();
+            IsBomb = true;
+            IsMark = false;
+            IsOpen = false;
+        }
+        public BaseCell GetBomb()
+        {
+            return this;
         }
     }
 }

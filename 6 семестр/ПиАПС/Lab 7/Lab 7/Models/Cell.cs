@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lab_7.Models
 {
-    internal class Cell : IObservable, IObserver, IPrototype
+    internal class Cell : BaseCell
     {
-        public List<Cell> Cells { get; init; } = new List<Cell>();
-        public bool IsBomb { get; set; } = false;
-        public bool IsMark { get; set; } = false;
-        public bool IsOpen { get; private set; } = false;
-        public int GetBombCount()
+        public Cell()
+        {
+            Cells = new List<BaseCell>();
+            IsBomb = false;
+            IsMark = false;
+            IsOpen = false;
+        }
+        public override int GetBombCount()
         {
             int count = 0;
             foreach (var cell in Cells)
@@ -23,72 +26,6 @@ namespace Lab_7.Models
                 }
             }
             return count;
-        }
-        public void Open()
-        {
-            IsOpen = true;
-        }
-        public void Attach(IObserver observer)
-        {
-            if (observer is Cell cell)
-            {
-                Cells.Add(cell);
-            }
-        }
-
-        public void Detach(IObserver observer)
-        {
-            if (observer is Cell cell)
-            {
-                Cells.Remove(cell);
-            }
-        }
-
-        public void Notify()
-        {
-            foreach (var cell in Cells)
-            {
-                if (GetBombCount() == 0)
-                {
-                    cell.Update(this);
-                }
-            }
-        }
-
-        public void Update(IObservable subject)
-        {
-            if (IsOpen == false)
-            {
-                Open();
-                if (GetBombCount() == 0)
-                {
-                    Notify();
-                }
-            }
-        }
-
-        public void Click()
-        {
-            Open();
-            Notify();
-        }
-
-        public void Clear()
-        {
-            IsOpen = false;
-            IsBomb = false;
-            IsMark = false;
-            Cells.Clear();
-        }
-
-        public IPrototype Clone()
-        {
-            Cell cell = new() { IsBomb = IsBomb, IsMark = IsMark, IsOpen = IsOpen };
-            foreach(var c in Cells)
-            {
-                cell.Cells.Add(c);
-            }
-            return cell;
         }
     }
 }
