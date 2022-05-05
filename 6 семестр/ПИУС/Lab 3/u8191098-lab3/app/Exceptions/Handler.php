@@ -2,24 +2,22 @@
 
 namespace App\Exceptions;
 
+use App\Http\ApiV1\Resources\ErrorResource;
+use App\Models\Error;
+use Illuminate\Validation\ValidationException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\HttpKernel\Exception\UnprocessableEntityHttpException;
 use Throwable;
+use TypeError;
 
 class Handler extends ExceptionHandler
 {
     /**
-     * A list of exception types with their corresponding custom log levels.
-     *
-     * @var array<class-string<\Throwable>, \Psr\Log\LogLevel::*>
-     */
-    protected $levels = [
-        //
-    ];
-
-    /**
      * A list of the exception types that are not reported.
      *
-     * @var array<int, class-string<\Throwable>>
+     * @var array<int, class-string<Throwable>>
      */
     protected $dontReport = [
         //
@@ -46,5 +44,28 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
+    }
+
+    public function render($request, Throwable $e)
+    {
+        $error = new Error(404, 'Not Found');
+        if ($e instanceof NotFoundHttpException) {
+            return response()->json(new ErrorResource($error), $error->code);
+        }
+
+        if ($request->is('api/v1/*')) {
+            if ($e instanceof ModelNotFoundException) {
+                return response()->json(new ErrorResource($error), $error->code);
+            }
+            if ($e instanceof ValidationException || $e instanceof TypeError) {
+                $error->code = 400;
+                $error->message = "Bad Request";
+                return response()->json(new ErrorResource($error), $error->code);
+            }
+            $error->code = 500;
+            $error->message = "Internal Server Error";
+            return response()->json(new ErrorResource($error), $error->code);
+        }
+        return parent::render($request, $e);
     }
 }
