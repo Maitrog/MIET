@@ -1,4 +1,5 @@
-﻿using System;
+﻿using lab3.Composite;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,5 @@ namespace lab3.Strategy
         {
             return _strategy.Execute(path, volume);
         }
-
     }
 }

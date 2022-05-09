@@ -1,4 +1,5 @@
-﻿using System;
+﻿using lab3.Composite;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,61 +11,63 @@ namespace lab3.Strategy
     {
         public override Track Execute(int[] path, int volume)
         {
-            Car car1 = new();
-            foreach (var item in _table)
+            Track track = new Track(volume);
+            foreach (var item in Constants._table)
             {
-                if (item.Key.Contains(_points[path[0]]))
+                if (item.Key.Contains(Constants._points[path[0]]))
                 {
-                    car1 = new Car(_tableCost[item.Value * 3 + 2], _matrixDist[path[0], path[1]]);
+                    Car car = new Car(Constants._tableCost[item.Value * 3 + 2], Constants._matrixDist[path[0], path[1]]);
+                    track.Add(car);
                 }
             }
 
-            Train train1 = new();
-            Plane plane1 = new();
 
-            foreach (var item in _table)
+            foreach (var item in Constants._table)
             {
-                if (item.Key.Contains(_points[path[1]]) && _points[path[1]].Contains("TS"))
+                if (item.Key.Contains(Constants._points[path[1]]) && Constants._points[path[1]].Contains("TS"))
                 {
-                    train1 = new Train(_tableCost[item.Value * 3 + 1], _matrixDist[path[1], path[2]]);
+                    Train train = new Train(Constants._tableCost[item.Value * 3 + 1], Constants._matrixDist[path[1], path[2]]);
+                    track.Add(train);
                 }
-                if (item.Key.Contains(_points[path[1]]) && _points[path[1]].Contains("AP"))
+                if (item.Key.Contains(Constants._points[path[1]]) && Constants._points[path[1]].Contains("AP"))
                 {
-                    plane1 = new Plane(_tableCost[item.Value * 3], _matrixDist[path[1], path[2]]);
+                    Plane plane = new Plane(Constants._tableCost[item.Value * 3], Constants._matrixDist[path[1], path[2]]);
+                    track.Add(plane);
                 }
             }
 
-            Car car2 = new();
-            foreach (var item in _table)
+            foreach (var item in Constants._table)
             {
-                if (item.Key.Contains(_points[path[2]]))
+                if (item.Key.Contains(Constants._points[path[2]]))
                 {
-                    car2 = new Car(_tableCost[item.Value * 3 + 2], _matrixDist[path[2], path[3]]);
+                    Car car = new Car(Constants._tableCost[item.Value * 3 + 2], Constants._matrixDist[path[2], path[3]]);
+                    track.Add(car);
                 }
             }
 
-            foreach (var item in _table)
+            foreach (var item in Constants._table)
             {
-                if (item.Key.Contains(_points[path[3]]) && _points[path[3]].Contains("AP"))
+                if (item.Key.Contains(Constants._points[path[3]]) && Constants._points[path[3]].Contains("AP"))
                 {
-                    plane1 = new Plane(_tableCost[item.Value * 3], _matrixDist[path[3], path[4]]);
+                    Plane plane = new Plane(Constants._tableCost[item.Value * 3], Constants._matrixDist[path[3], path[4]]);
+                    track.Add(plane);
                 }
-                if (item.Key.Contains(_points[path[3]]) && _points[path[3]].Contains("TS"))
+                if (item.Key.Contains(Constants._points[path[3]]) && Constants._points[path[3]].Contains("TS"))
                 {
-                    train1 = new Train(_tableCost[item.Value * 3 + 1], _matrixDist[path[3], path[4]]);
+                    Train train = new Train(Constants._tableCost[item.Value * 3 + 1], Constants._matrixDist[path[3], path[4]]);
+                    track.Add(train);
                 }
             }
 
-            Car car3 = new();
-            foreach (var item in _table)
+            foreach (var item in Constants._table)
             {
-                if (item.Key.Contains(_points[path[4]]))
+                if (item.Key.Contains(Constants._points[path[4]]))
                 {
-                    car2 = new Car(_tableCost[item.Value * 3 + 2], _matrixDist[path[4], path[5]]);
+                    Car car = new Car(Constants._tableCost[item.Value * 3 + 2], Constants._matrixDist[path[4], path[5]]);
+                    track.Add(car);
                 }
             }
 
-            Track track = new Track(new ITransport[] { car1, car2, car3, train1, plane1 }, volume);
             return track;
         }
     }

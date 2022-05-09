@@ -1,94 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="lab3.Car" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AgAAAABAAAAQAAAAAAAAAAAAAAAAAAAAFAAAAACAIAA=</HashCode>
-      <FileName>Car.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="lab3.Plane" BaseTypeListCollapsed="true">
-    <Position X="4" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AgAAAABAAAAQAAAAAAAAAAAAAAAAAAAAFAAAAACAIAA=</HashCode>
-      <FileName>Plane.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="lab3.Train" BaseTypeListCollapsed="true">
-    <Position X="2.25" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AgAAAABAAAAQAAAAAAAAAAAAAAAAAAAAFAAAAACAIAA=</HashCode>
-      <FileName>Train.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="lab3.Track">
-    <Position X="5.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AQAAAAAAACAgAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
-      <FileName>Track.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="lab3.Order">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+    <Position X="9.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgEAgCAgBAQAgAAAAAAgAAABAAAAACAAAACAIgE=</HashCode>
+      <HashCode>AAAAAgEAACAgBAQAAAAAAAAgAAABAAAAACAAAACAIAA=</HashCode>
       <FileName>Order.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lab3.Strategy.Context">
-    <Position X="9.25" Y="0.5" Width="1.5" />
+    <Position X="9.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAAAAAAAAACAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
       <FileName>Strategy\Context.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lab3.Strategy.Strategy">
-    <Position X="12.5" Y="0.5" Width="1.5" />
+    <Position X="14.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAgAAAAgQAgAIAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Strategy\Strategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lab3.Strategy.StrategyFiveTransport">
-    <Position X="13.75" Y="3.5" Width="1.5" />
+    <Position X="15.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Strategy\StrategyFiveTransport.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lab3.Strategy.StrategyOneTransport">
-    <Position X="9.25" Y="3.5" Width="1.5" />
+    <Position X="11" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Strategy\StrategyOneTransport.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lab3.Strategy.StrategySevenTransport">
-    <Position X="11.5" Y="3.5" Width="1.5" />
+    <Position X="13.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Strategy\StrategySevenTransport.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lab3.Strategy.StrategyThreeTransport">
-    <Position X="16" Y="3.5" Width="1.5" />
+    <Position X="17.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Strategy\StrategyThreeTransport.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="lab3.ITransport">
-    <Position X="2.25" Y="0.5" Width="1.5" />
+  <Class Name="lab3.Composite.Car" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
-      <FileName>ITransport.cs</FileName>
+      <HashCode>AgIAAABAAAAQAAAAAAAABAAAAAAAAAAAFAAAAACAIAA=</HashCode>
+      <FileName>Composite\Car.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="lab3.Composite.Plane" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAABAAAAQAAAAAAAABAAAAAAAAAAAFAAAAACAIAA=</HashCode>
+      <FileName>Composite\Plane.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="lab3.Composite.Track" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAAABAACAwAAAAAAAABAQAAAAAAAAAEAAAAACAAAA=</HashCode>
+      <FileName>Composite\Track.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="lab3.Composite.Train" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAABAAAAQAAAAAAAABAAAAAAAAAAAFAAAAACAIAA=</HashCode>
+      <FileName>Composite\Train.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="lab3.Composite.ITransport">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAABAAAAQAAAAAAAABAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Composite\ITransport.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="lab3.Type">
-    <Position X="5.75" Y="2.75" Width="1.5" />
+    <Position X="7.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAEAAEAAAAAA=</HashCode>
       <FileName>Type.cs</FileName>
