@@ -8,7 +8,7 @@ namespace Lab_7.Models
 {
     internal class BombCreator : BaseCellCreator
     {
-        public override BaseCell CreateCell()
+        public override CellState CreateCellState()
         {
             return new BombCell();
         }

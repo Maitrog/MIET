@@ -6,18 +6,24 @@ using System.Threading.Tasks;
 
 namespace Lab_7.Models
 {
-    internal class BombCell : BaseCell, IBomb
+    internal class BombCell : CellState
     {
-        public BombCell()
+        public override int Click()
         {
-            Cells = new List<BaseCell>();
-            IsBomb = true;
-            IsMark = false;
-            IsOpen = false;
+            if (IsMark)
+            {
+                return -2;
+            }
+            return GetBombCount();
         }
-        public BaseCell GetBomb()
+
+        public override int GetBombCount()
         {
-            return this;
+            return -1;
+        }
+
+        public override void Update(IObservable subject)
+        {
         }
     }
 }

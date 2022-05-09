@@ -6,27 +6,21 @@ using System.Threading.Tasks;
 
 namespace Lab_7.Models
 {
-    internal abstract class BaseCell : IObservable, IObserver
+    internal abstract class CellState : IObservable, IObserver
     {
         private bool _isBomb;
-        public List<BaseCell> Cells { get; init; }
-        public bool IsBomb
-        {
-            get
-            {
-                return _isBomb;
-            }
-            protected set
-            {
-                _isBomb = value;
-            }
-        }
+        public List<Cell> Cells { get; init; }
         public bool IsMark { get; set; }
         public bool IsOpen { get; protected set; }
 
+        public CellState()
+        {
+            Cells = new List<Cell>();
+        }
+
         public void Attach(IObserver observer)
         {
-            if (observer is BaseCell cell)
+            if (observer is Cell cell)
             {
                 Cells.Add(cell);
             }
@@ -34,15 +28,10 @@ namespace Lab_7.Models
 
         public void Detach(IObserver observer)
         {
-            if (observer is BaseCell cell)
+            if (observer is Cell cell)
             {
                 Cells.Remove(cell);
             }
-        }
-
-        public virtual int GetBombCount()
-        {
-            return -1;
         }
 
         public void Notify()
@@ -56,26 +45,26 @@ namespace Lab_7.Models
             }
         }
 
+        public abstract void Update(IObservable subject);
+
         public void Open()
         {
-            IsOpen = true;
+            if (IsMark == false)
+            {
+                IsOpen = true;
+            }
         }
 
-        public void Update(IObservable subject)
+        public bool RightClick()
         {
             if (IsOpen == false)
             {
-                Open();
-                if (GetBombCount() == 0)
-                {
-                    Notify();
-                }
+                IsMark = !IsMark;
             }
+            return IsMark;
         }
-        public void Click()
-        {
-            Open();
-            Notify();
-        }
+
+        public abstract int Click();
+        public abstract int GetBombCount();
     }
 }

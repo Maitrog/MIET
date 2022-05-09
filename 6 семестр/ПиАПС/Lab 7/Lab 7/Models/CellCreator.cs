@@ -8,9 +8,9 @@ namespace Lab_7.Models
 {
     internal class CellCreator : BaseCellCreator
     {
-        public override BaseCell CreateCell()
+        public override CellState CreateCellState()
         {
-            return new Cell();
+            return new EmptyCell();
         }
     }
 }

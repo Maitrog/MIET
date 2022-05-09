@@ -6,26 +6,55 @@ using System.Threading.Tasks;
 
 namespace Lab_7.Models
 {
-    internal class Cell : BaseCell
+    internal class Cell : IObservable, IObserver
     {
-        public Cell()
+        public CellState CellState { get; init; }
+
+        public bool IsOpen
         {
-            Cells = new List<BaseCell>();
-            IsBomb = false;
-            IsMark = false;
-            IsOpen = false;
-        }
-        public override int GetBombCount()
-        {
-            int count = 0;
-            foreach (var cell in Cells)
+            get
             {
-                if (cell.IsBomb)
-                {
-                    count++;
-                }
+                return CellState.IsOpen;
             }
-            return count;
+        }
+
+        public bool IsBomb
+        {
+            get
+            {
+                if (CellState is BombCell)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+        public void Attach(IObserver observer)
+        {
+            CellState.Attach(observer);
+        }
+
+        public void Detach(IObserver observer)
+        {
+            CellState.Detach(observer);
+        }
+
+        public void Notify()
+        {
+            CellState.Notify();
+        }
+
+        public void Update(IObservable subject)
+        {
+            CellState.Update(subject);
+        }
+        public int Click()
+        {
+            return CellState.Click();
+        }
+        public bool RightClick()
+        {
+            return CellState.RightClick();
         }
     }
 }

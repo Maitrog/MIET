@@ -12,7 +12,7 @@ namespace Lab_7
     /// </summary>
     public partial class MainWindow : Window
     {
-        readonly FieldProperties _fieldProperties = new FieldProperties() { Row = 15, Column = 20, BombDensity = 0.1};
+        readonly FieldProperties _fieldProperties = new FieldProperties() { Row = 15, Column = 20, BombDensity = 0.1 };
         readonly Field _field;
         readonly Stopwatch _stopwatch = Stopwatch.GetInstance();
 
@@ -43,49 +43,46 @@ namespace Lab_7
             int currentRow = Grid.GetRow(buttonSender);
             int currentColumn = Grid.GetColumn(buttonSender);
 
-            if (!_field.Cells[currentRow, currentColumn].IsMark)
-            {
-                if (_field.Cells[currentRow, currentColumn].IsBomb)
-                {
-                    ShowBomb();
-                    GameOver("YOU LOOOOSE");
-                    return;
-                }
+            int bombCount = _field.Cells[currentRow, currentColumn].Click();
 
-                _field.Cells[currentRow, currentColumn].Click();
-                foreach (Button button in Field.Children)
+            if (bombCount == -1)
+            {
+                ShowBomb();
+                GameOver("YOU LOOOOSE");
+                return;
+            }
+
+            foreach (Button button in Field.Children)
+            {
+                currentRow = Grid.GetRow(button);
+                currentColumn = Grid.GetColumn(button);
+                if (_field.Cells[currentRow, currentColumn].IsOpen && !_field.Cells[currentRow, currentColumn].IsBomb)
                 {
-                    currentRow = Grid.GetRow(button);
-                    currentColumn = Grid.GetColumn(button);
-                    if (_field.Cells[currentRow, currentColumn].IsOpen && !_field.Cells[currentRow, currentColumn].IsBomb)
+                    bombCount = _field.Cells[currentRow, currentColumn].Click();
+                    if (bombCount == 0)
                     {
-                        int bombCount = _field.Cells[currentRow, currentColumn].GetBombCount();
-                        if (bombCount == 0)
+                        button.IsEnabled = false;
+                        button.Content = new TextBlock();
+                    }
+                    else
+                    {
+                        Brush color = Brushes.Black;
+                        switch (bombCount)
                         {
-                            button.IsEnabled = false;
-                            button.Content = new TextBlock();
-                            _field.Cells[currentRow, currentColumn].IsMark = false;
+                            case 1: color = Brushes.Blue; break;
+                            case 2: color = Brushes.Green; break;
+                            case 3: color = Brushes.Red; break;
+                            case 4: color = Brushes.Purple; break;
+                            case 5: color = Brushes.Yellow; break;
                         }
-                        else
-                        {
-                            Brush color = Brushes.Black;
-                            switch (bombCount)
-                            {
-                                case 1: color = Brushes.Blue; break;
-                                case 2: color = Brushes.Green; break;
-                                case 3: color = Brushes.Red; break;
-                                case 4: color = Brushes.Purple; break;
-                                case 5: color = Brushes.Yellow; break;
-                            }
-                            button.Content = new TextBlock() { Text = bombCount.ToString(), FontWeight = FontWeights.Bold, Foreground = color };
-                        }
+                        button.Content = new TextBlock() { Text = bombCount.ToString(), FontWeight = FontWeights.Bold, Foreground = color };
                     }
                 }
+            }
 
-                if (_field.IsWin())
-                {
-                    GameOver("YOU WIN");
-                }
+            if (_field.IsWin())
+            {
+                GameOver("YOU WIN");
             }
         }
 
@@ -95,10 +92,9 @@ namespace Lab_7
             int currentRow = Grid.GetRow(buttonSender);
             int currentColumn = Grid.GetColumn(buttonSender);
 
-            _field.Cells[currentRow, currentColumn].IsMark = !_field.Cells[currentRow, currentColumn].IsMark;
             if (!_field.Cells[currentRow, currentColumn].IsOpen)
             {
-                if (_field.Cells[currentRow, currentColumn].IsMark)
+                if (_field.Cells[currentRow, currentColumn].RightClick())
                 {
                     buttonSender.Content = new TextBlock { Text = "🚩", Foreground = Brushes.Red };
                 }
@@ -157,14 +153,15 @@ namespace Lab_7
             {
                 int currentRow = Grid.GetRow(button);
                 int currentColumn = Grid.GetColumn(button);
-                if (_field.Cells[currentRow, currentColumn].IsBomb && !_field.Cells[currentRow, currentColumn].IsMark)
+
+                if (_field.Cells[currentRow, currentColumn].IsBomb /*&& !_field.Cells[currentRow, currentColumn].IsMark*/)
                 {
                     button.Content = new TextBlock() { Text = "💣" };
                 }
-                if (!_field.Cells[currentRow, currentColumn].IsBomb && _field.Cells[currentRow, currentColumn].IsMark)
-                {
-                    button.Content = new TextBlock() { Text = "❌", Foreground = Brushes.Red };
-                }
+                //if (!_field.Cells[currentRow, currentColumn].IsBomb && _field.Cells[currentRow, currentColumn].IsMark)
+                //{
+                //    button.Content = new TextBlock() { Text = "❌", Foreground = Brushes.Red };
+                //}
             }
         }
     }

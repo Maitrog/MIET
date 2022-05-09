@@ -8,6 +8,11 @@ namespace Lab_7.Models
 {
     internal abstract class BaseCellCreator
     {
-        public abstract BaseCell CreateCell();
+        public Cell CreateCell()
+        {
+            return new Cell() { CellState = CreateCellState() };
+        }
+
+        public abstract CellState CreateCellState();
     }
 }
