@@ -397,5 +397,4 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-Lab6/UserFiles
-Lab6/maillist.json
+Lab7/Images
