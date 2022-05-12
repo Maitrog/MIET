@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- объявляем элементы -->
+<!ELEMENT projects (project+)>
+<!ELEMENT project (title, authors?, img?, vuz, annotation?)>
+<!ELEMENT authors (author+)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT img EMPTY>
+<!ELEMENT vuz (#PCDATA)>
+<!ELEMENT annotation (#PCDATA)>
+<!-- объявляем параметрическую сущность, которую используем в этом DTD -->
+<!ENTITY % number "NMTOKEN #REQUIRED">
+<!-- объявляем атрибуты -->
+<!ATTLIST project
+    id %number;
+    year %number;>
+<!ATTLIST img
+    width %number;
+    height %number;
+    href CDATA #REQUIRED>
+<!ATTLIST author
+    country CDATA #IMPLIED>
+
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema 
+xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+<!-- определение простых элементов -->
+    <xs:element name="title" type="xs:string"/>
+    <xs:element name="vuz" type="xs:string"/>
+    <xs:element name="annotation" type="xs:string"/>
+
+    
+<!-- определение атрибутов -->
+    <xs:attribute name="country" type="xs:string"/>
+    <xs:attribute name="width" type="xs:integer"/>
+    <xs:attribute name="height" type="xs:integer"/>
+    <xs:attribute name="href" type="xs:string"/>
+    <xs:attribute name="id" type="xs:string"/>
+    <xs:attribute name="year" type="xs:integer" default="2017"/>
+
+        
+<!-- определение составных элементов -->            
+
+    <xs:element name="json">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string"/>
+            </xs:simpleContent>             
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="img">
+        <xs:complexType>
+            <xs:attribute ref="width"/> 
+            <xs:attribute ref="height"/>
+            <xs:attribute ref="href"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="author">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="country"/>
+                </xs:extension>
+            </xs:simpleContent>             
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="authors">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="author"  minOccurs="1" maxOccurs="4"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="project">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="title"/>
+                <xs:element ref="authors"/>
+                <xs:element ref="img" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="vuz"/>                
+                <xs:element ref="annotation"/>
+                <xs:element ref="json" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        <xs:attribute ref="id" use="required"/>
+        <xs:attribute ref="year" use="required"/>                                    
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="projects">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="project" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>
