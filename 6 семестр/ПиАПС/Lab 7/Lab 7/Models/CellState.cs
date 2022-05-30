@@ -8,7 +8,6 @@ namespace Lab_7.Models
 {
     internal abstract class CellState : IObservable, IObserver
     {
-        private bool _isBomb;
         public List<Cell> Cells { get; init; }
         public bool IsMark { get; set; }
         public bool IsOpen { get; protected set; }

@@ -8,16 +8,12 @@ namespace Lab_7.Models
 {
     internal class Field
     {
-        private readonly CellCreator _cellCreator;
-        private readonly BombCreator _bombCreator;
         public FieldProperties Properties { get; init; }
         public Cell[,] Cells { get; init; }
 
         public Field()
         {
             Properties = new FieldProperties() { Row = 15, Column = 20, BombDensity = 0.13 };
-            _cellCreator = new CellCreator();
-            _bombCreator = new BombCreator();
             Cells = new Cell[Properties.Row, Properties.Column];
             CreateField();
         }
@@ -25,8 +21,6 @@ namespace Lab_7.Models
         public Field(FieldProperties properties)
         {
             Properties = properties;
-            _cellCreator = new CellCreator();
-            _bombCreator = new BombCreator();
             Cells = new Cell[Properties.Row, Properties.Column];
             CreateField();
         }
@@ -36,7 +30,7 @@ namespace Lab_7.Models
             {
                 for (int j = 0; j < Properties.Column; j++)
                 {
-                    Cells[i, j] = _cellCreator.CreateCell();
+                    Cells[i, j] = new EmptyCell();
                 }
             }
         }
@@ -59,7 +53,7 @@ namespace Lab_7.Models
                 }
                 else
                 {
-                    Cells[cellNumber / Properties.Column, cellNumber % Properties.Column] = _bombCreator.CreateCell();
+                    Cells[cellNumber / Properties.Column, cellNumber % Properties.Column] = new BombCell();
                 }
             }
         }

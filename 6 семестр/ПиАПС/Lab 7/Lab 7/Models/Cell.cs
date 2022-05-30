@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lab_7.Models
 {
-    internal class Cell : IObservable, IObserver
+    internal abstract class Cell : IObservable, IObserver
     {
         public CellState CellState { get; init; }
+
+        public Cell()
+        {
+            CellState = CreateCellState();
+        }
 
         public bool IsOpen
         {
@@ -22,7 +27,7 @@ namespace Lab_7.Models
         {
             get
             {
-                if (CellState is BombCell)
+                if (CellState is BombCellState)
                 {
                     return true;
                 }
@@ -56,5 +61,7 @@ namespace Lab_7.Models
         {
             return CellState.RightClick();
         }
+
+        public abstract CellState CreateCellState();
     }
 }
