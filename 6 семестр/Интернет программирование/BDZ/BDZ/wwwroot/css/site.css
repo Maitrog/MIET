@@ -1,0 +1,55 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.close-icon {
+    width: 32px;
+    height: 32px;
+    background: url('../img/close.png');
+    display: inline-block;
+}
+.pin-icon {
+    width: 32px;
+    height: 32px;
+    background: url('../img/pin.png');
+    display: inline-block;
+}
+.minimize-icon {
+    width: 32px;
+    height: 32px;
+    background: url('../img/minimize.png');
+    display: inline-block;
+}
+
+#draggableChat {
+    position: absolute  ;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    width: 500px;
+    height: 600px;
+    padding: 5px;
+    top: 400px;
+    right: 10px;
+}
+
+.messages {
+    overflow-y: auto;
+    overflow-x: auto;
+    max-height: 400px;
+}

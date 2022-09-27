@@ -1,0 +1,365 @@
+﻿<div id="draggableChat">
+    <div id="draggableChatheader" class="d-flex justify-content-end">
+        <i id="pin" class="pin-icon ms-2"></i>
+        <i id="minimize" class="minimize-icon ms-2"></i>
+        <i class="close-icon ms-2"></i>
+    </div>
+    <hr>
+    <div id="content">
+        <form name="publish">
+            <div id="ConnectBlock" class="d-flex justify-content-start">
+                <h6 class="col-3 mt-2">Имя в чате:</h6>
+                <input type="text" class="form-control me-2" name="name" id="name">
+                <input id="ConnectOpen" type="button" class="btn btn-primary" value="Открыть соединение">
+            </div>
+            <div id="MessageBlock" class="d-none">
+                <div class="d-flex justify-content-between">
+                    <span class="me-2 mt-2">Имя в чате:</span>
+                    <b class="mt-2"><span id="MyName"></span></b><br>
+                    <button id="ConnectClose" class="btn btn-secondary ms-2">Отключиться</button>
+                    <select id="min" class="form-control ms-2 w-auto">
+                        <option selected value="0">Всё</option>
+                        <option value="15">15 мин</option>
+                        <option value="60">60 мин</option>
+                    </select>
+                    <button id="GetHistory" class="btn btn-secondary ms-2">История</button>
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                    <select id="sendTo" class="form-control me-2 w-auto">
+                        <option selected value="all">Всем</option>
+                    </select>
+                    <input type="text" class="form-control me-2" name="message" id="message">
+                    <input type="submit" id="BSubmit" class="btn btn-primary" value="Отправить" disabled>
+                </div>
+            </div>
+        </form>
+
+        <h2>Сообщения</h2>
+        <div id="messages" class="messages"></div>
+    </div>
+</div>
+
+<div class="cards-list">
+    <table class="card request-card full-width new">
+        <tbody>
+            <tr class="card-main">
+                <td class="card-left">
+                    <a href="" class="card-sert-link">47C85BCA-AF51-11EA-B6E6-005056AB57C5</a>
+                </td>
+
+                <td class="card-center">
+                    <div>&lt;tns:NSVUIDATRequest ИдЗапрос="1b32adb0-b339-11ea-8bc6-005056ab57c5" ВидРеестр="2" ДатаФБД="2020-06-20" xmlns:tns="urn://x-artefacts-fns-ns...</div>
+                </td>
+
+                <td class="card-right">
+                    <table class="full-width">
+                        <tbody>
+                            <tr>
+                                <td class="text-light">Статус</td>
+                                <td>
+                                    <i class="status-icon"></i>
+                                    <div class="status">Новый</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-light">Создан</td>
+                                <td><b>01.12.2015</b> 11:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="card-footer">
+                    <a href="">Сведения</a> <a href="">Запрос</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="card request-card full-width new">
+        <tbody>
+            <tr class="card-main">
+                <td class="card-left">
+                    <a href="" class="card-sert-link">47C85BCA-AF51-11EA-B6E6-005056AB57C5</a>
+                </td>
+
+                <td class="card-center">
+                    <div>&lt;tns:NSVUIDATRequest ИдЗапрос="1b32adb0-b339-11ea-8bc6-005056ab57c5" ВидРеестр="2" ДатаФБД="2020-06-20" xmlns:tns="urn://x-artefacts-fns-ns...</div>
+                </td>
+
+                <td class="card-right">
+                    <table class="full-width">
+                        <tbody>
+                            <tr>
+                                <td class="text-light">Статус</td>
+                                <td>
+                                    <i class="status-icon"></i>
+                                    <div class="status">Новый</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-light">Создан</td>
+                                <td><b>01.12.2015</b> 11:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="card-footer">
+                    <a href="">Сведения</a> <a href="">Запрос</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="card request-card full-width new">
+        <tbody>
+            <tr class="card-main">
+                <td class="card-left">
+                    <a href="" class="card-sert-link">47C85BCA-AF51-11EA-B6E6-005056AB57C5</a>
+                </td>
+
+                <td class="card-center">
+                    <div>&lt;tns:NSVUIDATRequest ИдЗапрос="1b32adb0-b339-11ea-8bc6-005056ab57c5" ВидРеестр="2" ДатаФБД="2020-06-20" xmlns:tns="urn://x-artefacts-fns-ns...</div>
+                </td>
+
+                <td class="card-right">
+                    <table class="full-width">
+                        <tbody>
+                            <tr>
+                                <td class="text-light">Статус</td>
+                                <td>
+                                    <i class="status-icon"></i>
+                                    <div class="status">Новый</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-light">Создан</td>
+                                <td><b>01.12.2015</b> 11:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="card-footer">
+                    <a href="">Сведения</a> <a href="">Запрос</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="card request-card full-width new">
+        <tbody>
+            <tr class="card-main">
+                <td class="card-left">
+                    <a href="" class="card-sert-link">47C85BCA-AF51-11EA-B6E6-005056AB57C5</a>
+                </td>
+
+                <td class="card-center">
+                    <div>&lt;tns:NSVUIDATRequest ИдЗапрос="1b32adb0-b339-11ea-8bc6-005056ab57c5" ВидРеестр="2" ДатаФБД="2020-06-20" xmlns:tns="urn://x-artefacts-fns-ns...</div>
+                </td>
+
+                <td class="card-right">
+                    <table class="full-width">
+                        <tbody>
+                            <tr>
+                                <td class="text-light">Статус</td>
+                                <td>
+                                    <i class="status-icon"></i>
+                                    <div class="status">Новый</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-light">Создан</td>
+                                <td><b>01.12.2015</b> 11:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="card-footer">
+                    <a href="">Сведения</a> <a href="">Запрос</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="card request-card full-width new">
+        <tbody>
+            <tr class="card-main">
+                <td class="card-left">
+                    <a href="" class="card-sert-link">47C85BCA-AF51-11EA-B6E6-005056AB57C5</a>
+                </td>
+
+                <td class="card-center">
+                    <div>&lt;tns:NSVUIDATRequest ИдЗапрос="1b32adb0-b339-11ea-8bc6-005056ab57c5" ВидРеестр="2" ДатаФБД="2020-06-20" xmlns:tns="urn://x-artefacts-fns-ns...</div>
+                </td>
+
+                <td class="card-right">
+                    <table class="full-width">
+                        <tbody>
+                            <tr>
+                                <td class="text-light">Статус</td>
+                                <td>
+                                    <i class="status-icon"></i>
+                                    <div class="status">Новый</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-light">Создан</td>
+                                <td><b>01.12.2015</b> 11:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="card-footer">
+                    <a href="">Сведения</a> <a href="">Запрос</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="card request-card full-width declined">
+        <tbody>
+            <tr class="card-main">
+                <td class="card-left">
+                    <a href="" class="card-sert-link">47C85BCA-AF51-11EA-B6E6-005056AB57C5</a>
+                </td>
+                <td class="card-center">
+                    <div>&lt;tns:NSVUIDATRequest ИдЗапрос="1b32adb0-b339-11ea-8bc6-005056ab57c5" ВидРеестр="2" ДатаФБД="2020-06-20" xmlns:tns="urn://x-artefacts-fns-ns...</div>
+                </td>
+                <td class="card-right">
+                    <table class="full-width">
+                        <tbody>
+                            <tr>
+                                <td class="text-light">Статус</td>
+                                <td>
+                                    <i class="status-icon"></i>
+                                    <div class="status">Ошибка</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="date text-light">Создан</td>
+                                <td class="date"><b>01.12.2015</b> 11:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="card-footer">
+                    <a href="">Сведения</a> <a href="">Запрос</a> <a href="">Сведения об ошибке</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="cards-list">
+        <table class="card request-card full-width new">
+            <tbody>
+                <tr class="card-main">
+                    <td class="card-left">
+                        <a href="" class="card-sert-link">47C85BCA-AF51-11EA-B6E6-005056AB57C5</a>
+                    </td>
+
+                    <td class="card-center">
+                        <div>&lt;tns:NSVUIDATRequest ИдЗапрос="1b32adb0-b339-11ea-8bc6-005056ab57c5" ВидРеестр="2" ДатаФБД="2020-06-20" xmlns:tns="urn://x-artefacts-fns-ns...</div>
+                    </td>
+
+                    <td class="card-right">
+                        <table class="full-width">
+                            <tbody>
+                                <tr>
+                                    <td class="text-light">Статус</td>
+                                    <td>
+                                        <i class="status-icon"></i>
+                                        <div class="status">Новый</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-light">Создан</td>
+                                    <td><b>01.12.2015</b> 11:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="card-footer">
+                        <a href="">Сведения</a> <a href="">Запрос</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="card request-card full-width declined">
+            <tbody>
+                <tr class="card-main">
+                    <td class="card-left">
+                        <a href="" class="card-sert-link">47C85BCA-AF51-11EA-B6E6-005056AB57C5</a>
+                    </td>
+                    <td class="card-center">
+                        <div>&lt;tns:NSVUIDATRequest ИдЗапрос="1b32adb0-b339-11ea-8bc6-005056ab57c5" ВидРеестр="2" ДатаФБД="2020-06-20" xmlns:tns="urn://x-artefacts-fns-ns...</div>
+                    </td>
+                    <td class="card-right">
+                        <table class="full-width">
+                            <tbody>
+                                <tr>
+                                    <td class="text-light">Статус</td>
+                                    <td>
+                                        <i class="status-icon"></i>
+                                        <div class="status">Ошибка</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="date text-light">Создан</td>
+                                    <td class="date"><b>01.12.2015</b> 11:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="card-footer">
+                        <a href="">Сведения</a> <a href="">Запрос</a> <a href="">Сведения об ошибке</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="card request-card full-width declined">
+            <tbody>
+                <tr class="card-main">
+                    <td class="card-left">
+                        <a href="" class="card-sert-link">47C85BCA-AF51-11EA-B6E6-005056AB57C5</a>
+                    </td>
+                    <td class="card-center">
+                        <div>&lt;tns:NSVUIDATRequest ИдЗапрос="1b32adb0-b339-11ea-8bc6-005056ab57c5" ВидРеестр="2" ДатаФБД="2020-06-20" xmlns:tns="urn://x-artefacts-fns-ns...</div>
+                    </td>
+                    <td class="card-right">
+                        <table class="full-width">
+                            <tbody>
+                                <tr>
+                                    <td class="text-light">Статус</td>
+                                    <td>
+                                        <i class="status-icon"></i>
+                                        <div class="status">Ошибка</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="date text-light">Создан</td>
+                                    <td class="date"><b>01.12.2015</b> 11:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="card-footer">
+                        <a href="">Сведения</a> <a href="">Запрос</a> <a href="">Сведения об ошибке</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="~/js/chat.js"></script>
+<link rel="stylesheet" href="~/css/site.css">
