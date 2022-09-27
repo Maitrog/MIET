@@ -8,7 +8,7 @@ namespace lab3
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\Mihay\Documents\MIET\7 semester\ТАЯК\ТАЯК\Laba3\test4.txt";
+            string path = @"C:\Users\Mihay\Documents\MIET\7 semester\ТАЯК\ТАЯК\Laba3\test1.txt";
 
             var lines = File.ReadAllLines(path);
 
@@ -25,11 +25,14 @@ namespace lab3
                 Console.WriteLine(item);
             }
 
-            Stack<char> startStack = new Stack<char>();
-            startStack.Push('_');
-            startStack.Push('E');
+            while (true)
+            {
+                string inputStr = Console.ReadLine();
+                bool isSolve = pushdownAutomaton.TrySolve(inputStr);
+                Console.WriteLine("Возможность разобрать строку: " + isSolve);
+                Console.WriteLine(pushdownAutomaton.TrySolveDeep(inputStr));
+            }
 
-            Console.WriteLine(pushdownAutomaton.TrySolve("a+a*a", startStack));
         }
     }
 }

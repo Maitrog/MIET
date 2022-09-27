@@ -130,7 +130,7 @@ namespace lab1
 
                     while (operatorsStack.TryPop(out newOp))
                     {
-                        if (GetRank(op) <= GetRank(newOp) && (op != "!" || newOp != "!"))
+                        if (GetRank(op) <= GetRank(newOp) && (op != "!" || newOp != "!") && (op != "log" || newOp != "!") && (op != "pow" || newOp != "!"))
                         {
                             outputStr.Add(newOp);
                         }
@@ -177,6 +177,7 @@ namespace lab1
 
         static void Validate(string str)
         {
+            string changeStr = Regex.Replace(str, "\\(\\-+\\d\\)|^\\-+\\d", "");
             if (string.IsNullOrEmpty(str))
             {
                 throw new Exception("Выражение не может быть пустым");
@@ -187,9 +188,39 @@ namespace lab1
                 throw new Exception("Между скобками отсутствует знак умножения");
             }
 
+            if (Regex.IsMatch(changeStr, "\\(([/*+]|pow(?!\\(\\d(.\\d)*,?\\d(.\\d)*\\))|log(?!\\(\\d(.\\d)*,?\\d(.\\d)*\\)))+.*\\)|\\(.*([/*+-]|pow|log)+\\)"))
+            {
+                throw new Exception("Выражение в скобках некорректно");
+            }
+
             if (Regex.IsMatch(str, "\\d\\(|\\)\\d"))
             {
                 throw new Exception("Между числом и скобкой отсутствует знак умножения");
+            }
+
+            if (Regex.IsMatch(changeStr, "([/*+]|pow|log){2,}|([/*+]|pow|log){0,}-([/*+]){1,}"))
+            {
+                throw new Exception("Несколько действий не могут идти подряд");
+            }
+
+            if (changeStr.Contains("pow") && !Regex.IsMatch(changeStr, @"pow\(\d*(\.\d+)?,\d*(\.\d+)?\)"))
+            {
+                throw new Exception("Функция pow должна иметь 2 вещественных аргумента");
+            }
+
+            if (changeStr.Contains("log") && !Regex.IsMatch(changeStr, @"log\(\d*(\.\d+)?,\d*(\.\d+)?\)"))
+            {
+                throw new Exception("Функция log должна иметь 2 вещественных аргумента");
+            }
+
+            if (Regex.IsMatch(str, "pow(?!\\()"))
+            {
+                throw new Exception("Функция pow имеет вид pow(a,b), где a и b - вещественные числа");
+            }
+
+            if (Regex.IsMatch(str, "log(?!\\()"))
+            {
+                throw new Exception("Функция pow имеет вид log(a,b), где a и b - вещественные положительные числа");
             }
 
             Stack<char> s = new Stack<char>();
