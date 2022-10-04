@@ -8,7 +8,7 @@ namespace lab3
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\Mihay\Documents\MIET\7 semester\ТАЯК\ТАЯК\Laba3\test1.txt";
+            string path = @"C:\Users\Mihay\Documents\MIET\7 semester\ТАЯК\ТАЯК\Laba4\test.txt";
 
             var lines = File.ReadAllLines(path);
 
@@ -30,7 +30,7 @@ namespace lab3
                 string inputStr = Console.ReadLine();
                 bool isSolve = pushdownAutomaton.TrySolve(inputStr);
                 Console.WriteLine("Возможность разобрать строку: " + isSolve);
-                Console.WriteLine(pushdownAutomaton.TrySolveDeep(inputStr));
+                //Console.WriteLine(pushdownAutomaton.TrySolveDeep(inputStr));
             }
 
         }

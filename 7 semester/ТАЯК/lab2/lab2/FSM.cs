@@ -70,6 +70,10 @@ namespace lab2
         public bool TrySolve(string inputStr)
         {
             var dfsm = CreateDFSM();
+            while (!dfsm.IsDeterministic())
+            {
+                dfsm = dfsm.CreateDFSM();
+            }
             State currentState = dfsm.q0;
             foreach (var item in inputStr)
             {
@@ -98,12 +102,12 @@ namespace lab2
                     int count = 0;
                     foreach (var item2 in functions)
                     {
-                        if(item.Symbol == item2.Symbol)
+                        if (item.Symbol == item2.Symbol)
                         {
                             count++;
                         }
                     }
-                    if(count > 1)
+                    if (count > 1)
                     {
                         return false;
                     }
@@ -142,6 +146,14 @@ namespace lab2
 
                         var newState = new State(name);
                         DFSM.AddTransitionFunction(new TransitionFunction(item.CurrentState, newState, item.Symbol));
+                        foreach (var state in states)
+                        {
+                            var funcs = t.Where(f => f.CurrentState == state);
+                            foreach (var f in funcs)
+                            {
+                                DFSM.AddTransitionFunction(new TransitionFunction(newState, f.NextState, f.Symbol));
+                            }
+                        }
                     }
                     else
                     {

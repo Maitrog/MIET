@@ -113,7 +113,7 @@ namespace Lab
             }
         }
 
-        private static byte[] DirectoryToBytes(string item)
+        public static byte[] DirectoryToBytes(string item)
         {
             byte[] data = Array.Empty<byte>();
             byte[] type = { 0x1 };
@@ -137,7 +137,7 @@ namespace Lab
             return data;
         }
 
-        private static byte[] FileToBytes(string item)
+        public static byte[] FileToBytes(string item)
         {
             byte[] data = Array.Empty<byte>();
             byte[] type = { 0x0 };
@@ -157,7 +157,7 @@ namespace Lab
             return data;
         }
 
-        private static int ReadDirectory(string currentDirectory, int readed, List<byte> archive)
+        public static int ReadDirectory(string currentDirectory, int readed, List<byte> archive)
         {
             int titleLength = BitConverter.ToInt32(archive.Skip(readed).Take(4).ToArray());
             readed += 4;
@@ -193,7 +193,7 @@ namespace Lab
             return readed;
         }
 
-        private static int ReadFile(string currentDirectory, int readed, List<byte> archive)
+        public static int ReadFile(string currentDirectory, int readed, List<byte> archive)
         {
             int titleLength = BitConverter.ToInt32(archive.Skip(readed).Take(4).ToArray());
             readed += 4;
@@ -213,7 +213,7 @@ namespace Lab
             return readed;
         }
 
-        private static byte[] CodeData(byte[] data, string[] codes)
+        public static byte[] CodeData(byte[] data, string[] codes)
         {
             List<byte> newData = new List<byte>();
             StringBuilder sb = new StringBuilder();
@@ -239,7 +239,7 @@ namespace Lab
             return newData.ToArray();
         }
 
-        private static List<byte> DecodeData(in List<byte> data, string[] codes, int minLength)
+        public static List<byte> DecodeData(in List<byte> data, string[] codes, int minLength)
         {
             List<byte> newData = new List<byte>();
             StringBuilder sb = new StringBuilder(24);
@@ -289,7 +289,7 @@ namespace Lab
             return newData;
         }
 
-        private static string[] GetCodes(byte[] alphabet, double[] probabilities, string[] codes)
+        public static string[] GetCodes(byte[] alphabet, double[] probabilities, string[] codes)
         {
             if (alphabet.Length == 1)
             {
@@ -348,7 +348,7 @@ namespace Lab
             return codes;
         }
 
-        private static void SortAlphabet(byte[] alphabet, double[] probabilities)
+        public static void SortAlphabet(byte[] alphabet, double[] probabilities)
         {
             for (int i = 0; i < alphabet.Length; i++)
             {
@@ -368,7 +368,7 @@ namespace Lab
             }
         }
 
-        private static void SortCode(string[] code, byte[] alphabet)
+        public static void SortCode(string[] code, byte[] alphabet)
         {
             for (int i = 0; i < code.Length; i++)
             {
@@ -388,7 +388,7 @@ namespace Lab
             }
         }
 
-        private static byte[] GetAlphabet()
+        public static byte[] GetAlphabet()
         {
             byte[] alphabet = new byte[256];
             for (int i = 0; i < alphabet.Length; i++)
@@ -398,7 +398,7 @@ namespace Lab
             return alphabet;
         }
 
-        private static (long, long[], double[], double[], double) GetStatistic(string[] fileNames)
+        public static (long, long[], double[], double[], double) GetStatistic(string[] fileNames)
         {
             long length = 0;
             long[] frequencies = new long[256];

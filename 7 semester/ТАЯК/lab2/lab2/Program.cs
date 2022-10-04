@@ -7,8 +7,8 @@ namespace lab2
     {
         static void Main(string[] args)
         {
-            //string path = @"C:\Users\Mihay\Documents\MIET\7 semester\ТАЯК\ТАЯК\Laba2\test2.txt";
-            string path = Console.ReadLine();
+            string path = @"C:\Users\Mihay\Documents\MIET\7 semester\ТАЯК\ТАЯК\Laba2\var3_nd.txt";
+            //string path = Console.ReadLine();
             string inputStr = Console.ReadLine();
 
 
@@ -31,18 +31,21 @@ namespace lab2
 
             bool isDeterministic = fsm.IsDeterministic();
             Console.WriteLine(isDeterministic);
-            if (!isDeterministic)
+            var dfsm = fsm.CreateDFSM();
+            while (!isDeterministic)
             {
-                var dfsm = fsm.CreateDFSM();
+                dfsm = dfsm.CreateDFSM();
+
                 foreach (var item in dfsm.t)
                 {
                     Console.WriteLine(item);
                 }
 
-                Console.WriteLine("Детерминированность: {0}",dfsm.IsDeterministic());
+                Console.WriteLine("Детерминированность: {0}", dfsm.IsDeterministic());
+                isDeterministic = dfsm.IsDeterministic();
             }
 
-            Console.WriteLine("Возможность разобрать строку {0}: {1}",inputStr,fsm.TrySolve(inputStr));
+            Console.WriteLine("Возможность разобрать строку {0}: {1}", inputStr, fsm.TrySolve(inputStr));
             //Console.WriteLine(fsm.TrySolve("ab"));
             //Console.WriteLine(fsm.TrySolve("ba"));
             //Console.WriteLine(fsm.TrySolve("b"));

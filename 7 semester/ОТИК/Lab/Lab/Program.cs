@@ -11,25 +11,27 @@ namespace ArchieveTest
     {
         static void Main(string[] args)
         {
-            int version = 1;
-            if(args.Length == 4)
-            {
-                if(args[2] == "-v")
-                {
-                    version = int.Parse(args[3]);
-                }
-            }
-            if (args.Length > 0)
-            {
-                if (args[0] == "-a")
-                {
-                    Archive(args.Skip(1).Take(args.Length - 1).ToArray(), version);
-                }
-                else if (args[0] == "-d")
-                {
-                    Dearchive(args.Skip(1).Take(1).ToArray()[0]);
-                }
-            }
+            ArchiverV3.Archive(new string[] { @"C:\Users\Mihay\Documents\Фото" });
+            Dearchive(@"C:\Users\Mihay\Documents\MIET\7 semester\ОТИК\Lab\Lab\bin\Debug\net6.0\archive3.lox");
+            //int version = 1;
+            //if(args.Length == 4)
+            //{
+            //    if(args[2] == "-v")
+            //    {
+            //        version = int.Parse(args[3]);
+            //    }
+            //}
+            //if (args.Length > 0)
+            //{
+            //    if (args[0] == "-a")
+            //    {
+            //        Archive(args.Skip(1).Take(args.Length - 1).ToArray(), version);
+            //    }
+            //    else if (args[0] == "-d")
+            //    {
+            //        Dearchive(args.Skip(1).Take(1).ToArray()[0]);
+            //    }
+            //}
         }
 
         static void Archive(string[] fileNames, int version = 0, int archiveStyle = 1)
@@ -70,10 +72,14 @@ namespace ArchieveTest
             {
                 ArchiverV0.Dearchive(currentDirectory, readed, archive);
             }
-            if(vers == 1)
+            if (vers == 1)
             {
                 ArchiverV1.Dearchive(currentDirectory, readed, archive);
             }
-        }        
+            if(vers == 3)
+            {
+                ArchiverV3.Dearchive(currentDirectory, readed, archive);
+            }
+        }
     }
 }
