@@ -1,0 +1,34 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="firstArg" Grid.Row="0" Grid.Column="0"
+                 Text="" FontSize="20"/>
+        <TextBox x:Name="secondArg" Grid.Row="0" Grid.Column="1"
+                 Text="" FontSize="20"/>
+        <TextBox x:Name="result" Grid.Row="1" Grid.Column="0" FontSize="20"
+                 Grid.ColumnSpan="2" HorizontalAlignment="Stretch" 
+                 VerticalAlignment="Bottom" Text="" TextAlignment="Center"/>
+        
+        <Button x:Name="minus" Grid.Row="2" Grid.Column="1" Content="-" Click="minus_Click"/>
+        <Button x:Name="plus" Grid.Row="2" Grid.Column="0" Content="+" Click="plus_Click"/>
+        <Button x:Name="divide" Grid.Row="3" Grid.Column="1" Content="/" Click="divide_Click"/>
+        <Button x:Name="multiply" Grid.Row="3" Grid.Column="0" Content="*" Click="multiply_Click"/>
+    </Grid>
+</Window>
