@@ -19,23 +19,30 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBox x:Name="firstArg" Grid.Row="0" Grid.Column="0"
-                 Text="" FontSize="20"/>
+                 Text="" FontSize="20"
+                  AutomationProperties.AutomationId="firstArg"/>
         <TextBox x:Name="secondArg" Grid.Row="0" Grid.Column="1"
-                 Text="" FontSize="20"/>
+                 Text="" FontSize="20"
+                  AutomationProperties.AutomationId="secondArg"/>
         <TextBlock x:Name="result" Grid.Row="1" Grid.Column="0" FontSize="20"
                  Grid.ColumnSpan="2" HorizontalAlignment="Stretch" 
-                 VerticalAlignment="Bottom" Text="" TextAlignment="Center"/>
+                 VerticalAlignment="Bottom" Text="" TextAlignment="Center"
+                 AutomationProperties.AutomationId="result"/>
 
-        <Button x:Name="minus" Grid.Row="2" Grid.Column="1" Click="minus_Click">
+        <Button x:Name="minus" Grid.Row="2" Grid.Column="1" Click="minus_Click"
+                 AutomationProperties.AutomationId="minus">
             <TextBlock Text="-" FontSize="100"/>
         </Button>
-        <Button x:Name="plus" Grid.Row="2" Grid.Column="0" Click="plus_Click">
+        <Button x:Name="plus" Grid.Row="2" Grid.Column="0" Click="plus_Click"
+                 AutomationProperties.AutomationId="plus">
             <TextBlock Text="+" FontSize="100"/>
         </Button>
-        <Button x:Name="divide" Grid.Row="3" Grid.Column="1"  Click="divide_Click">
+        <Button x:Name="divide" Grid.Row="3" Grid.Column="1"  Click="divide_Click"
+                 AutomationProperties.AutomationId="divide">
             <TextBlock Text="/" FontSize="100"/>
         </Button>
-        <Button x:Name="multiply" Grid.Row="3" Grid.Column="0" Click="multiply_Click">
+        <Button x:Name="multiply" Grid.Row="3" Grid.Column="0" Click="multiply_Click"
+                 AutomationProperties.AutomationId="multiply">
             <TextBlock Text="*" FontSize="100"/>
         </Button>
     </Grid>
