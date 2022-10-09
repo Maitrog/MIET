@@ -7,156 +7,170 @@ namespace CalculatorTests
     [TestClass]
     public class UnitTest1
     {
+        MainWindow mainWindow = new MainWindow();
+
         [TestMethod]
         public void TestSum()
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.FirstArgument = "2";
-            mainWindow.SecondArgument = "5";
-            mainWindow.plus_Click(null, null);
+            var res = mainWindow.Sum(2.2, 5.1);
 
-            Assert.AreEqual(mainWindow.Result, "7");
+            Assert.AreEqual(res, 7.3);
         }
 
         [TestMethod]
         public void TestSubtract()
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.FirstArgument = "2";
-            mainWindow.SecondArgument = "5";
-            mainWindow.minus_Click(null, null);
+            var res = mainWindow.Subtract(11, 1.6);
 
-            Assert.AreEqual(mainWindow.Result, "-3");
+            Assert.AreEqual(res, 9.4);
         }
 
         [TestMethod]
         public void TestDivide()
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.FirstArgument = "2";
-            mainWindow.SecondArgument = "2";
-            mainWindow.divide_Click(null, null);
+            var res = mainWindow.Divide(3, 4);
 
-            Assert.AreEqual(mainWindow.Result, "1");
+            Assert.AreEqual(res, 0.75);
+        }
+
+        [TestMethod]
+        public void TestZeroDivide()
+        {
+            Assert.ThrowsException<DivideByZeroException>(() => mainWindow.Divide(3, 0));
         }
 
         [TestMethod]
         public void TestMultiply()
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.FirstArgument = "2";
-            mainWindow.SecondArgument = "5";
-            mainWindow.multiply_Click(null, null);
+            var res = mainWindow.Multiply(2, 5);
 
-            Assert.AreEqual(mainWindow.Result, "10");
+            Assert.AreEqual(res, 10);
         }
 
         [TestMethod]
         public void TestGetFirstArgumentAsString()
         {
-            MainWindow mainWindow = new MainWindow();
             mainWindow.FirstArgument = "11";
             var arg = mainWindow.GetFirstArgumentAsString();
 
             Assert.AreEqual(arg, "11");
+
+            mainWindow.FirstArgument = "";
         }
 
         [TestMethod]
         public void TestGetSecondArgumentAsString()
         {
-            MainWindow mainWindow = new MainWindow();
             mainWindow.SecondArgument = "15";
             var arg = mainWindow.GetSecondArgumentAsString();
 
             Assert.AreEqual(arg, "15");
+
+            mainWindow.SecondArgument = "";
         }
 
         [TestMethod]
         public void TestDisplayError_1()
         {
-            MainWindow mainWindow = new MainWindow();
             mainWindow.FirstArgument = "11";
             mainWindow.SecondArgument = "ff";
             mainWindow.minus_Click(null, null);
 
             Assert.AreEqual(mainWindow.Result, "Некорректный ввод");
+
+            mainWindow.FirstArgument = "";
+            mainWindow.SecondArgument = "";
         }
 
         [TestMethod]
         public void TestDisplayError_2()
         {
-            MainWindow mainWindow = new MainWindow();
             mainWindow.FirstArgument = "s";
             mainWindow.SecondArgument = "3";
             mainWindow.minus_Click(null, null);
 
             Assert.AreEqual(mainWindow.Result, "Некорректный ввод");
+
+            mainWindow.FirstArgument = "";
+            mainWindow.SecondArgument = "";
         }
 
         [TestMethod]
         public void TestDisplayError_3()
         {
-            MainWindow mainWindow = new MainWindow();
             mainWindow.FirstArgument = "11";
             mainWindow.SecondArgument = "ff";
             mainWindow.plus_Click(null, null);
 
             Assert.AreEqual(mainWindow.Result, "Некорректный ввод");
+
+            mainWindow.FirstArgument = "";
+            mainWindow.SecondArgument = "";
         }
 
         [TestMethod]
         public void TestDisplayError_4()
         {
-            MainWindow mainWindow = new MainWindow();
             mainWindow.FirstArgument = "s";
             mainWindow.SecondArgument = "3";
             mainWindow.plus_Click(null, null);
 
             Assert.AreEqual(mainWindow.Result, "Некорректный ввод");
+
+            mainWindow.FirstArgument = "";
+            mainWindow.SecondArgument = "";
         }
 
         [TestMethod]
         public void TestDisplayError_5()
         {
-            MainWindow mainWindow = new MainWindow();
             mainWindow.FirstArgument = "11";
             mainWindow.SecondArgument = "ff";
             mainWindow.divide_Click(null, null);
 
             Assert.AreEqual(mainWindow.Result, "Некорректный ввод");
+
+            mainWindow.FirstArgument = "";
+            mainWindow.SecondArgument = "";
         }
 
         [TestMethod]
         public void TestDisplayError_6()
         {
-            MainWindow mainWindow = new MainWindow();
             mainWindow.FirstArgument = "s";
             mainWindow.SecondArgument = "3";
             mainWindow.divide_Click(null, null);
 
             Assert.AreEqual(mainWindow.Result, "Некорректный ввод");
+
+            mainWindow.FirstArgument = "";
+            mainWindow.SecondArgument = "";
         }
 
         [TestMethod]
         public void TestDisplayError_7()
         {
-            MainWindow mainWindow = new MainWindow();
             mainWindow.FirstArgument = "11";
             mainWindow.SecondArgument = "ff";
             mainWindow.multiply_Click(null, null);
 
             Assert.AreEqual(mainWindow.Result, "Некорректный ввод");
+
+            mainWindow.FirstArgument = "";
+            mainWindow.SecondArgument = "";
         }
 
         [TestMethod]
         public void TestDisplayError_8()
         {
-            MainWindow mainWindow = new MainWindow();
             mainWindow.FirstArgument = "s";
             mainWindow.SecondArgument = "3";
             mainWindow.multiply_Click(null, null);
 
             Assert.AreEqual(mainWindow.Result, "Некорректный ввод");
+
+            mainWindow.FirstArgument = "";
+            mainWindow.SecondArgument = "";
         }
     }
 }

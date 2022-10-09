@@ -22,13 +22,21 @@
                  Text="" FontSize="20"/>
         <TextBox x:Name="secondArg" Grid.Row="0" Grid.Column="1"
                  Text="" FontSize="20"/>
-        <TextBox x:Name="result" Grid.Row="1" Grid.Column="0" FontSize="20"
+        <TextBlock x:Name="result" Grid.Row="1" Grid.Column="0" FontSize="20"
                  Grid.ColumnSpan="2" HorizontalAlignment="Stretch" 
                  VerticalAlignment="Bottom" Text="" TextAlignment="Center"/>
-        
-        <Button x:Name="minus" Grid.Row="2" Grid.Column="1" Content="-" Click="minus_Click"/>
-        <Button x:Name="plus" Grid.Row="2" Grid.Column="0" Content="+" Click="plus_Click"/>
-        <Button x:Name="divide" Grid.Row="3" Grid.Column="1" Content="/" Click="divide_Click"/>
-        <Button x:Name="multiply" Grid.Row="3" Grid.Column="0" Content="*" Click="multiply_Click"/>
+
+        <Button x:Name="minus" Grid.Row="2" Grid.Column="1" Click="minus_Click">
+            <TextBlock Text="-" FontSize="100"/>
+        </Button>
+        <Button x:Name="plus" Grid.Row="2" Grid.Column="0" Click="plus_Click">
+            <TextBlock Text="+" FontSize="100"/>
+        </Button>
+        <Button x:Name="divide" Grid.Row="3" Grid.Column="1"  Click="divide_Click">
+            <TextBlock Text="/" FontSize="100"/>
+        </Button>
+        <Button x:Name="multiply" Grid.Row="3" Grid.Column="0" Click="multiply_Click">
+            <TextBlock Text="*" FontSize="100"/>
+        </Button>
     </Grid>
 </Window>
