@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\SpecFlow.MsTest.3.9.74\build\SpecFlow.MsTest.props" Condition="Exists('..\packages\SpecFlow.MsTest.3.9.74\build\SpecFlow.MsTest.props')" />
+  <Import Project="..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.props" Condition="Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.props')" />
   <Import Project="..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -42,8 +44,14 @@
     <Reference Include="Appium.Net, Version=4.3.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Appium.WebDriver.4.3.2\lib\net45\Appium.Net.dll</HintPath>
     </Reference>
+    <Reference Include="BoDi, Version=1.5.0.0, Culture=neutral, PublicKeyToken=ff7cd5ea2744b496, processorArchitecture=MSIL">
+      <HintPath>..\packages\BoDi.1.5.0\lib\net45\BoDi.dll</HintPath>
+    </Reference>
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Core.4.3.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Gherkin, Version=19.0.3.0, Culture=neutral, PublicKeyToken=86496cfa5b4a5851, processorArchitecture=MSIL">
+      <HintPath>..\packages\Gherkin.19.0.3\lib\net45\Gherkin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.2.2.7\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
@@ -59,10 +67,22 @@
     <Reference Include="SeleniumExtras.PageObjects, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DotNetSeleniumExtras.PageObjects.3.11.0\lib\net45\SeleniumExtras.PageObjects.dll</HintPath>
     </Reference>
+    <Reference Include="SpecFlow.Internal.Json, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.Internal.Json.1.0.8\lib\net45\SpecFlow.Internal.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="TechTalk.SpecFlow, Version=3.9.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.3.9.74\lib\net461\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="TechTalk.SpecFlow.MSTest.SpecFlowPlugin, Version=3.9.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.MsTest.3.9.74\lib\net461\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll</HintPath>
+    </Reference>
     <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
     </Reference>
@@ -75,8 +95,11 @@
     <Compile Include="AppiumTests.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="КалькуляторStepDefinitions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Калькулятор.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +116,14 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props'))" />
     <Error Condition="!Exists('..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.targets'))" />
+    <Error Condition="!Exists('..\packages\SpecFlow.3.9.74\build\SpecFlow.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.3.9.74\build\SpecFlow.targets'))" />
+    <Error Condition="!Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.props'))" />
+    <Error Condition="!Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.targets'))" />
+    <Error Condition="!Exists('..\packages\SpecFlow.MsTest.3.9.74\build\SpecFlow.MsTest.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.MsTest.3.9.74\build\SpecFlow.MsTest.props'))" />
+    <Error Condition="!Exists('..\packages\SpecFlow.MsTest.3.9.74\build\SpecFlow.MsTest.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.MsTest.3.9.74\build\SpecFlow.MsTest.targets'))" />
   </Target>
   <Import Project="..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.targets')" />
+  <Import Project="..\packages\SpecFlow.3.9.74\build\SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.3.9.74\build\SpecFlow.targets')" />
+  <Import Project="..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.targets" Condition="Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.targets')" />
+  <Import Project="..\packages\SpecFlow.MsTest.3.9.74\build\SpecFlow.MsTest.targets" Condition="Exists('..\packages\SpecFlow.MsTest.3.9.74\build\SpecFlow.MsTest.targets')" />
 </Project>
