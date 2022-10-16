@@ -11,8 +11,10 @@ namespace ArchieveTest
     {
         static void Main(string[] args)
         {
-            ArchiverV3.Archive(new string[] { @"C:\Users\Mihay\Documents\Фото" });
-            Dearchive(@"C:\Users\Mihay\Documents\MIET\7 semester\ОТИК\Lab\Lab\bin\Debug\net6.0\archive3.lox");
+            //ArchiverV5.Archive(new string[] { @"C:\Users\Mihay\Documents\Фото\photo_2021-05-09_17-11-47.jpg", 
+            //    @"C:\Users\Mihay\Documents\Фото\diamond_april_119096136_327576551996440_6482546758274533352_n.jpg" });
+            ArchiverV5.Archive(new string[] { @"C:\Users\Mihay\Documents\Работа\20220511174155.pdf" });
+            Dearchive(@"C:\Users\Mihay\Documents\MIET\7 semester\ОТИК\Lab\Lab\bin\Debug\net6.0\archive5.lox");
             //int version = 1;
             //if(args.Length == 4)
             //{
@@ -79,6 +81,10 @@ namespace ArchieveTest
             if(vers == 3)
             {
                 ArchiverV3.Dearchive(currentDirectory, readed, archive);
+            }
+            if(vers == 5)
+            {
+                ArchiverV5.Dearchive(currentDirectory, readed, archive);
             }
         }
     }

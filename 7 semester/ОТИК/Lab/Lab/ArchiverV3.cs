@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lab
 {
-    internal class ArchiverV3
+    internal class ArchiverV3 : Archiver
     {
         public static void Archive(string[] fileNames, byte algorithm = 0x4)
         {
@@ -24,14 +24,14 @@ namespace Lab
 
             archive.Write(new byte[1] { algorithm });
 
-            var stat = ArchiverV1.GetStatistic(fileNames);
+            var stat = GetStatistic(fileNames);
             double[] probabilities = stat.Item3;
-            byte[] alphabet = ArchiverV1.GetAlphabet();
-            ArchiverV1.SortAlphabet(alphabet, probabilities);
+            byte[] alphabet = GetAlphabet();
+            SortAlphabet(alphabet, probabilities);
 
             if (algorithm == 0x5)
             {
-                codes = ArchiverV1.GetCodes(alphabet, probabilities, codes);
+                codes = GetCodes(alphabet, probabilities, codes);
 
                 archive.Write(alphabet);
 
@@ -39,7 +39,7 @@ namespace Lab
                 Buffer.BlockCopy(probabilities, 0, probabilitiesBytes, 0, probabilitiesBytes.Length);
                 archive.Write(probabilitiesBytes);
 
-                ArchiverV1.SortCode(codes, alphabet);
+                SortCode(codes, alphabet);
 
             }
 
@@ -49,11 +49,11 @@ namespace Lab
             {
                 if (Directory.Exists(item))
                 {
-                    data = data.Concat(ArchiverV1.DirectoryToBytes(item)).ToArray();
+                    data = data.Concat(DirectoryToBytes(item)).ToArray();
                 }
                 else
                 {
-                    data = data.Concat(ArchiverV1.FileToBytes(item)).ToArray();
+                    data = data.Concat(FileToBytes(item)).ToArray();
                 }
             }
 
@@ -91,8 +91,8 @@ namespace Lab
 
                 Buffer.BlockCopy(probabilitiesBytes, 0, probabilities, 0, probabilitiesBytes.Length);
 
-                codes = ArchiverV1.GetCodes(alphabet, probabilities, codes);
-                ArchiverV1.SortCode(codes, alphabet);
+                codes = GetCodes(alphabet, probabilities, codes);
+                SortCode(codes, alphabet);
             }
 
             var prefix = archive.Skip(readed).First();
@@ -120,11 +120,11 @@ namespace Lab
 
                 if (type == 0x1)
                 {
-                    readed = ArchiverV1.ReadDirectory(currentDirectory, readed, data);
+                    readed = ReadDirectory(currentDirectory, readed, data);
                 }
                 else
                 {
-                    readed = ArchiverV1.ReadFile(currentDirectory, readed, data);
+                    readed = ReadFile(currentDirectory, readed, data);
                 }
 
                 var end = data.Skip(readed).Take(2).ToArray();
@@ -135,7 +135,7 @@ namespace Lab
             }
         }
 
-        private static byte[] ArchiveLZ77(byte[] data, byte prefix)
+        public static byte[] ArchiveLZ77(byte[] data, byte prefix)
         {
             StringBuilder str = new StringBuilder((int)(data.Length * 2.5));
             for (int i = 0; i < data.Length; i += 1023)
@@ -158,7 +158,7 @@ namespace Lab
             return ConvertStringToBytes(str.ToString());
         }
 
-        private static List<byte> DearchiveLZ77(List<byte> data, byte prefix)
+        public static List<byte> DearchiveLZ77(List<byte> data, byte prefix)
         {
             string stringPrefix = prefix.ToString("X2");
             StringBuilder inputData = ConvertBytesToString(data);
