@@ -29,8 +29,9 @@ namespace lab4
             {
                 string inputStr = Console.ReadLine();
                 inputStr += "$";
-                bool isSolve = pushdownAutomaton.TrySolve(inputStr);
-                Console.WriteLine("Возможность разобрать строку: " + isSolve);
+                pushdownAutomaton.FindError(inputStr);
+                //bool isSolve = pushdownAutomaton.TrySolve(inputStr);
+                //Console.WriteLine("Возможность разобрать строку: " + isSolve);
                 //Console.WriteLine(pushdownAutomaton.TrySolveDeep(inputStr));
             }
 

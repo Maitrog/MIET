@@ -16,6 +16,8 @@ namespace lab4
         readonly Dictionary<char, HashSet<string>> FirstSet;
         readonly Dictionary<char, HashSet<string>> FollowSet;
         readonly Dictionary<int, HashSet<string>> PredictSet;
+        HashSet<TransitionFunction> _rules;
+
         public HashSet<TransitionFunction> Sigma { get; }
 
         public PushdownAutomaton()
@@ -123,11 +125,6 @@ namespace lab4
 
         public bool TrySolve(string inputStr)
         {
-            InitFirstFollowSets();
-            CreateFirstSets();
-            CreateFollowSets();
-            CreatePredictSets();
-
             int count = 0;
             State currentState = s0;
             Stack<char> memory = new Stack<char>();
@@ -156,7 +153,7 @@ namespace lab4
                 memory.Pop();
                 if (f.Action.Length != 1 || f.Action[0] != '`')
                 {
-                    for (int i1 = 0; i1 < f.Action.Length; i1++)
+                    for (int i1 = f.Action.Length - 1; i1 >= 0; i1--)
                     {
                         char item2 = f.Action[i1];
                         memory.Push(item2);
@@ -201,17 +198,175 @@ namespace lab4
             return true;
         }
 
+        public void FindError(string inputStr)
+        {
+            InitFirstFollowSets();
+            CreateFirstSets();
+            CreateFollowSets();
+            CreatePredictSets();
+
+            int count = 0;
+            int addedFunctions = 0;
+            State currentState = s0;
+            Stack<char> memory = new Stack<char>();
+            memory.Push(h0);
+            Queue<(int, TransitionFunction, State, Stack<char>, Stack<string>)> chooses = new Queue<(int, TransitionFunction, State, Stack<char>, Stack<string>)>();
+
+            var newMemory = new Stack<char>(memory.Reverse());
+            var firstFunc = new TransitionFunction(new State("s0"), new State("s0"), '`', '$', "$E");
+            Stack<string> errors = new Stack<string>();
+            (int, TransitionFunction, State, Stack<char>, Stack<string>) lastChoose = (0, firstFunc, currentState, newMemory, errors);
+            chooses.Enqueue((0, firstFunc, currentState, newMemory, errors));
+
+
+            for (int i = 0; i < inputStr.Length; i++)
+            {
+                var item = inputStr[i];
+                if (memory.TryPeek(out char c) && c != '$')
+                {
+                    bool isNonterminal = IsNonterminal(c);
+                    if (!isNonterminal && c != item)
+                    {
+                        errors.Push($"Error. Terminal: {item}. Index: {i}");
+
+                        i = SkipSymbol(addedFunctions, chooses, i, 1);
+
+                        if (i + 1 >= inputStr.Length && chooses.Count > 0)
+                        {
+                            errors.Clear();
+                            goto getNextChoose;
+                        }
+                        continue;
+                    }
+                    var rules = _rules.Where(r => r.SymbolFromH == c).ToHashSet();
+
+                    int j = 0;
+                    bool isPredict = false;
+                    foreach (var rule in rules)
+                    {
+                        if (PredictSet[j].Contains(item.ToString()))
+                        {
+                            isPredict = true;
+                            break;
+                        }
+                        j++;
+                    }
+                    if (isNonterminal && !isPredict)
+                    {
+                        errors.Push($"Error. Terminal: {item}. Index: {i}");
+
+                        int skip = 1;
+
+                        var first = FirstSet[c];
+                        var follow = FollowSet[c];
+                        while (i + skip < inputStr.Length && !first.Contains(inputStr[i + skip].ToString()) && !follow.Contains(inputStr[i + skip].ToString()))
+                        {
+                            skip++;
+                        }
+
+                        i = SkipSymbol(addedFunctions, chooses, i, skip);
+                        if (i + 1 >= inputStr.Length && chooses.Count > 0)
+                        {
+                            errors.Clear();
+                            goto getNextChoose;
+                        }
+                        continue;
+                    }
+                }
+
+            getNextChoose:
+                if (!chooses.TryDequeue(out var currentChoose) || count == 100000)
+                {
+                    break;
+                }
+                lastChoose = currentChoose;
+                i = currentChoose.Item1;
+                currentState = currentChoose.Item3;
+                memory = new Stack<char>(currentChoose.Item4.Reverse());
+                var f = currentChoose.Item2;
+                currentState = f.NextState;
+                var newErrors = new Stack<string>(currentChoose.Item5.Reverse());
+                foreach (var error in errors.Reverse())
+                {
+                    newErrors.Push(error);
+                }
+                errors.Clear();
+
+                memory.Pop();
+                if (f.Action.Length != 1 || f.Action[0] != '`')
+                {
+                    for (int i1 = 0; i1 < f.Action.Length; i1++)
+                    {
+                        char item2 = f.Action[i1];
+                        memory.Push(item2);
+                    }
+                }
+
+                if (f.Symbol == '`' || (i == inputStr.Length - 1 && memory.Peek() != '$'))
+                {
+                    i--;
+                }
+
+                if (memory.Count != 0)
+                {
+                    if (i + 1 < inputStr.Length)
+                    {
+                        item = inputStr[i + 1];
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                    var functions = Sigma.Where(tr => (tr.Symbol == item || tr.Symbol == '`') && tr.CurrentState == currentState && tr.SymbolFromH == memory.Peek());
+                    addedFunctions = functions.Count();
+
+                    for (int j = 0; j < addedFunctions; j++)
+                    {
+                        newMemory = new Stack<char>(memory.Reverse());
+                        var func = functions.Skip(j).First();
+                        chooses.Enqueue((i + 1, func, currentState, newMemory, newErrors));
+                    }
+                    if (i == inputStr.Length - 1 && memory.Peek() == '$')
+                    {
+                        break;
+                    }
+                }
+                count++;
+            }
+
+            while (lastChoose.Item5.TryPop(out string res))
+            {
+                Console.WriteLine(res);
+            }
+        }
+
+        private static int SkipSymbol(int addedFunctions, Queue<(int, TransitionFunction, State, Stack<char>, Stack<string>)> chooses, int i, int skip)
+        {
+            List<(int, TransitionFunction, State, Stack<char>, Stack<string>)> list = chooses.Reverse().ToList();
+            chooses.Clear();
+            for (int i1 = 0; i1 < list.Count; i1++)
+            {
+                (int, TransitionFunction, State, Stack<char>, Stack<string>) choose = list[i1];
+                if (i1 >= list.Count - addedFunctions)
+                {
+                    choose.Item1 += skip;
+                }
+                chooses.Enqueue(choose);
+            }
+            i += skip - 1;
+            return i;
+        }
+
         private Dictionary<char, HashSet<string>> CreateFirstSets()
         {
             bool isSetChanged;
             HashSet<string> lastSymbol = new HashSet<string> { "$" };
-            var rules = Sigma.Where(s => FirstSet.ContainsKey(s.SymbolFromH)).ToHashSet();
 
             do
             {
                 isSetChanged = false;
 
-                foreach (var item in rules)
+                foreach (var item in _rules)
                 {
                     var set = FirstSet[item.SymbolFromH];
                     set = Union(set, CollectSet(set, item.Action, lastSymbol));
@@ -230,8 +385,7 @@ namespace lab4
         {
             string END_MARKER = "$";
             FollowSet[Sigma.First().SymbolFromH].Add(END_MARKER);
-            var rules = Sigma.Where(s => FirstSet.ContainsKey(s.SymbolFromH)).ToHashSet();
-            foreach (var rule in rules)
+            foreach (var rule in _rules)
             {
                 rule.Action = new string(rule.Action.Reverse().ToArray());
             }
@@ -241,7 +395,7 @@ namespace lab4
             do
             {
                 isSetChanged = false;
-                foreach (var func in rules)
+                foreach (var func in _rules)
                 {
                     for (int i = 0; i < func.Action.Length; i++)
                     {
@@ -264,7 +418,7 @@ namespace lab4
                 }
             } while (isSetChanged);
 
-            foreach (var rule in rules)
+            foreach (var rule in _rules)
             {
                 rule.Action = new string(rule.Action.Reverse().ToArray());
             }
@@ -275,13 +429,12 @@ namespace lab4
         {
             var EMPTY_CHAIN = '$';
             int i = 0;
-            var rules = Sigma.Where(s => FirstSet.ContainsKey(s.SymbolFromH)).ToHashSet();
-            foreach (var rule in rules)
+            foreach (var rule in _rules)
             {
                 rule.Action = new string(rule.Action.Reverse().ToArray());
             }
 
-            foreach (var func in rules)
+            foreach (var func in _rules)
             {
                 var firstItem = func.Action[0];
                 var set = new HashSet<string>();
@@ -303,7 +456,7 @@ namespace lab4
                 i++;
             }
 
-            foreach (var rule in rules)
+            foreach (var rule in _rules)
             {
                 rule.Action = new string(rule.Action.Reverse().ToArray());
             }
@@ -355,6 +508,8 @@ namespace lab4
                     FollowSet.Add(item.SymbolFromH, new HashSet<string>());
                 }
             }
+
+            _rules = Sigma.Where(s => FirstSet.ContainsKey(s.SymbolFromH)).ToHashSet();
         }
 
         private static HashSet<string> Union(HashSet<string> arg1, HashSet<string> arg2)
