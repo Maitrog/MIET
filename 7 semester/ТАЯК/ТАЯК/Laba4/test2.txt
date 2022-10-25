@@ -1,0 +1,17 @@
+<program>: <type> ‘main’ ‘(’ ‘)’ ‘{’ <statement> ‘}’
+<type>: ‘int’ | ‘bool’ | ‘void’
+<statement>:  | <declaration> ‘;’ | ‘{’ <statement> ‘}’ | <for> <statement> | <if> <statement> | <return>
+<declaration>: <type> <identifier> <assign>
+<identifier>: <character><id_end>
+<character>: ‘a’ | ‘b’ | ‘c’ | ‘d’ | ‘e’ | ‘f’ | ‘g’ | ‘h’ | ‘i’ | ‘j’ | ‘k’ | ‘l’ | ‘m’ | ‘n’ | ‘o’ | ‘p’ | ‘q’ | ‘r’ | ‘s’ | ‘t’ | ‘u’ | ‘v’ | ‘w’ | ‘x’ | ‘y’ | ‘z’ | ‘A’ | ‘B’ | ‘C’ | ‘D’ | ‘E’ | ‘F’ | ‘G’ | ‘H’ | ‘I’ | ‘J’ | ‘K’ | ‘L’ | ‘M’ | ‘N’ | ‘O’ | ‘P’ | ‘Q’ | ‘R’ | ‘S’ | ‘T’ | ‘U’ | ‘V’ | ‘W’ | ‘X’ | ‘Y’ | ‘Z’ | ‘_’
+<id_end>:  | <character><id_end>
+<assign>:  | ‘=’ <assign_end>
+<assign_end>: <identifier> | <number>
+<number>: <digit><number_end>
+<digit>: ‘0’ | ‘1’ | ‘2’ | ‘3’ | ‘4’ |  ‘5’ | ‘6’ | ‘7’ | ‘8’ | ‘9’
+<number_end>: | <digit><number_end>
+<for>: ‘for’ ‘(’ <declaration> ‘;’ <bool_expression> ‘;’ ‘)’
+<bool_expression>: <identifier> <relop> <identifier> | <number> <relop> <identifier>
+<relop>: ‘<’ | ‘>’ | ‘==’ | ‘!=’
+<if>: ‘if’ ‘(’ <bool_expression> ‘)’
+<return>: ‘return’ <number> ‘;’
