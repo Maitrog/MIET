@@ -18,7 +18,7 @@ namespace lab4
         readonly Dictionary<int, HashSet<string>> PredictSet;
         readonly HashSet<string> Left;
         HashSet<TransitionFunction> _rules;
-        readonly Dictionary<string, KeyValuePair<string, string>> NormalPredictSet;
+        readonly Dictionary<string, Dictionary<string, List<string>>> NormalPredictSet;
 
         public HashSet<TransitionFunction> Sigma { get; }
 
@@ -35,7 +35,7 @@ namespace lab4
             PredictSet = new Dictionary<int, HashSet<string>>();
             Sigma = new HashSet<TransitionFunction>();
             Left = new HashSet<string>();
-            NormalPredictSet = new Dictionary<string, KeyValuePair<string, string>>();
+            NormalPredictSet = new Dictionary<string, Dictionary<string, List<string>>>();
         }
 
         public void AddRangeTransitionFunction(IEnumerable<TransitionFunction> transitionFunctions)
@@ -217,10 +217,10 @@ namespace lab4
             CreateFollowSets();
             CreatePredictSets();
             CreateNormalPredictSets();
-            
+
             Stack<string> memory = new Stack<string>();
             memory.Push("$");
-            memory.Push("program");
+            memory.Push("E");
 
             for (int i = 0; i < inputStr.Length; i++)
             {
@@ -233,6 +233,7 @@ namespace lab4
                     var items = Z.Where(x => x.StartsWith(item));
                     if (items.Count() == 1)
                     {
+                        item = items.First();
                         break;
                     }
                     if (items.Count() == 0)
@@ -244,21 +245,86 @@ namespace lab4
 
                     j++;
                 } while (startIndex + j < inputStr.Length);
-                i += j;
 
                 if (memory.TryPeek(out string c) && c != "$")
                 {
-
+                    if (IsNonterminal(c) && NormalPredictSet[c][item] == null || !IsNonterminal(c) && c != item)
+                    {
+                        Console.WriteLine($"Error! Index: {i}. Symbol: {item}.");
+                    }
+                    else
+                    {
+                        memory.Pop();
+                        if (c == item)
+                        {
+                            i += item.Length - 1;
+                        }
+                        else
+                        {
+                            i--;
+                            foreach (var action in NormalPredictSet[c][item])
+                            {
+                                if (action != "~")
+                                {
+                                    memory.Push(action);
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
 
         private void CreateNormalPredictSets()
         {
-            foreach (object item in Left)
+            var columns = new Dictionary<string, List<string>>();
+            foreach (var item in Z.Except(Left))
             {
-                NormalPredictSet.Add(Left, new KeyValuePair<string, string>)
+                columns.Add(item, null);
             }
+            foreach (string item in Left)
+            {
+                List<int> indexes = GetIndexes(item);
+                var predicts = PredictSet.Where(x => indexes.Contains(x.Key));
+                var newColumns = new Dictionary<string, List<string>>(columns);
+                foreach (var predict in predicts)
+                {
+                    foreach (var terminal in predict.Value)
+                    {
+                        newColumns[terminal] = GetRuleByIndex(predict.Key).Action;
+                    }
+                }
+                NormalPredictSet.Add(item, newColumns);
+            }
+        }
+
+        private TransitionFunction GetRuleByIndex(int index)
+        {
+            int i = 0;
+            foreach (var item in _rules)
+            {
+                if (i == index)
+                {
+                    return item;
+                }
+                i++;
+            }
+            return null;
+        }
+
+        private List<int> GetIndexes(string item)
+        {
+            int i = 0;
+            List<int> result = new List<int>();
+            foreach (var rule in _rules)
+            {
+                if (rule.SymbolFromH == item)
+                {
+                    result.Add(i);
+                }
+                i++;
+            }
+            return result;
         }
 
 
@@ -469,7 +535,7 @@ namespace lab4
         private Dictionary<string, HashSet<string>> CreateFirstSets()
         {
             bool isSetChanged;
-            HashSet<string> lastSymbol = new HashSet<string> { "$" };
+            HashSet<string> lastSymbol = new HashSet<string> { "~" };
 
             do
             {
@@ -539,7 +605,7 @@ namespace lab4
 
         private Dictionary<int, HashSet<string>> CreatePredictSets()
         {
-            var EMPTY_CHAIN = "$";
+            var EMPTY_CHAIN = "~";
             int i = 0;
             foreach (var rule in _rules)
             {
@@ -586,9 +652,9 @@ namespace lab4
                 string item = items[i];
                 if (IsNonterminal(item))
                 {
-                    set = Union(initialSet, FirstSet[item].Where(s => s != "$").ToHashSet());
+                    set = Union(initialSet, FirstSet[item].Where(s => s != "~").ToHashSet());
 
-                    if (FirstSet[item].Contains("$"))
+                    if (FirstSet[item].Contains("~"))
                     {
                         if (i + 1 < items.Count) continue;
                         set = Union(set, additionalSet);

@@ -89,7 +89,7 @@ namespace lab4
                 }
                 if (rules[i].Length == 0)
                 {
-                    actions.Insert(0, "$");
+                    actions.Insert(0, "~");
                 }
                 TransitionFunction func = new TransitionFunction(startState, startState, "`", symbolFromH, actions);
                 transitionFunction.Add(func);
