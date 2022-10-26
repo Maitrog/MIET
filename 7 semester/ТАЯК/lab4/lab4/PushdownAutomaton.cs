@@ -18,6 +18,7 @@ namespace lab4
         readonly Dictionary<int, HashSet<string>> PredictSet;
         readonly HashSet<string> Left;
         HashSet<TransitionFunction> _rules;
+        readonly Dictionary<string, KeyValuePair<string, string>> NormalPredictSet;
 
         public HashSet<TransitionFunction> Sigma { get; }
 
@@ -34,6 +35,7 @@ namespace lab4
             PredictSet = new Dictionary<int, HashSet<string>>();
             Sigma = new HashSet<TransitionFunction>();
             Left = new HashSet<string>();
+            NormalPredictSet = new Dictionary<string, KeyValuePair<string, string>>();
         }
 
         public void AddRangeTransitionFunction(IEnumerable<TransitionFunction> transitionFunctions)
@@ -47,7 +49,7 @@ namespace lab4
                 foreach (var item2 in transitionFunction.Action)
                 {
                     Z.Add(item2);
-                    if(item2 != "`")
+                    if (item2 != "`")
                     {
                         Left.Add(transitionFunction.SymbolFromH);
                     }
@@ -214,144 +216,238 @@ namespace lab4
             CreateFirstSets();
             CreateFollowSets();
             CreatePredictSets();
-
-            int count = 0;
-            int addedFunctions = 0;
-            State currentState = s0;
+            CreateNormalPredictSets();
+            
             Stack<string> memory = new Stack<string>();
-            memory.Push(h0);
-            Queue<(int, TransitionFunction, State, Stack<string>, Stack<string>)> chooses = new Queue<(int, TransitionFunction, State, Stack<string>, Stack<string>)>();
-            List<string> startAction = new List<string> { "$", "program" };
-
-            var newMemory = new Stack<string>(memory.Reverse());
-            var firstFunc = new TransitionFunction(new State("s0"), new State("s0"), "`", "$", startAction);
-            Stack<string> errors = new Stack<string>();
-            (int, TransitionFunction, State, Stack<string>, Stack<string>) lastChoose = (0, firstFunc, currentState, newMemory, errors);
-            chooses.Enqueue((0, firstFunc, currentState, newMemory, errors));
-
+            memory.Push("$");
+            memory.Push("program");
 
             for (int i = 0; i < inputStr.Length; i++)
             {
-                var item = inputStr[i];
-                if (memory.TryPeek(out string c) && c != "$")
+                var startIndex = i;
+                int j = 1;
+                string item = "";
+                do
                 {
-                    bool isNonterminal = IsNonterminal(c);
-                    // todo исправить item
-                    if (!isNonterminal && c != item.ToString())
-                    {
-                        errors.Push($"Error. Terminal: {item}. Index: {i}");
-
-                        i = SkipSymbol(addedFunctions, chooses, i, 1);
-
-                        if (i + 1 >= inputStr.Length && chooses.Count > 0)
-                        {
-                            errors.Clear();
-                            goto getNextChoose;
-                        }
-                        continue;
-                    }
-                    var rules = _rules.Where(r => r.SymbolFromH == c).ToHashSet();
-
-                    int j = 0;
-                    bool isPredict = false;
-                    foreach (var rule in rules)
-                    {
-                        if (PredictSet[j].Contains(item.ToString()))
-                        {
-                            isPredict = true;
-                            break;
-                        }
-                        j++;
-                    }
-                    if (isNonterminal && !isPredict)
-                    {
-                        errors.Push($"Error. Terminal: {item}. Index: {i}");
-
-                        int skip = 1;
-
-                        var first = FirstSet[c];
-                        var follow = FollowSet[c];
-                        while (i + skip < inputStr.Length && !first.Contains(inputStr[i + skip].ToString()) && !follow.Contains(inputStr[i + skip].ToString()))
-                        {
-                            skip++;
-                        }
-
-                        i = SkipSymbol(addedFunctions, chooses, i, skip);
-                        if (i + 1 >= inputStr.Length && chooses.Count > 0)
-                        {
-                            errors.Clear();
-                            goto getNextChoose;
-                        }
-                        continue;
-                    }
-                }
-
-            getNextChoose:
-                if (!chooses.TryDequeue(out var currentChoose) || count == 100000)
-                {
-                    break;
-                }
-                lastChoose = currentChoose;
-                i = currentChoose.Item1;
-                currentState = currentChoose.Item3;
-                memory = new Stack<string>(currentChoose.Item4.Reverse());
-                var f = currentChoose.Item2;
-                currentState = f.NextState;
-                var newErrors = new Stack<string>(currentChoose.Item5.Reverse());
-                foreach (var error in errors.Reverse())
-                {
-                    newErrors.Push(error);
-                }
-                errors.Clear();
-
-                memory.Pop();
-                if (f.Action.Count != 1 || f.Action[0] != "`")
-                {
-                    for (int i1 = 0; i1 < f.Action.Count; i1++)
-                    {
-                        string item2 = f.Action[i1];
-                        memory.Push(item2);
-                    }
-                }
-
-                if (f.Symbol == "`" || (i == inputStr.Length - 1 && memory.Peek() != "$"))
-                {
-                    i--;
-                }
-
-                if (memory.Count != 0)
-                {
-                    if (i + 1 < inputStr.Length)
-                    {
-                        item = inputStr[i + 1];
-                    }
-                    else
-                    {
-                        continue;
-                    }
-                    // todo исправить item
-                    var functions = Sigma.Where(tr => (tr.Symbol == item.ToString() || tr.Symbol == "`") && tr.CurrentState == currentState && tr.SymbolFromH == memory.Peek());
-                    addedFunctions = functions.Count();
-
-                    for (int j = 0; j < addedFunctions; j++)
-                    {
-                        newMemory = new Stack<string>(memory.Reverse());
-                        var func = functions.Skip(j).First();
-                        chooses.Enqueue((i + 1, func, currentState, newMemory, newErrors));
-                    }
-                    if (i == inputStr.Length - 1 && memory.Peek() == "$")
+                    item = inputStr[startIndex..(startIndex + j)];
+                    var items = Z.Where(x => x.StartsWith(item));
+                    if (items.Count() == 1)
                     {
                         break;
                     }
-                }
-                count++;
-            }
+                    if (items.Count() == 0)
+                    {
+                        j--;
+                        item = inputStr[startIndex..(startIndex + j)];
+                        break;
+                    }
 
-            while (lastChoose.Item5.TryPop(out string res))
-            {
-                Console.WriteLine(res);
+                    j++;
+                } while (startIndex + j < inputStr.Length);
+                i += j;
+
+                if (memory.TryPeek(out string c) && c != "$")
+                {
+
+                }
             }
         }
+
+        private void CreateNormalPredictSets()
+        {
+            foreach (object item in Left)
+            {
+                NormalPredictSet.Add(Left, new KeyValuePair<string, string>)
+            }
+        }
+
+
+        //public void FindError(string inputStr)
+        //{
+        //    InitFirstFollowSets();
+        //    CreateFirstSets();
+        //    CreateFollowSets();
+        //    CreatePredictSets();
+
+        //    int count = 0;
+        //    int addedFunctions = 0;
+        //    State currentState = s0;
+        //    Stack<string> memory = new Stack<string>();
+        //    memory.Push(h0);
+        //    Queue<(int, TransitionFunction, State, Stack<string>, Stack<string>)> chooses = new Queue<(int, TransitionFunction, State, Stack<string>, Stack<string>)>();
+        //    List<string> startAction = new List<string> { "$", "program" };
+
+        //    var newMemory = new Stack<string>(memory.Reverse());
+        //    var firstFunc = new TransitionFunction(new State("s0"), new State("s0"), "`", "$", startAction);
+        //    Stack<string> errors = new Stack<string>();
+        //    (int, TransitionFunction, State, Stack<string>, Stack<string>) lastChoose = (0, firstFunc, currentState, newMemory, errors);
+        //    chooses.Enqueue((0, firstFunc, currentState, newMemory, errors));
+
+
+        //    for (int i = 0; i < inputStr.Length; i++)
+        //    {
+        //        var startIndex = i;
+        //        int j = 1;
+        //        string item = "";
+        //        do
+        //        {
+        //            item = inputStr[startIndex..(startIndex + j)];
+        //            var items = Z.Where(x => x.StartsWith(item));
+        //            if (items.Count() == 1)
+        //            {
+        //                break;
+        //            }
+        //            if (items.Count() == 0)
+        //            {
+        //                j--;
+        //                item = inputStr[startIndex..(startIndex + j)];
+        //                break;
+        //            }
+
+        //            j++;
+        //        } while (startIndex + j < inputStr.Length);
+        //        i += j;
+
+        //        if (memory.TryPeek(out string c) && c != "$")
+        //        {
+        //            bool isNonterminal = IsNonterminal(c);
+        //            // todo исправить item
+        //            if (!isNonterminal && c != item)
+        //            {
+        //                errors.Push($"Error. Terminal: {item}. Index: {i}");
+
+        //                i = SkipSymbol(addedFunctions, chooses, i, 1);
+
+        //                if (i + 1 >= inputStr.Length && chooses.Count > 0)
+        //                {
+        //                    errors.Clear();
+        //                    goto getNextChoose;
+        //                }
+        //                continue;
+        //            }
+        //            var rules = _rules.Where(r => r.SymbolFromH == c).ToHashSet();
+
+        //            int j1 = 0;
+        //            bool isPredict = false;
+        //            foreach (var rule in rules)
+        //            {
+        //                if (PredictSet[j1].Contains(item.ToString()))
+        //                {
+        //                    isPredict = true;
+        //                    break;
+        //                }
+        //                j1++;
+        //            }
+        //            if (isNonterminal && !isPredict)
+        //            {
+        //                errors.Push($"Error. Terminal: {item}. Index: {i}");
+
+        //                int skip = 1;
+
+        //                var first = FirstSet[c];
+        //                var follow = FollowSet[c];
+        //                while (i + skip < inputStr.Length && !first.Contains(inputStr[i + skip].ToString()) && !follow.Contains(inputStr[i + skip].ToString()))
+        //                {
+        //                    skip++;
+        //                }
+
+        //                i = SkipSymbol(addedFunctions, chooses, i, skip);
+        //                if (i + 1 >= inputStr.Length && chooses.Count > 0)
+        //                {
+        //                    errors.Clear();
+        //                    goto getNextChoose;
+        //                }
+        //                continue;
+        //            }
+        //        }
+
+        //    getNextChoose:
+        //        if (!chooses.TryDequeue(out var currentChoose) || count == 100000)
+        //        {
+        //            break;
+        //        }
+        //        lastChoose = currentChoose;
+        //        i = currentChoose.Item1;
+        //        currentState = currentChoose.Item3;
+        //        memory = new Stack<string>(currentChoose.Item4.Reverse());
+        //        var f = currentChoose.Item2;
+        //        currentState = f.NextState;
+        //        var newErrors = new Stack<string>(currentChoose.Item5.Reverse());
+        //        foreach (var error in errors.Reverse())
+        //        {
+        //            newErrors.Push(error);
+        //        }
+        //        errors.Clear();
+
+        //        memory.Pop();
+        //        if (f.Action.Count != 1 || f.Action[0] != "`")
+        //        {
+        //            for (int i1 = 0; i1 < f.Action.Count; i1++)
+        //            {
+        //                string item2 = f.Action[i1];
+        //                memory.Push(item2);
+        //            }
+        //        }
+
+        //        if (f.Symbol == "`" || (i == inputStr.Length - 1 && memory.Peek() != "$"))
+        //        {
+        //            i--;
+        //        }
+
+        //        if (memory.Count != 0)
+        //        {
+        //            if (i + 1 < inputStr.Length)
+        //            {
+        //                startIndex = i + 1;
+        //                j = 1;
+        //                item = "";
+        //                do
+        //                {
+        //                    item = inputStr[startIndex..(startIndex + j)];
+        //                    var items = Z.Where(x => x.StartsWith(item));
+        //                    if (items.Count() == 1)
+        //                    {
+        //                        break;
+        //                    }
+        //                    if (items.Count() == 0)
+        //                    {
+        //                        j--;
+        //                        item = inputStr[startIndex..(startIndex + j)];
+        //                        break;
+        //                    }
+
+
+        //                    j++;
+        //                } while (i < inputStr.Length);
+        //                i += j;
+        //            }
+        //            else
+        //            {
+        //                continue;
+        //            }
+        //            // todo исправить item
+        //            var functions = Sigma.Where(tr => (tr.Symbol == item || tr.Symbol == "`") && tr.CurrentState == currentState && tr.SymbolFromH == memory.Peek());
+        //            addedFunctions = functions.Count();
+
+        //            for (int k = 0; k < addedFunctions; k++)
+        //            {
+        //                newMemory = new Stack<string>(memory.Reverse());
+        //                var func = functions.Skip(k).First();
+        //                chooses.Enqueue((i + 1, func, currentState, newMemory, newErrors));
+        //            }
+        //            if (i == inputStr.Length - 1 && memory.Peek() == "$")
+        //            {
+        //                break;
+        //            }
+        //        }
+        //        count++;
+        //    }
+
+        //    while (lastChoose.Item5.TryPop(out string res))
+        //    {
+        //        Console.WriteLine(res);
+        //    }
+        //}
 
         private static int SkipSymbol(int addedFunctions, Queue<(int, TransitionFunction, State, Stack<string>, Stack<string>)> chooses, int i, int skip)
         {
@@ -458,7 +554,7 @@ namespace lab4
 
                 if (IsNonterminal(firstItem))
                 {
-                    set = Union(set, CollectSet(set, func.Action.GetRange(0,1), FollowSet[func.SymbolFromH]));
+                    set = Union(set, CollectSet(set, func.Action.GetRange(0, 1), FollowSet[func.SymbolFromH]));
                 }
                 else if (firstItem == EMPTY_CHAIN)
                 {
