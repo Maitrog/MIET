@@ -8,7 +8,7 @@ namespace lab4
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\Mihay\Documents\MIET\7 semester\ТАЯК\ТАЯК\Laba4\test3.txt";
+            string path = @"C:\Users\Mihay\Documents\MIET\7 semester\ТАЯК\ТАЯК\Laba4\test2.txt";
 
             var lines = File.ReadAllLines(path);
 
