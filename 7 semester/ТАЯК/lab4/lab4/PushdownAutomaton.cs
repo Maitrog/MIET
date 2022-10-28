@@ -221,6 +221,7 @@ namespace lab4
                 CreateNormalPredictSets();
             }
 
+            int errorCount = 0;
             Stack<string> memory = new Stack<string>();
             memory.Push("$");
             memory.Push("program");
@@ -231,14 +232,16 @@ namespace lab4
 
                 if (memory.TryPeek(out string c) && c != "$")
                 {
-                    if (!IsNonterminal(c) && c != item || IsNonterminal(c) && (!NormalPredictSet[c].ContainsKey(item) || NormalPredictSet[c][item] == null))
+                    bool isNonterminal = IsNonterminal(c);
+                    if (!isNonterminal && c != item || isNonterminal && (!NormalPredictSet[c].ContainsKey(item) || NormalPredictSet[c][item] == null))
                     {
                         do
                         {
                             Console.WriteLine($"Error! Index: {i}. Symbol: {item}.");
+                            errorCount++;
                             i += item.Length;
                             item = GetNextItem(inputStr, i);
-                        } while (!FirstSet[c].Contains(item) || FollowSet[c].Contains(item));
+                        } while (isNonterminal && (!FirstSet[c].Contains(item) || FollowSet[c].Contains(item)));
                     }
                     memory.Pop();
                     if (c == item)
@@ -248,16 +251,21 @@ namespace lab4
                     else
                     {
                         i--;
-                        foreach (var action in NormalPredictSet[c][item])
+                        if (!string.IsNullOrEmpty(item))
                         {
-                            if (action != "~")
+                            foreach (var action in NormalPredictSet[c][item])
                             {
-                                memory.Push(action);
+                                if (action != "~")
+                                {
+                                    memory.Push(action);
+                                }
                             }
                         }
                     }
                 }
             }
+
+            Console.WriteLine($"Number of errors: {errorCount}.");
         }
 
         private string GetNextItem(string inputStr, int i)
@@ -265,7 +273,7 @@ namespace lab4
             var startIndex = i;
             int j = 1;
             string item = "";
-            do
+            while (startIndex + j <= inputStr.Length)
             {
                 item = inputStr[startIndex..(startIndex + j)];
                 var items = Z.Where(x => x.StartsWith(item));
@@ -282,7 +290,7 @@ namespace lab4
                 }
 
                 j++;
-            } while (startIndex + j < inputStr.Length);
+            }
             return item;
         }
 
@@ -306,6 +314,23 @@ namespace lab4
                     }
                 }
                 NormalPredictSet.Add(item, newColumns);
+            }
+
+            var emptySymbolAction = new List<string>();
+            emptySymbolAction.Add("~");
+            foreach (var item in FirstSet)
+            {
+                if (item.Value.Contains("~"))
+                {
+                    var keys = NormalPredictSet[item.Key].Keys.ToArray();
+                    foreach (var item2 in keys)
+                    {
+                        if (NormalPredictSet[item.Key][item2] == null)
+                        {
+                            NormalPredictSet[item.Key][item2] = emptySymbolAction;
+                        }
+                    }
+                }
             }
         }
 
@@ -446,6 +471,8 @@ namespace lab4
 
         private HashSet<string> CollectSet(HashSet<string> initialSet, List<string> items, HashSet<string> additionalSet)
         {
+            var EMPTY_CHAIN = "~";
+
             var set = initialSet;
 
             for (int i = 0; i < items.Count; i++)
@@ -453,9 +480,9 @@ namespace lab4
                 string item = items[i];
                 if (IsNonterminal(item))
                 {
-                    set = Union(initialSet, FirstSet[item].Where(s => s != "~").ToHashSet());
+                    set = Union(initialSet, FirstSet[item].Where(s => s != EMPTY_CHAIN).ToHashSet());
 
-                    if (FirstSet[item].Contains("~"))
+                    if (FirstSet[item].Contains(EMPTY_CHAIN))
                     {
                         if (i + 1 < items.Count) continue;
                         set = Union(set, additionalSet);

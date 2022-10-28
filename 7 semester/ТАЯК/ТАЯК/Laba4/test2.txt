@@ -8,7 +8,7 @@
 <assign>:  | ‘=’ <assign_end>
 <assign_end>: <identifier> | <number>
 <number>: <digit><number_end>
-<digit>: ‘0’ | ‘1’ | ‘2’ | ‘3’ | ‘4’ |  ‘5’ | ‘6’ | ‘7’ | ‘8’ | ‘9’
+<digit>: ‘0’ | ‘1’ | ‘2’ | ‘3’ | ‘4’ | ‘5’ | ‘6’ | ‘7’ | ‘8’ | ‘9’
 <number_end>:  | <digit><number_end>
 <for>: ‘for’ ‘(’ <declaration> ‘;’ <bool_expression> ‘;’ ‘)’
 <bool_expression>: <identifier> <relop> <identifier> | <number> <relop> <identifier>
