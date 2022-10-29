@@ -10,7 +10,6 @@ namespace lab4
         readonly HashSet<State> S;
         readonly HashSet<string> P;
         readonly HashSet<string> Z;
-        readonly State s0;
         readonly Dictionary<string, HashSet<string>> FirstSet;
         readonly Dictionary<string, HashSet<string>> FollowSet;
         readonly Dictionary<int, HashSet<string>> PredictSet;
@@ -25,7 +24,6 @@ namespace lab4
             S = new HashSet<State>();
             P = new HashSet<string>();
             Z = new HashSet<string>();
-            s0 = new State("s0");
             FirstSet = new Dictionary<string, HashSet<string>>();
             FollowSet = new Dictionary<string, HashSet<string>>();
             PredictSet = new Dictionary<int, HashSet<string>>();
