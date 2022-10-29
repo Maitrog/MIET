@@ -11,8 +11,6 @@ namespace lab4
         readonly HashSet<string> P;
         readonly HashSet<string> Z;
         readonly State s0;
-        readonly string h0;
-        readonly HashSet<State> F;
         readonly Dictionary<string, HashSet<string>> FirstSet;
         readonly Dictionary<string, HashSet<string>> FollowSet;
         readonly Dictionary<int, HashSet<string>> PredictSet;
@@ -28,8 +26,6 @@ namespace lab4
             P = new HashSet<string>();
             Z = new HashSet<string>();
             s0 = new State("s0");
-            h0 = "$";
-            F = new HashSet<State>() { s0 };
             FirstSet = new Dictionary<string, HashSet<string>>();
             FollowSet = new Dictionary<string, HashSet<string>>();
             PredictSet = new Dictionary<int, HashSet<string>>();
@@ -58,157 +54,6 @@ namespace lab4
                 P.Add(transitionFunction.SymbolFromH);
             }
         }
-
-        #region TrySolveDeep
-        //public bool TrySolveDeep(string inputStr)
-        //{
-        //    State currentState = s0;
-        //    Stack<char> memory = new Stack<char>();
-        //    memory.Push(h0);
-        //    memory.Push('E');
-        //    Stack<(int, int, int, State, Stack<char>)> choose = new Stack<(int, int, int, State, Stack<char>)>();
-
-        //    for (int i = 0; i < inputStr.Length; i++)
-        //    {
-        //        int numberOfSkipedElement = 0;
-        //        var item = inputStr[i];
-
-        //        var functions = Sigma.Where(tr => (tr.Symbol == item || tr.Symbol == '`') && tr.CurrentState == currentState && tr.SymbolFromH == memory.Peek());
-
-        //        if (functions.Count() == 0)
-        //        {
-        //            if (choose.TryPeek(out var lastChoose))
-        //            {
-        //                if (lastChoose.Item2 == lastChoose.Item3 - 1)
-        //                {
-        //                    choose.Pop();
-        //                    if (i == inputStr.Length - 1 && memory.Peek() != '$')
-        //                    {
-        //                        i--;
-        //                    }
-        //                    continue;
-        //                }
-        //                else
-        //                {
-        //                    i = lastChoose.Item1;
-        //                    currentState = lastChoose.Item4;
-        //                    memory = new Stack<char>(lastChoose.Item5.Reverse());
-        //                    lastChoose.Item2++;
-        //                    numberOfSkipedElement = lastChoose.Item2;
-
-        //                    choose.Pop();
-        //                    choose.Push(lastChoose);
-        //                }
-        //            }
-        //        }
-        //        else if (functions.Count() > 1)
-        //        {
-        //            var newMemory = new Stack<char>(memory.Reverse());
-        //            choose.Push((i, 0, functions.Count(), currentState, newMemory));
-        //        }
-
-        //        var f = functions.Skip(numberOfSkipedElement).First();
-        //        currentState = f.NextState;
-        //        memory.Pop();
-        //        if (f.Action.Length != 1 || f.Action[0] != '`')
-        //        {
-        //            for (int i1 = f.Action.Length - 1; i1 >= 0; i1--)
-        //            {
-        //                char item2 = f.Action[i1];
-        //                memory.Push(item2);
-        //            }
-        //        }
-
-        //        if (f.Symbol == '`' || (i == inputStr.Length - 1 && memory.Peek() != '$'))
-        //        {
-        //            i--;
-        //        }
-        //    }
-
-        //    if (!F.Contains(currentState) || memory.Peek() != '$')
-        //    {
-        //        return false;
-        //    }
-        //    return true;
-        //}
-        #endregion
-
-        #region TrySolve
-        //public bool TrySolve(string inputStr)
-        //{
-        //    int count = 0;
-        //    State currentState = s0;
-        //    Stack<char> memory = new Stack<char>();
-        //    memory.Push(h0);
-        //    Queue<(int, TransitionFunction, State, Stack<char>)> chooses = new Queue<(int, TransitionFunction, State, Stack<char>)>();
-
-        //    var newMemory = new Stack<char>(memory.Reverse());
-        //    var firstFunc = new TransitionFunction(new State("s0"), new State("s0"), '`', '$', "E$");
-        //    chooses.Enqueue((0, firstFunc, currentState, newMemory));
-
-
-        //    for (int i = 0; i < inputStr.Length; i++)
-        //    {
-        //        var item = inputStr[i];
-
-        //        if (!chooses.TryDequeue(out var currentChoose) || count == 100000)
-        //        {
-        //            break;
-        //        }
-        //        i = currentChoose.Item1;
-        //        currentState = currentChoose.Item3;
-        //        memory = new Stack<char>(currentChoose.Item4.Reverse());
-        //        var f = currentChoose.Item2;
-
-        //        currentState = f.NextState;
-        //        memory.Pop();
-        //        if (f.Action.Length != 1 || f.Action[0] != '`')
-        //        {
-        //            for (int i1 = f.Action.Length - 1; i1 >= 0; i1--)
-        //            {
-        //                char item2 = f.Action[i1];
-        //                memory.Push(item2);
-        //            }
-        //        }
-
-        //        if (f.Symbol == '`' || (i == inputStr.Length - 1 && memory.Peek() != '$'))
-        //        {
-        //            i--;
-        //        }
-
-        //        if (memory.Count != 0)
-        //        {
-        //            if (i + 1 < inputStr.Length)
-        //            {
-        //                item = inputStr[i + 1];
-        //            }
-        //            else
-        //            {
-        //                continue;
-        //            }
-        //            var functions = Sigma.Where(tr => (tr.Symbol == item || tr.Symbol == '`') && tr.CurrentState == currentState && tr.SymbolFromH == memory.Peek());
-
-        //            for (int j = 0; j < functions.Count(); j++)
-        //            {
-        //                newMemory = new Stack<char>(memory.Reverse());
-        //                var func = functions.Skip(j).First();
-        //                chooses.Enqueue((i + 1, func, currentState, newMemory));
-        //            }
-        //            if (i == inputStr.Length - 1 && memory.Peek() == '$')
-        //            {
-        //                break;
-        //            }
-        //        }
-        //        count++;
-        //    }
-
-        //    if (!F.Contains(currentState) || memory.Count == 0 || memory.Peek() != '$')
-        //    {
-        //        return false;
-        //    }
-        //    return true;
-        //}
-        #endregion
 
         public void FindError(string inputStr)
         {
