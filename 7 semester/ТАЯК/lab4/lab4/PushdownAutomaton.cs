@@ -224,26 +224,39 @@ namespace lab4
             int errorCount = 0;
             Stack<string> memory = new Stack<string>();
             memory.Push("$");
-            memory.Push("program");
+            memory.Push("--program");
 
             for (int i = 0; i < inputStr.Length; i++)
             {
                 string item = GetNextItem(inputStr, i);
 
-                if (memory.TryPeek(out string c) && c != "$")
+                if (item.Length > 1)
+                {
+                    item = item.Trim();
+                }
+
+                if (memory.TryPop(out string c) && c != "$")
                 {
                     bool isNonterminal = IsNonterminal(c);
                     if (!isNonterminal && c != item || isNonterminal && (!NormalPredictSet[c].ContainsKey(item) || NormalPredictSet[c][item] == null))
                     {
                         do
                         {
-                            Console.WriteLine($"Error! Index: {i}. Symbol: {item}.");
-                            errorCount++;
+                            if (isNonterminal)
+                            {
+                                Console.WriteLine($"Error! Index: {i}. Symbol: '{item}'.");
+                                errorCount++;
+                            }
+                            else if (item != "$")
+                            {
+                                Console.WriteLine($"Error! Index: {i}. Symbol: '{c}'.");
+                                errorCount++;
+                            }
                             i += item.Length;
                             item = GetNextItem(inputStr, i);
                         } while (isNonterminal && (!FirstSet[c].Contains(item) || FollowSet[c].Contains(item)));
                     }
-                    memory.Pop();
+
                     if (c == item)
                     {
                         i += item.Length - 1;
@@ -251,7 +264,7 @@ namespace lab4
                     else
                     {
                         i--;
-                        if (!string.IsNullOrEmpty(item))
+                        if (isNonterminal && !string.IsNullOrEmpty(item))
                         {
                             foreach (var action in NormalPredictSet[c][item])
                             {
