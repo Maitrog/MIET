@@ -58,7 +58,7 @@ namespace Lab5
 
             driver.Navigate().GoToUrl("https://4pda.to/forum");
 
-            driver.FindElement(By.Id("y1GmpEpcrP903Z7")).Click();
+            driver.FindElement(By.PartialLinkText("Регистрация")).Click();
 
             driver.FindElement(By.Id("reg-term-1")).Click();
 
