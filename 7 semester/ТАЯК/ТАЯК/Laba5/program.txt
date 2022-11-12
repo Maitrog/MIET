@@ -1,0 +1,7 @@
+scan a ;
+b = 10 ;
+if a > b
+{
+print "a " ;
+print a ;
+}

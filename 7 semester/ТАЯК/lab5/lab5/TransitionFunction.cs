@@ -80,7 +80,7 @@ namespace lab5
                         transitionFunction.Add(func2);
                         continue;
                     }
-                    actions.Insert(0, rules[i][j].ToString());
+                    //actions.Insert(0, rules[i][j].ToString());
                 }
                 if (rules[i].Length == 0)
                 {

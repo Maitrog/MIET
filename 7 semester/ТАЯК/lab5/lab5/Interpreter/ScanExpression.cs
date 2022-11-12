@@ -3,14 +3,16 @@
     internal class ScanExpression : AbstractExpression
     {
         private IdentifierExpression _identifier;
-        public ScanExpression()
+        public ScanExpression(IdentifierExpression identifier)
         {
+            _identifier = identifier;
         }
         public override object Interpret(Context context)
         {
-            var name = Console.ReadLine();
-            _identifier = new IdentifierExpression(name!);
-            return _identifier.Interpret(context);
+            var value = int.Parse(Console.ReadLine());
+            AssignExpression assignExpression = new AssignExpression(_identifier,
+                new ExpressionExpression(new TermExpression(new FactorExpression(new NumberExpression(value)))));
+            return assignExpression.Interpret(context);
         }
     }
 }
