@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace lab5.Interpreter
+﻿namespace lab5.Interpreter
 {
     internal class IdentifierExpression : AbstractExpression
     {
@@ -20,12 +14,12 @@ namespace lab5.Interpreter
             // return global variable
             if(context.Variable.TryGetValue(_name, out var value))
             {
-                return value;
+                return new KeyValuePair<string, int>(_name, value);
             }
             else
             {
                 context.Variable.Add(_name, 0);
-                return 0;
+                return new KeyValuePair<string, int>(_name, 0);
             }
         }
     }

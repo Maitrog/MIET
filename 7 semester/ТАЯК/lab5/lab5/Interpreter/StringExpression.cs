@@ -1,12 +1,14 @@
 ﻿namespace lab5.Interpreter
 {
-    internal class NumberExpression : AbstractExpression
+    internal class StringExpression : AbstractExpression
     {
-        int _value;
-        public NumberExpression(int value)
+        private string _value;
+
+        public StringExpression(string value)
         {
             _value = value;
         }
+
         public override object Interpret(Context context)
         {
             return _value;

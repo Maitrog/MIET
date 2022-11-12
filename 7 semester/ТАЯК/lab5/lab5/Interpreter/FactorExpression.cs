@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace lab5.Interpreter
+﻿namespace lab5.Interpreter
 {
     internal class FactorExpression : AbstractExpression
     {
@@ -34,7 +28,7 @@ namespace lab5.Interpreter
             }
             if(_identifier != null)
             {
-                return _identifier.Interpret(context);
+                return ((KeyValuePair<string, int>)_identifier.Interpret(context)).Value;
             }
             if(_expression != null)
             {
