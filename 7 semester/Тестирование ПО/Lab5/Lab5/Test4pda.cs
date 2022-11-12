@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System.Threading;
 
 namespace Lab5
 {
@@ -102,6 +103,8 @@ namespace Lab5
             var driver = new ChromeDriver();
 
             driver.Navigate().GoToUrl("https://4pda.to/2022/10/03/404571/opros_gotovy_li_vy_peresest_na_linux/");
+
+            Thread.Sleep(100);
 
             var pool = driver.FindElement(By.ClassName("diagram-box"));
 
