@@ -38,11 +38,11 @@
         {
             if(_string != null)
             {
-                Console.WriteLine(_string.Interpret(context));
+                Console.Write(_string.Interpret(context));
             }
             else if(_expression != null)
             {
-                Console.WriteLine(_expression.Interpret(context).ToString());
+                Console.Write(_expression.Interpret(context).ToString());
             }
 
             if(_print != null)

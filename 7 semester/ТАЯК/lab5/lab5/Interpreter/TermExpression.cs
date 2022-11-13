@@ -26,11 +26,23 @@
             {
                 switch (_operation)
                 {
-                    case '*': return (int)_factor.Interpret(context) + (int)_term.Interpret(context);
-                    case '/': return (int)_factor.Interpret(context) - (int)_term.Interpret(context);
+                    case '*': return (int)_factor.Interpret(context) * (int)_term.Interpret(context);
+                    case '/': return (int)_factor.Interpret(context) / (int)_term.Interpret(context);
                 }
             }
             return _factor.Interpret(context);
+        }
+
+        public override string ToString()
+        {
+            if (_operation != null)
+            {
+                return _factor.ToString() + " " + _operation + " " + _term?.ToString();
+            }
+            else
+            {
+                return _factor.ToString();
+            }
         }
     }
 }

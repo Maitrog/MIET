@@ -31,5 +31,17 @@
             }
             return _term.Interpret(context);
         }
+
+        public override string ToString()
+        {
+            if( _operation != null)
+            {
+                return _term.ToString() + " " + _operation + " " + _expression.ToString();
+            }
+            else
+            {
+                return _term.ToString();
+            }
+        }
     }
 }

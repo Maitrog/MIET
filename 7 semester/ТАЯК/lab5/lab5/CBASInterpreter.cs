@@ -1,6 +1,10 @@
-﻿using System;
+﻿using lab5.Interpreter;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Net.WebSockets;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -144,14 +148,325 @@ namespace lab5
 
             return errorCount;
         }
-
         public void Interpret(string programText)
         {
-            for (int i = 0; i < programText.Length;)
-            {
-                var item = GetNextItem(programText, i);
+            int i = 0;
+            Context context = new Context();
+            var program = new ProgramExpression(ParseStatement(programText, ref i));
 
+            program.Interpret(context);
+        }
+
+        public StatementExpression ParseStatement(string programText, ref int i)
+        {
+            StatementExpression? returnStatement = null;
+            bool isChangeBrackets = false;
+            Stack<string> brackets = new Stack<string>();
+            Stack<AbstractExpression> expressions = new Stack<AbstractExpression>();
+            StatementExpression? lastStatement;
+            var keywords = GetKeywords();
+            for (; i < programText.Length;)
+            {
+                string item = GetNextItemWithoutSpace(programText, ref i);
+                if (item == "{")
+                {
+                    brackets.Push(item);
+                    isChangeBrackets = true;
+                }
+
+                if (item == "}")
+                {
+                    brackets.Pop();
+                }
+
+                if (isChangeBrackets && brackets.Count == 0)
+                {
+                    returnStatement = CreateStatement(returnStatement, expressions);
+                    return returnStatement;
+                }
+
+                if (keywords.TryGetValue(item, out var value))
+                {
+                    switch (value)
+                    {
+                        case 0:
+                            string id = GetNextItemWithoutSpace(programText, ref i);
+                            expressions.Push(new ScanExpression(new IdentifierExpression(id)));
+                            break;
+                        case 1:
+                            string nextItem = GetNextItemWithoutSpace(programText, ref i);
+
+                            if (nextItem == "\"")
+                            {
+                                var outputStr = GetString(programText, ref i);
+                                outputStr = outputStr.Replace("\\n", "\n");
+                                expressions.Push(new PrintExpression(new StringExpression(outputStr)));
+                            }
+                            else
+                            {
+                                var expression = nextItem + GetExpressionString(programText, ';', ref i);
+                                expressions.Push(new PrintExpression(ParseExpression(expression)));
+                            }
+                            break;
+                        case 2:
+                            id = GetNextItemWithoutSpace(programText, ref i);
+                            GetNextItemWithoutSpace(programText, ref i);
+                            string fromEx = GetExpressionString(programText, 't', ref i);
+                            GetNextItemWithoutSpace(programText, ref i);
+                            string toEx = GetExpressionString(programText, '{', ref i);
+                            lastStatement = ParseStatement(programText, ref i);
+                            expressions.Push(new StatementExpression(lastStatement, new ForExpression(new IdentifierExpression(id),
+                                ParseExpression(fromEx), ParseExpression(toEx))));
+                            break;
+                        case 3:
+                            string firstEx = GetExpressionString(programText, new char[] { '<', '>', '=', '!' }, ref i);
+                            string operation = GetNextItemWithoutSpace(programText, ref i);
+                            string secondEx = GetExpressionString(programText, '{', ref i);
+                            lastStatement = ParseStatement(programText, ref i);
+
+                            ElseExpression? elseExpression = null;
+                            string elseItem = GetNextItemWithoutSpace(programText, ref i);
+                            {
+                                if (keywords.TryGetValue(elseItem, out var res) && res == 4)
+                                {
+                                    StatementExpression statement = ParseStatement(programText, ref i);
+                                    elseExpression = new ElseExpression(statement);
+                                }
+                            }
+
+                            if (elseExpression == null)
+                            {
+                                expressions.Push(new StatementExpression(lastStatement, new IfExpression(new BoolExpression(ParseExpression(firstEx),
+                                    ParseExpression(secondEx), operation))));
+                            }
+                            else
+                            {
+                                expressions.Push(new StatementExpression(lastStatement, new IfExpression(new BoolExpression(ParseExpression(firstEx),
+                                    ParseExpression(secondEx), operation)), elseExpression));
+                            }
+                            break;
+                    }
+                }
+                else
+                {
+                    _ = GetNextItemWithoutSpace(programText, ref i);
+                    string ex = GetExpressionString(programText, ';', ref i);
+
+                    expressions.Push(new AssignExpression(new IdentifierExpression(item), ParseExpression(ex)));
+                }
             }
+
+            returnStatement = CreateStatement(returnStatement, expressions);
+            return returnStatement;
+        }
+
+        private static StatementExpression? CreateStatement(StatementExpression? returnStatement, Stack<AbstractExpression> expressions)
+        {
+            while (expressions.TryPop(out var ex))
+            {
+                if (ex is ScanExpression)
+                {
+                    returnStatement = new StatementExpression(statement: returnStatement, scan: (ScanExpression)ex);
+                }
+                if (ex is PrintExpression)
+                {
+                    returnStatement = new StatementExpression(statement: returnStatement, print: (PrintExpression)ex);
+                }
+                if (ex is AssignExpression)
+                {
+                    returnStatement = new StatementExpression(statement: returnStatement, assign: (AssignExpression)ex);
+                }
+                if (ex is StatementExpression)
+                {
+                    returnStatement = (StatementExpression?)ex;
+                }
+            }
+
+            return returnStatement;
+        }
+
+        private ExpressionExpression ParseExpression(string expression)
+        {
+            ExpressionExpression? newExpression = null;
+            TermExpression? term;
+            var splitEx = expression.Split(new char[] { '+', '-' }, StringSplitOptions.TrimEntries);
+            if (!splitEx[0].IsEqualsBracketCount())
+            {
+                while (!splitEx[0].IsEqualsBracketCount())
+                {
+                    splitEx[0] += expression[splitEx[0].Length] + splitEx[1];
+                    for (int i = 1; i < splitEx.Length - 1; i++)
+                    {
+                        splitEx[i] = splitEx[i + 1];
+                    }
+                    splitEx[^1] = "";
+                }
+            }
+            term = ParseTerm(splitEx[0]);
+
+            if (splitEx.Length > 1 && splitEx[1] != "")
+            {
+                int startIndex = splitEx[0].Length + 1;
+                newExpression = ParseExpression(expression[startIndex..]);
+            }
+
+            if (newExpression != null)
+            {
+                int startIndex = splitEx[0].Length;
+                string op = GetNextItemWithoutSpace(expression, ref startIndex);
+                return new ExpressionExpression(term, newExpression, op[0]);
+            }
+
+            return new ExpressionExpression(term);
+        }
+
+        private TermExpression ParseTerm(string term)
+        {
+            TermExpression? newTerm = null;
+            FactorExpression? factor;
+            var splitTerm = term.Split(new char[] { '*', '/' }, StringSplitOptions.TrimEntries);
+            if (!splitTerm[0].IsEqualsBracketCount())
+            {
+                while (!splitTerm[0].IsEqualsBracketCount())
+                {
+                    splitTerm[0] += term[splitTerm[0].Length] + splitTerm[1];
+                    for (int i = 1; i < splitTerm.Length - 1; i++)
+                    {
+                        splitTerm[i] = splitTerm[i + 1];
+                    }
+                    splitTerm[^1] = "";
+                }
+            }
+            factor = ParseFactor(splitTerm[0]);
+
+            if (splitTerm.Length > 1 && splitTerm[1] != "")
+            {
+                int startIndex = term.IndexOf(splitTerm[1]);
+                newTerm = ParseTerm(term[startIndex..]);
+            }
+
+            if (newTerm != null)
+            {
+                int startIndex = splitTerm[0].Length;
+                string op = GetNextItemWithoutSpace(term, ref startIndex);
+                return new TermExpression(factor, newTerm, op[0]);
+            }
+
+            return new TermExpression(factor);
+        }
+
+        private FactorExpression ParseFactor(string factor)
+        {
+            if (int.TryParse(factor, out int result))
+            {
+                return new FactorExpression(new NumberExpression(result));
+            }
+            else if (factor[0] != '(')
+            {
+                return new FactorExpression(new IdentifierExpression(factor));
+            }
+            else
+            {
+                var ex = ParseExpression(factor.Trim(new char[] { '(', ')' }));
+                return new FactorExpression(ex);
+            }
+        }
+
+        private string GetExpressionString(string programText, char lastSymbol, ref int i)
+        {
+            string res = "";
+            while (programText[i] != lastSymbol)
+            {
+                res += programText[i];
+                i++;
+            }
+            return res.Trim();
+        }
+
+        private string GetExpressionString(string programText, char[] lastSymbol, ref int i)
+        {
+            string res = "";
+            while (!lastSymbol.Contains(programText[i]))
+            {
+                res += programText[i];
+                i++;
+            }
+            return res.Trim();
+        }
+
+        private string GetString(string programText, ref int i)
+        {
+            int startIndex = i;
+            while (programText[i] != '\"')
+            {
+                i++;
+            }
+            i++;
+            return programText[startIndex..(i - 1)];
+        }
+
+        private string GetNextItemWithoutSpace(string programText, ref int i)
+        {
+            var item = GetNextItem(programText, i);
+            i += item.Length;
+
+            if (string.IsNullOrEmpty(item))
+            {
+                return item;
+            }
+
+            while (item.IsSpace())
+            {
+                item = GetNextItem(programText, i);
+                i += item.Length;
+            }
+
+            if (item.Length == 1 && char.IsDigit(item[0]))
+            {
+                while (char.IsDigit(programText[i]))
+                {
+                    item += programText[i];
+                    i++;
+                }
+            }
+
+            if (item.Length == 1 && (char.IsLetter(item[0]) || item[0] == '_'))
+            {
+                while (char.IsLetter(programText[i]) || item[0] == '_')
+                {
+                    item += programText[i];
+                    i++;
+                }
+            }
+
+            item = item.Trim();
+            return item;
+        }
+
+        private Dictionary<string, int> GetKeywords()
+        {
+            Dictionary<string, int> keywords = new Dictionary<string, int>();
+            keywords.Add("scan", 0);
+            keywords.Add("print", 1);
+            keywords.Add("for", 2);
+            keywords.Add("if", 3);
+            keywords.Add("else", 4);
+            keywords.Add("+", 5);
+            keywords.Add("-", 6);
+            keywords.Add("*", 7);
+            keywords.Add("/", 8);
+            keywords.Add("<", 9);
+            keywords.Add(">", 10);
+            keywords.Add("==", 11);
+            keywords.Add("!=", 12);
+            keywords.Add("=", 13);
+            keywords.Add("(", 14);
+            keywords.Add(")", 15);
+            keywords.Add("{", 16);
+            keywords.Add("}", 17);
+            keywords.Add(";", 18);
+            keywords.Add("to", 19);
+            return keywords;
         }
 
         private string GetNextItem(string inputStr, int i)
@@ -162,13 +477,15 @@ namespace lab5
             while (startIndex + j <= inputStr.Length)
             {
                 item = inputStr[startIndex..(startIndex + j)];
-                var items = Z.Where(x => x.StartsWith(item));
+                //var items = Z.Where(x => x.StartsWith(item));
+                var items = Z.Where(x => x == item);
+
                 if (items.Count() == 1)
                 {
                     item = items.First();
                     break;
                 }
-                if (items.Count() == 0 || item == "$")
+                if (!items.Any() || item == "$")
                 {
                     item = inputStr[startIndex..(startIndex + j)];
                     j--;

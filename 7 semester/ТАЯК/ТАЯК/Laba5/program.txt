@@ -1,7 +1,8 @@
-scan a ;
-b = 10 ;
-if a > b
+scan aa ;
+res=1;
+for i = 1 to (aa+1)
 {
-print "a " ;
-print a ;
+res = res * i ;
+print res ;
+print "\n";
 }

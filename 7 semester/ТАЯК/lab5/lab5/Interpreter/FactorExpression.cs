@@ -36,5 +36,22 @@
             }
             throw new Exception();
         }
+
+        public override string ToString()
+        {
+            if (_number != null)
+            {
+                return _number.ToString();
+            }
+            if (_identifier != null)
+            {
+                return _identifier.ToString();
+            }
+            if (_expression != null)
+            {
+                return "(" + _expression.ToString() + ")";
+            }
+            return string.Empty;
+        }
     }
 }

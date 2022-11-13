@@ -19,5 +19,23 @@ namespace lab5
             }
             return true;
         }
+
+        public static bool IsEqualsBracketCount(this string str)
+        {
+            int open = 0;
+            int close = 0;
+            for(int i = 0; i < str.Length; i++)
+            {
+                if(str[i] == '(')
+                {
+                    open++;
+                }
+                if (str[i] == ')')
+                {
+                    close++;
+                }
+            }
+            return open == close;
+        }
     }
 }

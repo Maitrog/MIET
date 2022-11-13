@@ -76,7 +76,7 @@
                 {
                     _statement?.Interpret(context);
                 }
-                if (_else != null)
+                else if (_else != null)
                 {
                     _else.Interpret(context);
                 }

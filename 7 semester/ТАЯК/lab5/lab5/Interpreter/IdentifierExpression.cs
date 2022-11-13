@@ -22,5 +22,10 @@
                 return new KeyValuePair<string, int>(_name, 0);
             }
         }
+
+        public override string ToString()
+        {
+            return _name;
+        }
     }
 }
