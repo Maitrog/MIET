@@ -148,6 +148,7 @@ namespace lab5
 
             return errorCount;
         }
+
         public void Interpret(string programText)
         {
             int i = 0;
@@ -156,6 +157,8 @@ namespace lab5
 
             program.Interpret(context);
         }
+
+        #region Parse Program
 
         public StatementExpression ParseStatement(string programText, ref int i)
         {
@@ -285,6 +288,10 @@ namespace lab5
             return returnStatement;
         }
 
+        #endregion
+
+        #region Expression Parser
+
         private ExpressionExpression ParseExpression(string expression)
         {
             ExpressionExpression? newExpression = null;
@@ -372,7 +379,11 @@ namespace lab5
             }
         }
 
-        private string GetExpressionString(string programText, char lastSymbol, ref int i)
+        #endregion
+
+        #region Getters
+
+        private static string GetExpressionString(string programText, char lastSymbol, ref int i)
         {
             string res = "";
             while (programText[i] != lastSymbol)
@@ -383,7 +394,7 @@ namespace lab5
             return res.Trim();
         }
 
-        private string GetExpressionString(string programText, char[] lastSymbol, ref int i)
+        private static string GetExpressionString(string programText, char[] lastSymbol, ref int i)
         {
             string res = "";
             while (!lastSymbol.Contains(programText[i]))
@@ -394,7 +405,7 @@ namespace lab5
             return res.Trim();
         }
 
-        private string GetString(string programText, ref int i)
+        private static string GetString(string programText, ref int i)
         {
             int startIndex = i;
             while (programText[i] != '\"')
@@ -443,7 +454,7 @@ namespace lab5
             return item;
         }
 
-        private Dictionary<string, int> GetKeywords()
+        private static Dictionary<string, int> GetKeywords()
         {
             Dictionary<string, int> keywords = new Dictionary<string, int>();
             keywords.Add("scan", 0);
@@ -496,6 +507,10 @@ namespace lab5
             }
             return item;
         }
+
+        #endregion
+
+        #region First Follow Predict
 
         private void CreateNormalPredictSets()
         {
@@ -736,5 +751,7 @@ namespace lab5
             }
             return result;
         }
+
+        #endregion
     }
 }
