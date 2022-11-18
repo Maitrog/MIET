@@ -1,0 +1,18 @@
+<block>
+	<column TextColor="15" BgColor="5">
+		<row>
+			<block>
+				<row>
+					<column>A</column>
+					<column>B</column>
+				</row>
+				<row>
+					<column>C</column>
+					<column>D</column>
+				</row>
+			</block>
+		</row>
+		<row>F</row>
+	</column>
+	<column>E</column>
+</block>

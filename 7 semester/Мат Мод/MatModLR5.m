@@ -1,15 +1,14 @@
-syms N1(t) N2(t) t;
 b1=0.01;
-b2=0.9;
-a1=0;
+b2=0.02;
+a1=0.01;
 a2=0;
 g1=0;
 g2=0;
-N1_0=100;
-N2_0=100;
+N1_0=10000;
+N2_0=10000;
 
-range = [0 100];
-[t,y] = ode45(@(t,y) ArmyVsEnemy(t,y,a1,a2,b1,b2,g1,g2), range, [N1_0; N2_0]);
+range = [0 10000];
+[t,y] = ode45(@(t,y) ArmyVsArmy(t,y,a1,a2,b1,b2,g1,g2), range, [N1_0; N2_0]);
 plot(t,y(:,1),'-',t,y(:,2),'-')
 hold on; grid on;
 
