@@ -1,18 +1,18 @@
 <block>
-	<column TextColor="15" BgColor="5">
+	<column BgColor="5">
 		<row>
 			<block>
-				<row>
-					<column>A</column>
-					<column>B</column>
+				<row Height="10">
+					<column Width="5" Valign="Center" Halign="Center" BgColor="4">A</column>
+					<column BgColor="3" Halign="Right">B</column>
 				</row>
 				<row>
-					<column>C</column>
-					<column>D</column>
+					<column BgColor="2">C</column>
+					<column BgColor="6">D</column>
 				</row>
 			</block>
 		</row>
 		<row>F</row>
 	</column>
-	<column>E</column>
+	<column BgColor="7" Valign="Bottom" TextColor="10">E</column>
 </block>
