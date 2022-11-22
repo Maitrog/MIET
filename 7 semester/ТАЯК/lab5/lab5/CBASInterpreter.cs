@@ -214,16 +214,20 @@ namespace lab5
                         case 2:
                             id = GetNextItemWithoutSpace(programText, ref i);
                             GetNextItemWithoutSpace(programText, ref i);
-                            string fromEx = GetExpressionString(programText, 't', ref i);
-                            GetNextItemWithoutSpace(programText, ref i);
+                            string fromEx = GetExpressionString(programText, new char[] { 't', 'd' }, ref i);
+                            string operation = GetNextItemWithoutSpace(programText, ref i);
+                            if(operation == "down")
+                            {
+                                operation += " " + GetNextItemWithoutSpace(programText, ref i);
+                            }
                             string toEx = GetExpressionString(programText, '{', ref i);
                             lastStatement = ParseStatement(programText, ref i);
                             expressions.Push(new StatementExpression(lastStatement, new ForExpression(new IdentifierExpression(id),
-                                ParseExpression(fromEx), ParseExpression(toEx))));
+                                ParseExpression(fromEx), ParseExpression(toEx), operation)));
                             break;
                         case 3:
                             string firstEx = GetExpressionString(programText, new char[] { '<', '>', '=', '!' }, ref i);
-                            string operation = GetNextItemWithoutSpace(programText, ref i);
+                            operation = GetNextItemWithoutSpace(programText, ref i);
                             string secondEx = GetExpressionString(programText, '{', ref i);
                             lastStatement = ParseStatement(programText, ref i);
 

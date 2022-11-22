@@ -16,7 +16,7 @@
 <¬¬print>: ‘print’ <¬¬print_end> ‘;’
 <¬¬print_end>: <¬¬string> | <¬¬expression>
 <¬¬scan>: ‘scan’ <¬¬identifier> ‘;’
-<¬¬for>: ‘for’ <¬¬identifier> ‘=’ <¬¬expression> ‘to’ <¬¬expression>
+<¬¬for>: ‘for’ <¬¬identifier> ‘=’ <¬¬expression> ‘to’ <¬¬expression> | ‘for’ <¬¬identifier> ‘=’ <¬¬expression> ‘down to’ <¬¬expression>
 <¬¬if>: ‘if’ <¬¬bool_expression>
 <¬¬else>:  | ‘else’ ‘{’ <¬¬statement> ‘}’
 <¬¬statement>:  | <¬¬print> <¬¬statement> | <¬¬scan> <¬¬statement> | <¬¬assign> <¬¬statement> | <¬¬for> ‘{’ <¬¬statement> ‘}’ | <¬¬if> ‘{’ <¬¬statement> ‘}’ <¬¬else>

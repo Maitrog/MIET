@@ -1,8 +1,5 @@
 scan aa ;
-res=1;
-for i = 1 to (aa+1)
+for i = aa down to 1
 {
-res = res * i ;
-print res ;
-print "\n";
+	print i;
 }
