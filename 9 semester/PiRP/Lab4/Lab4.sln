@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Var 0", "Var 0", "{804FD809-1EF4-4B30-871F-9C6FBB39AFB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Var 1", "Var 1", "{1837F6D3-5103-424B-AEB7-F27C1A44B88E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab4_1", "Var 0\Lab4_1\Lab4_1.vcxproj", "{D78BC5FF-C7FD-4752-A252-9EF7B06F3CC4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab4_2", "Var 0\Lab4_2\Lab4_2.vcxproj", "{1E0FF55A-10BC-439B-8C1C-B272C6605259}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab4_1", "Var 1\Lab4_1\Lab4_1.vcxproj", "{93FA8D87-9067-409F-A48C-CA3784CC8A0E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab4_2", "Var 1\Lab4_2\Lab4_2.vcxproj", "{734F2146-9739-4B6B-B607-A32828088FE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{7BAB099F-744E-4C66-A670-12FED8514F67}"
+	ProjectSection(SolutionItems) = preProject
+		common\drvapi_error_string.h = common\drvapi_error_string.h
+		common\dynlink_d3d10.h = common\dynlink_d3d10.h
+		common\dynlink_d3d11.h = common\dynlink_d3d11.h
+		common\exception.h = common\exception.h
+		common\findgllib.mk = common\findgllib.mk
+		common\helper_cuda.h = common\helper_cuda.h
+		common\helper_cuda_drvapi.h = common\helper_cuda_drvapi.h
+		common\helper_cusolver.h = common\helper_cusolver.h
+		common\helper_functions.h = common\helper_functions.h
+		common\helper_gl.h = common\helper_gl.h
+		common\helper_image.h = common\helper_image.h
+		common\helper_math.h = common\helper_math.h
+		common\helper_multiprocess.cpp = common\helper_multiprocess.cpp
+		common\helper_multiprocess.h = common\helper_multiprocess.h
+		common\helper_nvJPEG.hxx = common\helper_nvJPEG.hxx
+		common\helper_string.h = common\helper_string.h
+		common\helper_timer.h = common\helper_timer.h
+		common\multithreading.cpp = common\multithreading.cpp
+		common\multithreading.h = common\multithreading.h
+		common\nvMath.h = common\nvMath.h
+		common\nvMatrix.h = common\nvMatrix.h
+		common\nvQuaternion.h = common\nvQuaternion.h
+		common\nvrtc_helper.h = common\nvrtc_helper.h
+		common\nvShaderUtils.h = common\nvShaderUtils.h
+		common\nvVector.h = common\nvVector.h
+		common\param.h = common\param.h
+		common\paramgl.h = common\paramgl.h
+		common\rendercheck_d3d10.cpp = common\rendercheck_d3d10.cpp
+		common\rendercheck_d3d10.h = common\rendercheck_d3d10.h
+		common\rendercheck_d3d11.cpp = common\rendercheck_d3d11.cpp
+		common\rendercheck_d3d11.h = common\rendercheck_d3d11.h
+		common\rendercheck_d3d9.cpp = common\rendercheck_d3d9.cpp
+		common\rendercheck_d3d9.h = common\rendercheck_d3d9.h
+		common\rendercheck_gl.h = common\rendercheck_gl.h
+		common\rendercheck_gles.h = common\rendercheck_gles.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D78BC5FF-C7FD-4752-A252-9EF7B06F3CC4}.Debug|x64.ActiveCfg = Debug|x64
+		{D78BC5FF-C7FD-4752-A252-9EF7B06F3CC4}.Debug|x64.Build.0 = Debug|x64
+		{D78BC5FF-C7FD-4752-A252-9EF7B06F3CC4}.Release|x64.ActiveCfg = Release|x64
+		{D78BC5FF-C7FD-4752-A252-9EF7B06F3CC4}.Release|x64.Build.0 = Release|x64
+		{1E0FF55A-10BC-439B-8C1C-B272C6605259}.Debug|x64.ActiveCfg = Debug|x64
+		{1E0FF55A-10BC-439B-8C1C-B272C6605259}.Debug|x64.Build.0 = Debug|x64
+		{1E0FF55A-10BC-439B-8C1C-B272C6605259}.Release|x64.ActiveCfg = Release|x64
+		{1E0FF55A-10BC-439B-8C1C-B272C6605259}.Release|x64.Build.0 = Release|x64
+		{93FA8D87-9067-409F-A48C-CA3784CC8A0E}.Debug|x64.ActiveCfg = Debug|x64
+		{93FA8D87-9067-409F-A48C-CA3784CC8A0E}.Debug|x64.Build.0 = Debug|x64
+		{93FA8D87-9067-409F-A48C-CA3784CC8A0E}.Release|x64.ActiveCfg = Release|x64
+		{93FA8D87-9067-409F-A48C-CA3784CC8A0E}.Release|x64.Build.0 = Release|x64
+		{734F2146-9739-4B6B-B607-A32828088FE7}.Debug|x64.ActiveCfg = Debug|x64
+		{734F2146-9739-4B6B-B607-A32828088FE7}.Debug|x64.Build.0 = Debug|x64
+		{734F2146-9739-4B6B-B607-A32828088FE7}.Release|x64.ActiveCfg = Release|x64
+		{734F2146-9739-4B6B-B607-A32828088FE7}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D78BC5FF-C7FD-4752-A252-9EF7B06F3CC4} = {804FD809-1EF4-4B30-871F-9C6FBB39AFB5}
+		{1E0FF55A-10BC-439B-8C1C-B272C6605259} = {804FD809-1EF4-4B30-871F-9C6FBB39AFB5}
+		{93FA8D87-9067-409F-A48C-CA3784CC8A0E} = {1837F6D3-5103-424B-AEB7-F27C1A44B88E}
+		{734F2146-9739-4B6B-B607-A32828088FE7} = {1837F6D3-5103-424B-AEB7-F27C1A44B88E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACC6E1E9-DB02-40B3-A6D1-4B98F2964BC4}
+	EndGlobalSection
+EndGlobal
