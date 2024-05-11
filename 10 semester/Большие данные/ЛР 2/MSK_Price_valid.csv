@@ -1,0 +1,1177 @@
+,Price,Apartment type,Metro station,Minutes to metro,Region,Number of rooms,Area,Living area,Kitchen area,Floor,Number of floors,Renovation
+0,4000000.0,Secondary,Выхино,21.0,Moscow,0.0,11.7,8.0,7.6,1.0,9,Cosmetic
+1,15970000.0,Secondary,Улица Скобелевская,12.0,Moscow,2.0,57.3,24.5,18.3,28.0,33,European-style renovation
+2,4500000.0,Secondary,Сетунь,29.0,Moscow,0.0,16.0,9.0,2.0,1.0,14,European-style renovation
+3,14500000.0,Secondary,Славянский бульвар,5.0,Moscow,1.0,39.0,19.0,9.0,2.0,17,European-style renovation
+4,9413360.0,New building,Котельники,7.0,Moscow region,2.0,56.3,22.5,18.8,14.0,17,Cosmetic
+5,6876407.0,Secondary, Аникеевка,17.0,Moscow region,1.0,33.0,18.8,9.4,8.0,12,Cosmetic
+6,8292548.0,New building,Битца,13.0,Moscow region,2.0,60.98,33.0,11.7,14.0,9,Cosmetic
+7,13650000.0,Secondary,Лианозово,13.0,Moscow,1.0,46.0,24.0,12.0,20.0,32,European-style renovation
+8,72000000.0,Secondary, Петровский Парк,15.0,Moscow,4.0,91.0,59.0,11.0,10.0,41,Designer
+9,36905610.0,Secondary, Селигерская,10.0,Moscow,3.0,86.0,5.8,13.8,43.0,43,European-style renovation
+10,10499999.0,Secondary,Новогиреево,6.0,Moscow,1.0,36.0,21.0,10.0,8.0,12,European-style renovation
+11,18500000.0,Secondary, Дмитровская,1.0,Moscow,1.0,37.0,12.0,15.0,22.0,29,Cosmetic
+12,7586400.0,New building,Депо,19.0,Moscow,1.0,43.6,16.0,17.8,10.0,11,Cosmetic
+13,6741944.0,New building,Красногвардейская,12.0,Moscow region,1.0,38.68,11.9,13.2,2.0,20,Cosmetic
+14,315000000.0,Secondary,Парк культуры,7.0,Moscow,6.0,268.2,137.7,28.8,2.0,8,European-style renovation
+15,7084400.0,New building,Депо,19.0,Moscow,1.0,35.6,20.1,9.6,23.0,11,Cosmetic
+16,37900000.0,Secondary,Университет,9.0,Moscow,2.0,77.0,39.0,11.0,14.0,16,European-style renovation
+17,93000000.0,Secondary, Третьяковская,11.0,Moscow,3.0,141.5,36.0,18.3,2.0,8,Without renovation
+18,3122320.0,New building,Алма-Атинская,12.0,Moscow region,0.0,27.61,16.1,8.9,15.0,16,Cosmetic
+19,5950000.0,Secondary,Рассказовка,3.0,Moscow,0.0,20.0,12.2,5.1,9.0,9,Cosmetic
+20,2599070.0,New building,Алма-Атинская,13.0,Moscow region,0.0,24.01,14.3,8.6,2.0,16,Cosmetic
+21,26500000.0,Secondary, Сходненская,17.0,Moscow,0.0,62.0,62.0,11.8,1.0,5,Without renovation
+22,2821219.0,New building,Красногвардейская,14.0,Moscow region,0.0,23.75,14.1,8.6,4.0,20,Cosmetic
+23,22300000.0,Secondary,Киевская,12.0,Moscow,2.0,55.4,36.2,10.0,6.0,9,European-style renovation
+24,6214991.0,New building,Красногвардейская,5.0,Moscow region,1.0,41.8,23.3,10.1,13.0,20,Cosmetic
+25,6027000.0,Secondary, Аминьевская,15.0,Moscow,1.0,14.7,8.0,3.0,7.0,9,European-style renovation
+26,2606875.0,New building,Алма-Атинская,13.0,Moscow region,0.0,23.75,14.1,8.6,5.0,16,Cosmetic
+27,4562450.0,New building,Алма-Атинская,13.0,Moscow region,2.0,47.71,26.3,10.6,6.0,16,Cosmetic
+28,6409260.0,Secondary,Селигерская,27.0,Moscow,0.0,20.0,12.2,7.0,3.0,3,European-style renovation
+29,3150000.0,Secondary,Бибирево,13.0,Moscow,0.0,11.7,8.0,7.6,1.0,9,Cosmetic
+30,11285950.0,New building,Депо,19.0,Moscow,2.0,63.05,34.0,11.9,10.0,11,Cosmetic
+31,10677700.0,New building,Братиславская,13.0,Moscow,2.0,62.81,33.9,11.8,2.0,16,Cosmetic
+32,10952340.0,New building,Братиславская,13.0,Moscow,2.0,61.53,28.5,16.7,11.0,16,Cosmetic
+33,13500000.0,Secondary,ВДНХ,11.0,Moscow,2.0,40.0,22.0,7.5,4.0,12,Cosmetic
+34,14000000.0,Secondary, Прокшино,22.0,Moscow,2.0,53.5,28.3,10.0,9.0,12,Without renovation
+35,14800000.0,Secondary,Некрасовка,19.0,Moscow,2.0,61.0,31.0,14.0,5.0,17,Designer
+36,75425319.0,Secondary, Верхние котлы,17.0,Moscow,5.0,138.4,83.0,41.5,4.0,15,Designer
+37,66937499.0,Secondary, Тимирязевская,2.0,Moscow,0.0,157.5,16.1,19.7,5.0,16,Without renovation
+38,12201040.0,New building,Депо,19.0,Moscow,2.0,66.31,35.7,12.1,21.0,11,Cosmetic
+39,19950000.0,Secondary,Народное Ополчение,11.0,Moscow,3.0,75.1,46.1,10.2,4.0,16,Cosmetic
+40,3517932.0,New building,Красногвардейская,11.0,Moscow region,0.0,21.36,14.6,8.4,17.0,20,Cosmetic
+41,6618716.0,New building,Жулебино,14.0,Moscow region,2.0,59.03,30.2,13.9,2.0,14,Cosmetic
+42,16500000.0,Secondary,Стахановская,4.0,Moscow,1.0,38.5,18.0,12.0,4.0,23,Designer
+43,4250000.0,Secondary,Молодежная,12.0,Moscow,0.0,14.0,9.2,7.8,1.0,14,Cosmetic
+44,18693457.0,New building,Каширская,3.0,Moscow,2.0,65.9,35.5,12.1,10.0,10,European-style renovation
+45,34990000.0,Secondary,Хорошево,15.0,Moscow,3.0,89.1,51.9,12.0,16.0,18,Without renovation
+46,8687700.0,New building,Котельники,17.0,Moscow region,2.0,59.1,23.6,22.3,10.0,17,Cosmetic
+47,3697962.0,New building,Красногвардейская,11.0,Moscow region,0.0,25.38,16.1,8.7,8.0,20,Cosmetic
+48,16500000.0,Secondary,Гражданская,9.0,Moscow,3.0,61.8,39.3,6.1,9.0,9,Without renovation
+49,18999000.0,Secondary,Варшавская (Коломенское),15.0,Moscow,2.0,65.7,31.3,20.4,6.0,8,Without renovation
+50,3800000.0,Secondary,Планерная,15.0,Moscow,0.0,11.7,8.0,7.6,1.0,9,European-style renovation
+51,15900000.0,Secondary,Лесопарковая,9.0,Moscow,1.0,42.3,12.4,16.5,15.0,23,Designer
+52,60406892.0,Secondary, Октябрьское поле,18.0,Moscow,5.0,126.2,84.8,11.8,14.0,19,Without renovation
+53,7293614.0,New building,Битца,7.0,Moscow region,2.0,44.9,24.8,10.4,2.0,9,Cosmetic
+54,3771960.0,New building,Котельники,8.0,Moscow region,0.0,18.49,9.3,8.2,16.0,17,Cosmetic
+55,61999999.0,Secondary, Серпуховская,15.0,Moscow,6.0,138.0,15.0,18.1,33.0,46,Without renovation
+56,5263600.0,New building,Красногвардейская,16.0,Moscow region,2.0,33.84,23.7,2.6,17.0,20,Cosmetic
+57,3950000.0,Secondary,Планерная,7.0,Moscow,0.0,12.0,8.2,7.6,1.0,9,European-style renovation
+58,43000000.0,Secondary, Серпуховская,10.0,Moscow,0.0,63.0,21.0,34.0,5.0,14,Designer
+59,199000000.0,Secondary,Достоевская,8.0,Moscow,6.0,524.0,120.0,32.0,3.0,18,Designer
+60,7925783.0,New building,Домодедовская,8.0,Moscow region,2.0,47.88,26.3,10.6,5.0,15,Cosmetic
+61,14400000.0,Secondary,Новогиреево,24.0,Moscow,3.0,59.1,33.0,6.1,5.0,9,Cosmetic
+62,13239600.0,New building,Аннино,7.0,Moscow,2.0,76.4,40.8,13.0,10.0,22,Cosmetic
+63,37200000.0,Secondary,Юго-Западная,17.0,Moscow,4.0,114.0,59.8,13.6,3.0,17,European-style renovation
+64,28978000.0,Secondary,ЗИЛ,22.0,Moscow,2.0,62.8,33.9,11.8,8.0,15,European-style renovation
+65,10639906.0,Secondary, Опалиха,7.0,Moscow region,1.0,41.7,23.2,10.1,4.0,6,Cosmetic
+66,5072800.0,New building,Котельники,10.0,Moscow region,1.0,37.3,21.0,9.7,4.0,17,Cosmetic
+67,8218650.0,New building,Депо,19.0,Moscow,1.0,43.95,17.3,12.0,7.0,11,Cosmetic
+68,15700000.0,Secondary,Академическая,16.0,Moscow,1.0,40.0,21.0,9.0,12.0,14,European-style renovation
+69,4230720.0,New building,Котельники,10.0,Moscow region,0.0,27.12,17.0,5.0,2.0,17,Cosmetic
+70,6350000.0,New building,Домодедовская,13.0,Moscow region,2.0,53.8,28.0,11.0,7.0,15,Cosmetic
+71,4802345.0,New building,Алма-Атинская,12.0,Moscow region,1.0,47.5,26.1,10.6,13.0,16,Cosmetic
+72,12800000.0,Secondary,Бабушкинская,23.0,Moscow,1.0,40.5,22.9,10.3,12.0,19,Cosmetic
+73,12201040.0,New building,Депо,19.0,Moscow,2.0,66.31,35.7,12.1,20.0,11,Cosmetic
+74,5068406.0,New building,Красногвардейская,11.0,Moscow region,2.0,33.88,19.8,6.0,11.0,20,Cosmetic
+75,6110000.0,New building,Битца,12.0,Moscow region,1.0,41.0,23.4,4.2,3.0,9,Cosmetic
+76,10029210.0,New building,Братиславская,13.0,Moscow,2.0,55.41,30.1,11.2,5.0,16,Cosmetic
+77,6260051.0,New building,Красногвардейская,11.0,Moscow region,2.0,44.44,27.3,5.0,13.0,20,Cosmetic
+78,137200000.0,Secondary, Калужская,12.0,Moscow,5.0,280.0,143.7,29.8,21.0,35,Designer
+79,8831940.0,New building,Котельники,17.0,Moscow region,2.0,50.7,28.2,10.4,17.0,17,Cosmetic
+80,10995925.0,New building,Зябликово,9.0,Moscow region,3.0,77.3,42.4,12.4,9.0,14,Cosmetic
+81,9900000.0,Secondary, Митино,15.0,Moscow region,2.0,57.9,25.1,13.0,1.0,1,Cosmetic
+82,3800000.0,Secondary,Планерная,14.0,Moscow,0.0,11.7,7.0,7.6,1.0,9,European-style renovation
+83,8800000.0,New building,Котельники,6.0,Moscow region,3.0,56.2,34.0,8.4,14.0,17,Cosmetic
+84,7684740.0,New building,Братиславская,5.0,Moscow,1.0,32.1,9.1,14.5,2.0,16,Cosmetic
+85,19999900.0,Secondary,Народное Ополчение,14.0,Moscow,1.0,48.6,18.0,18.0,19.0,23,Without renovation
+86,10100000.0,Secondary,Тургеневская,3.0,Moscow,0.0,18.0,11.2,8.1,1.0,8,Cosmetic
+87,324885000.0,Secondary, Улица 1905 года,7.0,Moscow,4.0,179.0,92.6,21.4,20.0,21,Designer
+88,15999999.0,Secondary,Озёрная,21.0,Moscow,3.0,66.4,38.0,12.0,2.0,5,Cosmetic
+89,400000000.0,Secondary, Спортивная,8.0,Moscow,5.0,200.8,103.6,23.3,1.0,9,Designer
+90,99000000.0,Secondary,Тушинская,38.0,Moscow,4.0,190.0,100.0,24.0,1.0,6,Without renovation
+91,21000000.0,Secondary,Павелецкая,18.0,Moscow,1.0,39.0,11.1,20.9,13.0,47,Without renovation
+92,14350000.0,Secondary,Аннино,8.0,Moscow,1.0,41.2,17.5,9.9,3.0,21,Cosmetic
+93,10800000.0,Secondary, Ростокино,13.0,Moscow,0.0,28.0,16.3,9.0,5.0,10,Designer
+94,4514953.0,New building,Красногвардейская,11.0,Moscow region,2.0,33.87,19.8,6.0,16.0,20,Cosmetic
+95,12620960.0,New building,Братиславская,13.0,Moscow,2.0,71.71,33.3,14.5,5.0,16,Cosmetic
+96,12800000.0,Secondary,Хорошёвская,11.0,Moscow,1.0,38.0,18.0,10.0,10.0,23,Without renovation
+97,8267770.0,New building,Зябликово,9.0,Moscow region,2.0,65.8,35.4,12.1,15.0,14,Cosmetic
+98,15200000.0,Secondary,Бибирево,9.0,Moscow,3.0,63.4,45.2,6.6,6.0,12,European-style renovation
+99,21300000.0,Secondary,Народное Ополчение,12.0,Moscow,1.0,42.6,14.5,15.4,28.0,5,Without renovation
+100,7755440.0,New building,Зябликово,9.0,Moscow region,2.0,61.6,33.3,11.7,16.0,14,Cosmetic
+101,39700000.0,Secondary, Панфиловская,7.0,Moscow,3.0,88.0,20.0,13.9,8.0,18,Designer
+102,5307250.0,New building,Красногвардейская,14.0,Moscow region,1.0,47.5,26.1,10.6,17.0,20,Cosmetic
+103,5640425.0,New building,Красногвардейская,13.0,Moscow region,2.0,52.19,28.5,11.0,11.0,20,Cosmetic
+104,225000000.0,Secondary,Парк культуры,10.0,Moscow,5.0,331.6,169.8,14.4,8.0,8,Designer
+105,6325200.0,New building,Братиславская,13.0,Moscow,1.0,35.14,17.2,8.8,11.0,16,Cosmetic
+106,38000000.0,Secondary, Ростокино,12.0,Moscow,0.0,109.0,57.2,15.7,55.0,59,Without renovation
+107,9000000.0,Secondary, Павшино,2.0,Moscow region,1.0,49.2,20.0,10.0,6.0,15,European-style renovation
+108,144990000.0,Secondary,Курская,9.0,Moscow,4.0,189.0,105.0,26.0,2.0,10,Designer
+109,20558378.0,New building,Каширская,3.0,Moscow,3.0,67.47,36.2,12.2,8.0,10,European-style renovation
+110,26093421.0,New building,Каширская,4.0,Moscow,4.0,105.62,55.5,15.4,2.0,10,European-style renovation
+111,15159300.0,New building,Депо,19.0,Moscow,3.0,89.7,53.7,13.6,13.0,11,Cosmetic
+112,110000000.0,Secondary,Сретенский бульвар,3.0,Moscow,5.0,207.0,156.0,25.0,3.0,5,Designer
+113,5272862.0,New building,Красногвардейская,11.0,Moscow region,2.0,34.53,19.8,6.0,8.0,20,Cosmetic
+114,8022780.0,New building,Депо,19.0,Moscow,1.0,44.82,16.3,15.4,2.0,11,Cosmetic
+115,8614200.0,New building,Депо,19.0,Moscow,1.0,43.95,24.4,10.3,10.0,11,Cosmetic
+116,5279568.0,New building,Красногвардейская,13.0,Moscow region,1.0,47.68,26.2,10.6,10.0,20,Cosmetic
+117,526209060.0,Secondary, Новокузнецкая,15.0,Moscow,3.0,162.11,84.1,20.1,6.0,6,Designer
+118,98000000.0,Secondary,Юго-Западная,14.0,Moscow,5.0,195.8,101.1,22.8,17.0,21,European-style renovation
+119,6031568.0,New building,Красногвардейская,5.0,Moscow region,1.0,42.9,23.8,9.5,15.0,20,Cosmetic
+120,110000000.0,Secondary,Крылатское,29.0,Moscow,4.0,249.0,125.0,20.0,2.0,7,Without renovation
+121,12000000.0,Secondary,Алма-Атинская,57.0,Moscow,4.0,64.0,46.0,5.0,1.0,9,Cosmetic
+122,4990000.0,Secondary,Сходненская,16.0,Moscow,0.0,26.9,14.0,4.0,8.0,8,Cosmetic
+123,5923840.0,New building,Братиславская,13.0,Moscow,0.0,28.48,18.4,9.0,18.0,16,Cosmetic
+124,46000000.0,Secondary, Алексеевская,2.0,Moscow,0.0,111.45,58.5,15.9,9.0,15,Cosmetic
+125,6700000.0,Secondary,Сокол,9.0,Moscow,0.0,19.2,16.0,2.0,1.0,8,Without renovation
+126,15500000.0,Secondary,Беляево,16.0,Moscow,3.0,58.0,41.9,6.6,4.0,9,Cosmetic
+127,46213200.0,Secondary, Калужская,8.0,Moscow,5.0,118.8,62.2,16.5,29.0,34,Without renovation
+128,6600000.0,Secondary,Красный Балтиец,14.0,Moscow,0.0,18.2,15.3,8.1,1.0,7,Cosmetic
+129,7019250.0,New building,Красногвардейская,5.0,Moscow region,2.0,52.5,28.7,11.0,16.0,20,Cosmetic
+130,44500000.0,Secondary,Павелецкая,17.0,Moscow,3.0,81.3,43.2,10.0,13.0,9,Without renovation
+131,86000000.0,Secondary,Улица 1905 года,16.0,Moscow,5.0,165.0,85.6,20.3,12.0,25,European-style renovation
+132,8639680.0,New building,Депо,19.0,Moscow,1.0,44.08,24.4,10.3,6.0,11,Cosmetic
+133,34980000.0,Secondary,Комсомольская,7.0,Moscow,3.0,92.0,76.0,10.0,4.0,6,Cosmetic
+134,5662884.0,New building,Красногвардейская,12.0,Moscow region,1.0,34.44,11.4,14.4,5.0,20,Cosmetic
+135,16500000.0,Secondary,Сетунь,27.0,Moscow,3.0,61.6,38.7,8.2,10.0,12,European-style renovation
+136,12500000.0,Secondary,Москва-Товарная,15.0,Moscow,1.0,34.3,19.5,10.0,9.0,16,Cosmetic
+137,25200000.0,Secondary,ЗИЛ,12.0,Moscow,1.0,44.7,12.0,18.0,14.0,40,Without renovation
+138,6835370.0,New building,Котельники,10.0,Moscow region,2.0,60.49,28.0,13.0,4.0,17,Cosmetic
+139,9124420.0,New building,Красногвардейская,11.0,Moscow region,3.0,77.39,41.9,12.6,17.0,20,Cosmetic
+140,8250000.0,Secondary,Трубная,6.0,Moscow,0.0,16.0,10.2,8.0,1.0,3,Cosmetic
+141,9442548.0,New building,Красногвардейская,5.0,Moscow region,3.0,83.4,44.3,13.5,11.0,20,Cosmetic
+142,12000000.0,Secondary,Савеловская,15.0,Moscow,0.0,27.1,13.2,6.5,8.0,12,Designer
+143,34468676.0,Secondary, Бунинская аллея,16.0,Moscow,5.0,187.8,69.4,18.0,2.0,23,European-style renovation
+144,31500000.0,Secondary,Тульская,11.0,Moscow,4.0,100.0,75.6,8.6,3.0,5,Cosmetic
+145,9990000.0,Secondary,Кузьминки,9.0,Moscow,2.0,38.6,25.4,7.4,1.0,9,Cosmetic
+146,23200000.0,Secondary,Бабушкинская,23.0,Moscow,3.0,89.0,58.5,10.3,12.0,19,Cosmetic
+147,6769830.0,New building,Зябликово,9.0,Moscow region,1.0,33.9,14.9,8.9,2.0,14,Cosmetic
+148,7462500.0,New building,Депо,19.0,Moscow,1.0,37.5,14.1,11.3,16.0,11,Cosmetic
+149,19441710.0,New building,Перерва,4.0,Moscow,3.0,87.3,44.6,19.6,5.0,23,European-style renovation
+150,5200000.0,Secondary,Щелковская,12.0,Moscow,0.0,19.0,11.7,8.2,1.0,9,Designer
+151,6377414.0,New building,Красногвардейская,12.0,Moscow region,1.0,32.69,14.5,9.6,17.0,20,Cosmetic
+152,10752500.0,New building,Депо,19.0,Moscow,2.0,63.25,34.1,11.9,8.0,11,Cosmetic
+153,5170000.0,Secondary, Шаболовская,14.0,Moscow,0.0,30.0,17.3,9.1,1.0,4,European-style renovation
+154,15000000.0,Secondary,Зюзино,3.0,Moscow,2.0,44.9,33.4,5.2,1.0,5,Without renovation
+155,6800000.0,Secondary,Электрозаводская,12.0,Moscow,0.0,15.7,8.7,2.0,7.0,8,Designer
+156,11200000.0,Secondary,Академическая,15.0,Moscow,1.0,35.5,20.0,10.5,1.0,12,European-style renovation
+157,13100000.0,Secondary,Царицыно,26.0,Moscow,1.0,45.0,18.0,12.0,5.0,11,Cosmetic
+158,8633790.0,New building,Депо,19.0,Moscow,1.0,46.17,14.2,18.7,17.0,11,Cosmetic
+159,8736300.0,New building,Котельники,7.0,Moscow region,2.0,51.0,28.4,10.5,16.0,17,Cosmetic
+160,17697207.0,New building,Каширская,4.0,Moscow,3.0,74.72,39.9,12.8,2.0,10,European-style renovation
+161,6692400.0,New building,Котельники,9.0,Moscow region,1.0,39.6,15.7,9.7,23.0,17,Cosmetic
+162,6700000.0,Secondary, Павшино,15.0,Moscow region,2.0,35.48,20.1,9.6,14.0,24,Cosmetic
+163,159500000.0,Secondary, Тверская,9.0,Moscow,5.0,190.2,15.0,22.4,6.0,6,Designer
+164,13600000.0,Secondary,Улица 1905 года,10.0,Moscow,1.0,34.0,18.5,10.1,1.0,12,Cosmetic
+165,10965877.0,New building,Зябликово,9.0,Moscow region,2.0,64.8,34.6,11.8,11.0,14,Cosmetic
+166,6084540.0,New building,Кантемировская,20.0,Moscow,0.0,19.8,9.8,5.0,9.0,14,Cosmetic
+167,6830457.0,New building,Красногвардейская,5.0,Moscow region,2.0,59.5,32.2,8.0,1.0,20,Cosmetic
+168,2850000.0,Secondary,Отрадное,7.0,Moscow,0.0,10.0,8.0,2.0,1.0,12,Without renovation
+169,6403200.0,New building,Депо,13.0,Moscow,0.0,23.2,11.0,6.0,18.0,11,Cosmetic
+170,17814679.0,New building,Каширская,4.0,Moscow,3.0,66.89,36.0,12.2,5.0,10,European-style renovation
+171,3200000.0,Secondary,Косино,15.0,Moscow,0.0,10.5,7.4,7.5,1.0,12,Cosmetic
+172,8907120.0,New building,Красногвардейская,5.0,Moscow region,3.0,83.4,44.3,13.5,12.0,20,Cosmetic
+173,5311358.0,New building,Жулебино,14.0,Moscow region,2.0,39.69,27.0,3.6,8.0,14,Cosmetic
+174,12490000.0,Secondary,Профсоюзная,22.0,Moscow,0.0,48.8,26.8,10.7,13.0,23,Cosmetic
+175,10180000.0,New building,Битца,12.0,Moscow region,2.0,69.54,30.2,20.1,4.0,9,Cosmetic
+176,22000000.0,Secondary,Москва-Товарная,4.0,Moscow,0.0,42.0,35.0,3.0,12.0,19,European-style renovation
+177,18840000.0,Secondary,Митино,6.0,Moscow,3.0,75.0,54.0,12.0,12.0,14,European-style renovation
+178,12400000.0,Secondary, Красногорская,6.0,Moscow region,2.0,57.9,31.4,11.4,12.0,17,Cosmetic
+179,76000000.0,Secondary, Динамо,6.0,Moscow,5.0,192.5,130.0,53.8,7.0,11,Without renovation
+180,9090240.0,New building,Депо,19.0,Moscow,1.0,44.56,24.7,10.3,16.0,11,Cosmetic
+181,6168913.0,New building,Красногвардейская,5.0,Moscow region,1.0,42.1,23.4,10.1,1.0,20,Cosmetic
+182,20271104.0,Secondary, Хорошёво,17.0,Moscow,1.0,40.4,16.2,11.0,2.0,43,European-style renovation
+183,3718168.0,New building,Красногвардейская,12.0,Moscow region,0.0,23.89,15.5,8.6,10.0,20,Cosmetic
+184,9919040.0,New building,Котельники,3.0,Moscow region,3.0,89.2,47.5,21.5,13.0,17,Cosmetic
+185,9850000.0,Secondary,Бунинская Аллея,31.0,Moscow,1.0,35.0,19.0,9.0,14.0,18,Cosmetic
+186,20500000.0,Secondary,Авиамоторная,4.0,Moscow,3.0,82.0,54.0,9.5,5.0,5,Cosmetic
+187,114800000.0,Secondary,Ломоносовский проспект,15.0,Moscow,5.0,208.0,168.0,18.0,6.0,17,Without renovation
+188,5500000.0,Secondary, Бунинская аллея,9.0,Moscow,0.0,20.1,10.0,4.5,2.0,14,Without renovation
+189,71762857.0,Secondary, Шелепиха,9.0,Moscow,5.0,137.8,70.3,43.9,28.0,32,Designer
+190,80000000.0,Secondary, Выставочная,4.0,Moscow,2.0,92.0,48.6,14.3,15.0,77,European-style renovation
+191,26705708.0,Secondary,Панфиловская,6.0,Moscow,2.0,46.8,15.8,13.5,6.0,18,European-style renovation
+192,20500000.0,Secondary,Алтуфьево,12.0,Moscow,3.0,73.2,44.0,10.1,2.0,16,European-style renovation
+193,9737256.0,New building,Домодедовская,8.0,Moscow region,3.0,81.11,51.2,11.3,2.0,15,Cosmetic
+194,34900000.0,Secondary,Аминьевская,5.0,Moscow,4.0,97.0,63.0,8.0,2.0,42,Without renovation
+195,86000000.0,Secondary,Фрунзенская,6.0,Moscow,3.0,97.0,51.2,14.7,5.0,14,Designer
+196,22200000.0,Secondary,Стрешнево,8.0,Moscow,4.0,92.0,48.6,14.3,27.0,28,European-style renovation
+197,8999000.0,Secondary,Калитники,8.0,Moscow,0.0,26.1,16.0,5.0,7.0,8,European-style renovation
+198,10499000.0,Secondary,Курьяново,11.0,Moscow,1.0,33.0,16.5,8.5,9.0,31,Without renovation
+199,85000000.0,Secondary,Ломоносовский проспект,17.0,Moscow,4.0,186.0,96.2,22.0,35.0,42,Without renovation
+200,3140205.0,New building,Красногвардейская,14.0,Moscow region,0.0,26.6,15.6,8.8,15.0,20,Cosmetic
+201,11604250.0,New building,Депо,19.0,Moscow,2.0,66.31,33.3,14.2,23.0,11,Cosmetic
+202,6290410.0,New building,Красногвардейская,16.0,Moscow region,3.0,53.45,35.1,5.7,9.0,20,Cosmetic
+203,7609811.0,New building,Красногвардейская,5.0,Moscow region,2.0,60.5,32.7,8.1,9.0,20,Cosmetic
+204,10499000.0,Secondary,Кузьминки,21.0,Moscow,2.0,40.1,23.5,6.0,9.0,9,Cosmetic
+205,6481366.0,Secondary, Калитники,7.0,Moscow,0.0,26.8,22.0,8.9,1.0,8,Without renovation
+206,34000000.0,Secondary, Шелепиха,5.0,Moscow,3.0,72.2,47.2,8.4,4.0,30,Cosmetic
+207,5709310.0,New building,Котельники,9.0,Moscow region,1.0,37.81,14.0,10.0,11.0,17,Cosmetic
+208,83000000.0,Secondary,Киевская,13.0,Moscow,4.0,134.2,72.3,13.0,6.0,14,European-style renovation
+209,10650000.0,Secondary, Опалиха,4.0,Moscow region,2.0,57.0,30.7,14.2,1.0,8,Without renovation
+210,10487840.0,New building,Братиславская,13.0,Moscow,2.0,59.59,32.3,11.6,5.0,16,Cosmetic
+211,43000000.0,Secondary,Киевская,11.0,Moscow,4.0,116.0,73.0,17.0,2.0,8,Without renovation
+212,48000000.0,Secondary,ЦСКА,14.0,Moscow,3.0,111.0,58.3,14.0,23.0,26,Designer
+213,2631720.0,New building,Алма-Атинская,13.0,Moscow region,0.0,23.76,14.1,8.6,14.0,16,Cosmetic
+214,12700000.0,Secondary, Аникеевка,16.0,Moscow region,2.0,70.1,37.6,12.4,4.0,6,Cosmetic
+215,14790000.0,Secondary, Полежаевская,15.0,Moscow,1.0,32.0,18.3,9.3,3.0,27,Without renovation
+216,6200000.0,New building,Домодедовская,13.0,Moscow region,1.0,41.2,23.0,10.0,4.0,15,Cosmetic
+217,5193827.0,New building,Красногвардейская,11.0,Moscow region,2.0,34.16,19.4,9.5,8.0,20,Cosmetic
+218,19800000.0,Secondary,Багратионовская,4.0,Moscow,3.0,57.7,47.0,6.0,7.0,9,Cosmetic
+219,9200000.0,Secondary,Коммунарка,26.0,Moscow,1.0,39.1,17.0,8.0,8.0,14,Without renovation
+220,14500000.0,Secondary,Щукинская,6.0,Moscow,1.0,36.3,19.0,9.0,20.0,25,Cosmetic
+221,51000000.0,Secondary, Шелепиха,18.0,Moscow,3.0,98.2,58.2,16.9,18.0,19,Without renovation
+222,165000000.0,Secondary, Курская,11.0,Moscow,4.0,182.0,142.0,25.0,6.0,10,Without renovation
+223,10799000.0,Secondary,Прокшино,18.0,Moscow,2.0,47.8,21.6,11.0,3.0,16,Without renovation
+224,8600080.0,New building,Депо,19.0,Moscow,1.0,44.56,13.9,18.5,10.0,11,Cosmetic
+225,10278050.0,New building,Депо,19.0,Moscow,2.0,66.31,33.3,14.2,23.0,11,Cosmetic
+226,6549920.0,New building,Зябликово,9.0,Moscow region,1.0,37.6,16.3,9.2,5.0,14,Cosmetic
+227,7075074.0,New building,Жулебино,13.0,Moscow region,2.0,57.06,29.8,12.1,16.0,14,Cosmetic
+228,9691470.0,New building,Зябликово,9.0,Moscow region,3.0,83.8,44.5,13.6,15.0,14,Cosmetic
+229,72850000.0,Secondary, Маяковская,1.0,Moscow,2.0,62.0,23.8,11.8,6.0,9,Designer
+230,11490000.0,Secondary,Царицыно,8.0,Moscow,2.0,44.9,29.7,6.2,1.0,9,Without renovation
+231,6056623.0,Secondary, Филатов Луг,11.0,Moscow,6.0,21.1,9.4,8.4,12.0,19,Cosmetic
+232,5066970.0,New building,Красногвардейская,11.0,Moscow region,2.0,33.87,19.8,6.0,11.0,20,Cosmetic
+233,6833954.0,New building,Красногвардейская,11.0,Moscow region,3.0,58.34,38.1,4.7,9.0,20,Cosmetic
+234,8000000.0,Secondary,Проспект Вернадского,9.0,Moscow,0.0,14.4,7.0,3.0,2.0,10,Designer
+235,8489121.0,Secondary, Владыкино,10.0,Moscow,6.0,19.8,9.8,5.0,13.0,33,Cosmetic
+236,18490000.0,Secondary,Варшавская,10.0,Moscow,1.0,61.8,24.0,17.0,6.0,23,European-style renovation
+237,4518183.0,New building,Жулебино,14.0,Moscow region,1.0,32.69,14.5,9.6,17.0,14,Cosmetic
+238,274912000.0,Secondary, Октябрьская,1.0,Moscow,6.0,171.82,139.8,27.0,8.0,9,Designer
+239,6820854.0,New building,Красногвардейская,5.0,Moscow region,2.0,50.9,27.9,10.9,14.0,20,Cosmetic
+240,3133560.0,New building,Красногвардейская,14.0,Moscow region,0.0,27.96,16.3,9.0,7.0,20,Cosmetic
+241,199000000.0,Secondary, Арбатская,6.0,Moscow,5.0,177.0,134.0,25.0,3.0,7,European-style renovation
+242,5138644.0,New building,Красногвардейская,12.0,Moscow region,1.0,35.24,14.9,9.4,17.0,20,Cosmetic
+243,318000000.0,Secondary, Кропоткинская,8.0,Moscow,4.0,166.0,94.0,17.0,3.0,6,Designer
+244,150000000.0,Secondary, Петровский Парк,17.0,Moscow,5.0,153.5,103.0,7.2,21.0,36,Designer
+245,4850000.0,Secondary,Некрасовка,12.0,Moscow,0.0,20.0,16.0,2.0,2.0,17,Cosmetic
+246,29500000.0,Secondary,Боровское шоссе,5.0,Moscow,5.0,126.0,76.0,13.5,12.0,17,European-style renovation
+247,24000000.0,Secondary,Белорусская,6.0,Moscow,2.0,55.9,42.0,13.0,6.0,8,Without renovation
+248,12002992.0,Secondary, Опалиха,7.0,Moscow region,2.0,54.2,29.5,11.1,4.0,6,Cosmetic
+249,49326000.0,Secondary,ЗИЛ,12.0,Moscow,3.0,93.4,49.4,14.4,31.0,40,Without renovation
+250,6726600.0,New building,Братиславская,13.0,Moscow,1.0,37.37,14.1,11.1,15.0,16,Cosmetic
+251,9900000.0,Secondary,Бескудниково,12.0,Moscow,1.0,39.0,19.0,8.0,10.0,17,European-style renovation
+252,11277579.0,New building,Каширская,4.0,Moscow,2.0,45.88,25.3,10.4,9.0,10,Cosmetic
+253,185000000.0,Secondary,Динамо,9.0,Moscow,4.0,195.0,100.7,22.8,13.0,16,European-style renovation
+254,22500000.0,Secondary,Говорово,11.0,Moscow,2.0,75.0,40.0,10.0,12.0,14,Designer
+255,35500000.0,Secondary,Фили,6.0,Moscow,3.0,72.0,50.0,20.0,25.0,42,Without renovation
+256,9003150.0,New building,Депо,19.0,Moscow,1.0,46.17,25.5,10.5,25.0,11,Cosmetic
+257,5700000.0,Secondary,Нагатинский Затон,1.0,Moscow,0.0,12.0,8.2,7.6,1.0,12,Cosmetic
+258,6500000.0,New building,Братиславская,10.0,Moscow region,1.0,41.0,13.0,15.0,10.0,16,Cosmetic
+259,140000000.0,Secondary,Динамо,9.0,Moscow,4.0,203.1,104.8,23.4,7.0,10,Designer
+260,15850000.0,Secondary, Бауманская,7.0,Moscow,1.0,37.4,23.8,7.0,4.0,6,Designer
+261,3700000.0,New building,Домодедовская,15.0,Moscow region,1.0,27.3,17.1,3.0,12.0,15,Cosmetic
+262,18500000.0,Secondary, Кузнецкий мост,3.0,Moscow,0.0,21.0,12.8,8.4,4.0,4,Without renovation
+263,3100000.0,Secondary,Текстильщики,17.0,Moscow,0.0,13.8,9.1,7.8,2.0,2,European-style renovation
+264,11100320.0,New building,Братиславская,13.0,Moscow,2.0,63.07,34.0,11.9,5.0,16,Cosmetic
+265,5767998.0,Secondary, Павшино,5.0,Moscow region,3.0,23.34,13.9,8.6,24.0,24,Cosmetic
+266,13200000.0,Secondary,Домодедовская,11.0,Moscow,2.0,53.0,28.8,10.0,8.0,16,Without renovation
+267,12028800.0,New building,Депо,19.0,Moscow,2.0,67.2,36.1,12.2,8.0,11,Cosmetic
+268,11000000.0,Secondary,Шипиловская,13.0,Moscow,2.0,46.0,30.0,7.0,4.0,12,Cosmetic
+269,17300000.0,Secondary,Соколиная Гора,13.0,Moscow,3.0,65.5,45.5,8.5,11.0,12,Cosmetic
+270,12400000.0,Secondary,Хорошёвская,11.0,Moscow,2.0,46.1,38.1,8.0,8.0,23,Without renovation
+271,19990000.0,Secondary, Пролетарская,7.0,Moscow,3.0,59.2,6.0,11.5,6.0,9,Cosmetic
+272,162760000.0,Secondary, Чистые пруды,4.0,Moscow,2.0,143.2,53.6,33.5,1.0,6,Designer
+273,7489705.0,Secondary, Бульвар Адмирала Ушакова,8.0,Moscow,1.0,25.4,15.0,8.7,2.0,16,Cosmetic
+274,14440000.0,New building,Аннино,7.0,Moscow,2.0,80.0,42.6,13.3,3.0,22,Cosmetic
+275,16500000.0,Secondary,Стрешнево,8.0,Moscow,2.0,38.0,25.0,6.0,1.0,5,European-style renovation
+276,17500000.0,Secondary,Новаторская,15.0,Moscow,1.0,45.0,18.0,11.0,8.0,22,European-style renovation
+277,13500000.0,Secondary,Зябликово,8.0,Moscow,2.0,45.0,29.0,5.8,9.0,9,Designer
+278,5381960.0,New building,Котельники,10.0,Moscow region,1.0,34.28,12.0,10.0,7.0,17,Cosmetic
+279,157300000.0,Secondary, Маяковская,9.0,Moscow,5.0,250.5,160.0,10.5,3.0,8,Designer
+280,11500000.0,New building,Домодедовская,15.0,Moscow region,3.0,86.78,53.0,13.0,7.0,15,Cosmetic
+281,7020000.0,Secondary,Тропарево,16.0,Moscow,0.0,20.6,12.5,8.3,6.0,22,Designer
+282,120000000.0,Secondary, Киевская,15.0,Moscow,3.0,100.0,9.6,14.9,6.0,7,European-style renovation
+283,5669734.0,New building,Зябликово,9.0,Moscow region,1.0,36.2,10.1,12.7,10.0,14,Cosmetic
+284,14300000.0,Secondary,Авиамоторная,18.0,Moscow,0.0,30.0,18.0,10.0,6.0,17,Without renovation
+285,7269091.0,New building,Красногвардейская,5.0,Moscow region,2.0,60.6,32.8,7.9,4.0,20,Cosmetic
+286,11352621.0,Secondary,Преображенская площадь,12.0,Moscow,0.0,31.5,18.1,9.2,4.0,4,European-style renovation
+287,5099051.0,New building,Битца,13.0,Moscow region,1.0,36.22,20.4,9.6,9.0,9,Cosmetic
+288,19800000.0,Secondary,Давыдково,19.0,Moscow,2.0,62.8,37.4,9.4,15.0,16,Designer
+289,3850000.0,Secondary,Люблино,8.0,Moscow,0.0,11.0,7.7,7.5,1.0,12,Cosmetic
+290,30000000.0,Secondary,Марксистская,11.0,Moscow,3.0,65.3,39.5,8.3,4.0,12,European-style renovation
+291,5077655.0,New building,Красногвардейская,11.0,Moscow region,2.0,33.88,19.8,6.0,15.0,20,Cosmetic
+292,77000000.0,Secondary, Крылатское,10.0,Moscow,5.0,208.6,155.0,20.0,8.0,23,Designer
+293,14700000.0,Secondary,Октябрьское поле,10.0,Moscow,1.0,36.2,18.0,9.0,10.0,28,Without renovation
+294,39356300.0,Secondary, Нагорная,8.0,Moscow,5.0,103.0,54.2,15.2,27.0,28,Without renovation
+295,4670000.0,Secondary,Селигерская,8.0,Moscow,0.0,13.0,9.0,2.0,2.0,3,European-style renovation
+296,13500000.0,Secondary,Новогиреево,18.0,Moscow,3.0,59.1,41.5,7.0,4.0,5,Without renovation
+297,2540000.0,New building,Битца,12.0,Moscow region,0.0,20.17,12.3,14.2,3.0,9,Cosmetic
+298,5081842.0,New building,Красногвардейская,12.0,Moscow region,0.0,27.33,17.1,8.9,5.0,20,Cosmetic
+299,46000000.0,Secondary,Крестьянская застава,5.0,Moscow,3.0,93.0,50.0,9.8,7.0,14,Cosmetic
+300,7425690.0,New building,Котельники,10.0,Moscow region,2.0,58.47,27.0,15.0,2.0,17,Cosmetic
+301,83000000.0,Secondary,Минская,26.0,Moscow,4.0,147.0,76.0,18.8,15.0,24,European-style renovation
+302,7555950.0,New building,Депо,19.0,Moscow,1.0,39.15,11.8,16.7,6.0,11,Cosmetic
+303,2954075.0,New building,Красногвардейская,14.0,Moscow region,0.0,26.95,15.8,8.9,3.0,20,Cosmetic
+304,5780941.0,New building,Алма-Атинская,12.0,Moscow region,2.0,52.04,28.4,10.9,14.0,16,Cosmetic
+305,8614200.0,New building,Депо,19.0,Moscow,1.0,43.95,24.4,10.3,3.0,11,Cosmetic
+306,341000000.0,Secondary, Спортивная,7.0,Moscow,5.0,227.5,117.1,25.5,6.0,12,Without renovation
+307,5491517.0,New building,Красногвардейская,5.0,Moscow region,1.0,41.8,23.3,10.6,5.0,20,Cosmetic
+308,10906418.0,Secondary, Опалиха,7.0,Moscow region,1.0,42.0,23.4,10.1,6.0,6,Cosmetic
+309,4754466.0,New building,Котельники,8.0,Moscow region,0.0,31.73,12.9,5.0,2.0,17,Cosmetic
+310,6133884.0,Secondary, Щербинка,9.0,Moscow,6.0,20.0,9.8,5.1,10.0,17,Cosmetic
+311,325000000.0,Secondary, Тушинская,12.0,Moscow,6.0,500.0,300.0,50.0,1.0,4,Designer
+312,10400000.0,Secondary,Улица Старокачаловская,11.0,Moscow,1.0,36.0,15.0,11.0,2.0,16,Cosmetic
+313,16500000.0,Secondary,Дмитровская,6.0,Moscow,0.0,30.0,17.3,9.1,16.0,58,European-style renovation
+314,22200000.0,Secondary,Дубровка,7.0,Moscow,1.0,41.7,12.4,17.3,11.0,16,Designer
+315,43000000.0,Secondary,Шелепиха,7.0,Moscow,4.0,117.0,48.0,23.0,10.0,11,Without renovation
+316,10230560.0,New building,Депо,19.0,Moscow,2.0,59.48,28.0,12.3,14.0,11,Cosmetic
+317,4808391.0,New building,Красногвардейская,12.0,Moscow region,0.0,29.65,18.2,9.1,6.0,20,Cosmetic
+318,7494480.0,New building,Котельники,10.0,Moscow region,2.0,59.48,32.2,11.6,12.0,17,Cosmetic
+319,10800000.0,Secondary,Стахановская,18.0,Moscow,1.0,36.6,19.5,9.8,3.0,16,Cosmetic
+320,6806150.0,New building,Братиславская,13.0,Moscow,1.0,36.79,14.0,10.9,14.0,16,Cosmetic
+321,14555343.0,Secondary, Печатники,16.0,Moscow,6.0,25.4,12.6,4.8,18.0,22,Cosmetic
+322,13700000.0,Secondary, Нахимовский проспект,4.0,Moscow,0.0,48.0,30.0,10.0,4.0,23,Without renovation
+323,37860840.0,Secondary, Крымская,18.0,Moscow,4.0,83.8,44.5,13.6,30.0,42,European-style renovation
+324,4350000.0,Secondary,Бунинская Аллея,11.0,Moscow,0.0,20.5,16.5,2.0,1.0,9,Without renovation
+325,58977000.0,Secondary,ЗИЛ,12.0,Moscow,4.0,114.8,60.2,16.1,29.0,40,Without renovation
+326,11869743.0,New building,Зябликово,9.0,Moscow region,2.0,63.9,31.1,12.7,13.0,14,Cosmetic
+327,16800000.0,Secondary,Хорошево,12.0,Moscow,1.0,35.6,13.9,10.4,18.0,27,Without renovation
+328,3600000.0,Secondary,Покровское,12.0,Moscow,0.0,15.3,8.0,2.0,1.0,9,Without renovation
+329,10200000.0,Secondary,Кленовый бульвар,17.0,Moscow,1.0,38.0,20.0,10.0,12.0,12,Cosmetic
+330,15325430.0,New building,Варшавская,6.0,Moscow,2.0,62.83,33.9,11.8,6.0,15,Cosmetic
+331,4500000.0,Secondary,Депо,6.0,Moscow,0.0,16.0,10.2,8.0,1.0,2,European-style renovation
+332,7654000.0,New building,Депо,19.0,Moscow,1.0,43.0,16.4,13.5,11.0,11,Cosmetic
+333,9200000.0,Secondary,Владыкино,12.0,Moscow,0.0,19.8,16.8,3.0,3.0,33,Designer
+334,13500000.0,Secondary,Нагорная,6.0,Moscow,2.0,51.2,28.0,8.5,2.0,14,Cosmetic
+335,10752500.0,New building,Депо,19.0,Moscow,2.0,63.25,24.8,17.9,10.0,11,Cosmetic
+336,3600000.0,Secondary,Щукинская,11.0,Moscow,0.0,10.7,7.5,7.5,1.0,9,Without renovation
+337,115000000.0,Secondary, Деловой центр,2.0,Moscow,3.0,187.0,91.0,22.1,39.0,75,Designer
+338,12968207.0,New building,Варшавская,6.0,Moscow,2.0,47.46,26.1,10.6,8.0,15,Cosmetic
+339,28000000.0,Secondary,Кутузовская,5.0,Moscow,2.0,67.0,32.0,10.0,4.0,9,European-style renovation
+340,45503164.0,Secondary,Панфиловская,6.0,Moscow,3.0,81.9,60.8,4.6,15.0,18,Without renovation
+341,6855000.0,Secondary,Сретенский бульвар,7.0,Moscow,0.0,13.7,9.1,7.8,1.0,3,Without renovation
+342,34000000.0,Secondary,Красногвардейская,9.0,Moscow,0.0,71.7,46.0,10.0,30.0,30,Without renovation
+343,9345550.0,New building,Зябликово,9.0,Moscow region,2.0,60.1,30.7,11.6,3.0,14,Cosmetic
+344,17500000.0,Secondary,Ленинский проспект,7.0,Moscow,1.0,45.0,17.7,13.9,5.0,9,Cosmetic
+345,2954075.0,New building,Красногвардейская,14.0,Moscow region,0.0,26.95,15.8,8.9,2.0,20,Cosmetic
+346,11600000.0,Secondary,Отрадное,12.0,Moscow,2.0,45.9,30.1,6.5,8.0,12,Without renovation
+347,12004469.0,Secondary, Тушинская,5.0,Moscow,2.0,46.0,10.9,23.6,6.0,25,Cosmetic
+348,99000000.0,Secondary, Чистые пруды,5.0,Moscow,6.0,207.0,150.0,20.0,2.0,5,European-style renovation
+349,11000000.0,Secondary, Коммунарка,6.0,Moscow,0.0,45.0,24.9,10.4,15.0,23,Without renovation
+350,8086820.0,New building,Зябликово,9.0,Moscow region,2.0,65.8,35.4,12.1,4.0,14,Cosmetic
+351,2630625.0,New building,Алма-Атинская,13.0,Moscow region,0.0,23.75,14.1,8.6,7.0,16,Cosmetic
+352,11145379.0,Secondary, Опалиха,7.0,Moscow region,1.0,41.8,23.3,10.1,4.0,6,Cosmetic
+353,16000000.0,Secondary, Опалиха,14.0,Moscow region,2.0,68.3,34.4,18.5,2.0,4,Cosmetic
+354,15500000.0,Secondary,Белокаменная,24.0,Moscow,1.0,48.0,19.1,10.8,8.0,29,Without renovation
+355,46000000.0,Secondary,Народное Ополчение,23.0,Moscow,4.0,158.0,61.4,12.0,2.0,20,European-style renovation
+356,5561905.0,Secondary,Калитники,8.0,Moscow,0.0,14.5,9.5,7.8,5.0,8,Without renovation
+357,6249606.0,New building,Жулебино,14.0,Moscow region,2.0,46.89,30.6,5.3,13.0,14,Cosmetic
+358,146000000.0,Secondary, Кропоткинская,3.0,Moscow,4.0,153.0,102.0,14.0,6.0,7,Designer
+359,6622994.0,New building,Красногвардейская,5.0,Moscow region,1.0,46.7,25.7,10.5,17.0,20,Cosmetic
+360,8200000.0,Secondary, Митино,7.0,Moscow region,1.0,35.3,15.0,8.3,5.0,17,European-style renovation
+361,8080270.0,New building,Депо,19.0,Moscow,1.0,43.21,13.9,18.1,7.0,11,Cosmetic
+362,7696563.0,New building,Красногвардейская,5.0,Moscow region,2.0,60.6,32.8,11.7,13.0,20,Cosmetic
+363,194800000.0,Secondary, Киевская,5.0,Moscow,3.0,160.0,83.0,19.9,47.0,54,European-style renovation
+364,125000000.0,Secondary, Китай-город,4.0,Moscow,6.0,240.0,190.0,20.0,5.0,6,Designer
+365,9508800.0,New building,Котельники,7.0,Moscow region,2.0,56.0,21.1,21.4,5.0,17,Cosmetic
+366,4261259.0,New building,Жулебино,13.0,Moscow region,0.0,29.65,18.6,9.1,4.0,14,Cosmetic
+367,40000000.0,Secondary, Шелепиха,13.0,Moscow,2.0,60.0,16.0,30.0,35.0,50,Designer
+368,4396773.0,New building,Красногвардейская,11.0,Moscow region,2.0,33.5,19.9,5.4,17.0,20,Cosmetic
+369,11786250.0,New building,Депо,19.0,Moscow,2.0,67.35,36.2,12.2,24.0,11,Cosmetic
+370,16700000.0,Secondary,Яхромская,12.0,Moscow,2.0,57.0,30.6,11.3,14.0,22,Cosmetic
+371,9328290.0,New building,Красногвардейская,5.0,Moscow region,3.0,83.4,44.3,8.9,1.0,20,Cosmetic
+372,8509298.0,New building,Жулебино,14.0,Moscow region,3.0,79.47,42.7,16.4,13.0,14,Cosmetic
+373,30150000.0,Secondary,Сокольники,12.0,Moscow,3.0,70.9,50.7,7.6,2.0,5,Designer
+374,14326650.0,Secondary,Электрозаводская,17.0,Moscow,1.0,40.0,20.0,9.0,6.0,7,Without renovation
+375,13100000.0,Secondary,Водный стадион,22.0,Moscow,1.0,40.0,21.0,10.0,14.0,17,Cosmetic
+376,52000000.0,Secondary,Киевская,14.0,Moscow,3.0,100.0,62.5,9.0,5.0,10,Without renovation
+377,7749980.0,New building,Котельники,7.0,Moscow region,1.0,39.4,19.6,11.2,9.0,17,Cosmetic
+378,6823283.0,New building,Красногвардейская,11.0,Moscow region,2.0,53.53,25.6,13.3,8.0,20,Cosmetic
+379,3000000.0,Secondary,Зюзино,15.0,Moscow,0.0,15.0,9.7,7.9,2.0,5,European-style renovation
+380,2650200.0,New building,Алма-Атинская,13.0,Moscow region,0.0,23.82,14.2,8.6,10.0,16,Cosmetic
+381,209231579.0,Secondary, Арбатская,9.0,Moscow,4.0,180.7,93.5,21.6,8.0,8,Designer
+382,36000000.0,Secondary,Лермонтовский проспект,13.0,Moscow,5.0,124.4,79.6,9.9,1.0,5,Designer
+383,12500000.0,Secondary,Озёрная,14.0,Moscow,1.0,37.6,19.8,9.0,1.0,16,Cosmetic
+384,6695774.0,New building,Жулебино,14.0,Moscow region,2.0,42.86,25.5,9.1,14.0,14,Cosmetic
+385,10667500.0,New building,Братиславская,13.0,Moscow,2.0,62.75,33.9,11.8,2.0,16,Cosmetic
+386,10734520.0,New building,Депо,19.0,Moscow,2.0,62.41,32.7,10.7,14.0,11,Cosmetic
+387,13978104.0,New building,Зябликово,9.0,Moscow region,3.0,90.8,53.7,11.9,2.0,14,Cosmetic
+388,13000000.0,Secondary,Нижегородская,14.0,Moscow,1.0,32.3,9.5,10.0,12.0,33,European-style renovation
+389,14044800.0,Secondary, Преображенская площадь,10.0,Moscow,0.0,46.2,38.2,3.0,2.0,3,Designer
+390,5800000.0,New building,Жулебино,13.0,Moscow region,1.0,37.0,20.0,11.3,6.0,14,Cosmetic
+391,72000000.0,Secondary,Беломорская,21.0,Moscow,5.0,152.0,62.0,35.0,14.0,15,European-style renovation
+392,6850000.0,Secondary,Некрасовка,18.0,Moscow,1.0,37.0,25.0,9.0,2.0,18,European-style renovation
+393,10500000.0,Secondary,Кленовый бульвар,24.0,Moscow,1.0,34.0,18.0,9.0,2.0,14,Without renovation
+394,94900000.0,Secondary,Арбатская,12.0,Moscow,4.0,133.0,80.0,10.0,4.0,6,European-style renovation
+395,14100000.0,Secondary,Дегунино,8.0,Moscow,2.0,45.0,28.0,6.0,6.0,9,European-style renovation
+396,6151873.0,New building,Красногвардейская,5.0,Moscow region,1.0,41.8,23.3,10.1,11.0,20,Cosmetic
+397,3730423.0,New building,Красногвардейская,11.0,Moscow region,0.0,25.38,16.1,8.7,6.0,20,Cosmetic
+398,24000000.0,Secondary, Савёловская,12.0,Moscow,3.0,56.4,20.0,28.0,3.0,7,Designer
+399,186000000.0,Secondary, Китай-город,6.0,Moscow,6.0,336.4,222.5,26.0,4.0,4,Cosmetic
+400,620000000.0,Secondary,Кропоткинская,9.0,Moscow,6.0,372.0,190.2,37.4,4.0,7,Designer
+401,10500000.0,Secondary, Митино,11.0,Moscow region,2.0,50.3,25.0,6.0,22.0,25,European-style renovation
+402,978945000.0,Secondary, Выставочная,3.0,Moscow,5.0,593.3,302.1,55.7,66.0,66,Designer
+403,9477602.0,New building,Каширская,4.0,Moscow,1.0,31.53,18.1,9.2,14.0,10,Cosmetic
+404,10361040.0,New building,Депо,19.0,Moscow,2.0,56.31,30.6,11.3,2.0,11,Cosmetic
+405,8235480.0,New building,Братиславская,13.0,Moscow,1.0,44.04,14.0,17.9,4.0,16,Cosmetic
+406,3550000.0,Secondary,Гражданская,7.0,Moscow,0.0,16.2,13.0,8.0,1.0,5,Without renovation
+407,4508112.0,New building,Красногвардейская,11.0,Moscow region,2.0,33.87,19.8,6.0,10.0,20,Cosmetic
+408,5204497.0,New building,Бутово,6.0,Moscow region,1.0,35.51,20.1,9.6,2.0,15,Cosmetic
+409,8689200.0,New building,Депо,19.0,Moscow,1.0,44.56,24.7,10.3,20.0,11,Cosmetic
+410,35980759.0,Secondary, Белорусская,14.0,Moscow,1.0,60.05,13.5,22.5,5.0,33,European-style renovation
+411,40794404.0,Secondary,Панфиловская,6.0,Moscow,3.0,79.0,39.8,13.4,13.0,18,Without renovation
+412,6098690.0,New building,Красногвардейская,17.0,Moscow region,2.0,49.13,20.7,9.5,12.0,20,Cosmetic
+413,16900000.0,Secondary,Беломорская,22.0,Moscow,3.0,65.0,8.2,39.0,11.0,12,European-style renovation
+414,87000000.0,Secondary,Фрунзенская,6.0,Moscow,4.0,145.2,110.0,20.0,7.0,14,Designer
+415,4900000.0,Secondary,Некрасовка,8.0,Moscow,0.0,18.5,11.5,8.2,2.0,17,European-style renovation
+416,3350000.0,Secondary,Щелковская,21.0,Moscow,0.0,10.7,7.5,7.5,1.0,9,European-style renovation
+417,250000000.0,Secondary, Войковская,12.0,Moscow,6.0,500.0,165.0,25.0,1.0,5,Designer
+418,615313800.0,Secondary,Кропоткинская,4.0,Moscow,6.0,410.0,245.0,30.0,4.0,7,Designer
+419,8918190.0,New building,Братиславская,13.0,Moscow,1.0,45.27,14.2,18.3,19.0,16,Cosmetic
+420,14400000.0,Secondary,Пятницкое шоссе,34.0,Moscow,1.0,46.2,15.9,15.9,4.0,24,Cosmetic
+421,3500000.0,New building,Котельники,15.0,Moscow region,1.0,32.4,13.5,9.3,3.0,17,Cosmetic
+422,10490000.0,Secondary,Теплый Стан,16.0,Moscow,1.0,35.0,19.5,9.5,3.0,16,Cosmetic
+423,47000000.0,Secondary,Щукинская,12.0,Moscow,3.0,122.0,89.0,20.0,26.0,30,European-style renovation
+424,48700000.0,Secondary,Белорусская,4.0,Moscow,3.0,85.6,44.8,20.8,6.0,12,Without renovation
+425,6750000.0,New building,Бульвар Дмитрия Донского,15.0,Moscow region,2.0,46.2,26.0,9.0,7.0,18,Cosmetic
+426,41000000.0,Secondary,Смоленская,9.0,Moscow,2.0,53.6,31.6,6.2,7.0,7,Without renovation
+427,36475000.0,Secondary,Молодежная,12.0,Moscow,6.0,128.6,88.0,11.8,11.0,14,Cosmetic
+428,13522003.0,Secondary,Москворечье,18.0,Moscow,1.0,35.4,10.6,18.6,42.0,52,Without renovation
+429,7408710.0,New building,Битца,13.0,Moscow region,2.0,56.34,30.6,11.3,16.0,9,Cosmetic
+430,150000000.0,Secondary,Арбатская,9.0,Moscow,4.0,162.4,84.2,20.1,2.0,6,European-style renovation
+431,6698550.0,New building,Котельники,8.0,Moscow region,2.0,45.17,26.3,10.4,11.0,17,Cosmetic
+432,21200000.0,Secondary,Марк,23.0,Moscow,4.0,103.0,64.0,10.3,6.0,22,Cosmetic
+433,13950000.0,Secondary,Строгино,4.0,Moscow,1.0,38.0,18.0,8.3,3.0,12,Cosmetic
+434,146084211.0,Secondary, Арбатская,9.0,Moscow,3.0,154.2,80.1,19.4,4.0,8,Designer
+435,11700000.0,Secondary,Нагорная,12.0,Moscow,1.0,37.5,19.1,10.3,14.0,16,Cosmetic
+436,34499000.0,Secondary,Улица 1905 года,12.0,Moscow,2.0,49.5,32.4,12.0,32.0,44,Designer
+437,26500000.0,Secondary,Университет,17.0,Moscow,3.0,76.8,46.0,12.0,2.0,9,European-style renovation
+438,4504679.0,New building,Жулебино,14.0,Moscow region,2.0,34.27,19.6,6.0,2.0,14,Cosmetic
+439,3896893.0,New building,Красногвардейская,11.0,Moscow region,0.0,26.04,16.1,8.8,15.0,20,Cosmetic
+440,4999000.0,New building,Домодедовская,15.0,Moscow region,1.0,36.31,11.1,15.0,7.0,15,Cosmetic
+441,6900000.0,New building,Домодедовская,23.0,Moscow region,1.0,40.7,17.1,10.4,12.0,15,Cosmetic
+442,6826444.0,New building,Красногвардейская,12.0,Moscow region,1.0,38.9,14.4,15.5,15.0,20,Cosmetic
+443,4855680.0,New building,Жулебино,8.0,Moscow region,1.0,33.72,19.2,9.4,4.0,14,Cosmetic
+444,11412050.0,New building,Депо,19.0,Moscow,2.0,63.05,34.0,11.9,11.0,11,Cosmetic
+445,10800000.0,Secondary,Физтех,6.0,Moscow,1.0,38.4,17.8,8.7,9.0,17,European-style renovation
+446,8272170.0,New building,Депо,13.0,Moscow,1.0,32.1,9.1,14.5,9.0,11,Cosmetic
+447,7601440.0,New building,Зябликово,9.0,Moscow region,2.0,61.6,33.3,11.7,6.0,14,Cosmetic
+448,6241866.0,New building,Красногвардейская,11.0,Moscow region,3.0,52.88,35.0,5.7,9.0,20,Cosmetic
+449,6443680.0,New building,Братиславская,13.0,Moscow,1.0,35.02,17.6,8.8,22.0,16,Cosmetic
+450,25918000.0,Secondary, Бауманская,19.0,Moscow,0.0,85.2,75.2,5.0,7.0,7,Without renovation
+451,2847962.0,New building,Красногвардейская,14.0,Moscow region,0.0,24.08,14.3,8.6,4.0,20,Cosmetic
+452,8961000.0,New building,Перерва,4.0,Moscow,1.0,41.2,13.2,18.8,10.0,23,Cosmetic
+453,13200000.0,Secondary,Шелепиха,13.0,Moscow,0.0,26.0,21.3,8.8,14.0,24,Designer
+454,8900000.0,Secondary,Аэропорт,3.0,Moscow,0.0,19.9,14.0,5.0,3.0,4,Designer
+455,29000000.0,Secondary,Новаторская,14.0,Moscow,3.0,85.0,45.1,12.8,2.0,22,European-style renovation
+456,19900000.0,Secondary,Юго-Западная,16.0,Moscow,2.0,55.0,29.9,10.0,13.0,17,European-style renovation
+457,27150000.0,New building,Каширская,6.0,Moscow,4.0,108.6,57.0,15.6,3.0,10,European-style renovation
+458,5100000.0,Secondary,Тропарево,7.0,Moscow,0.0,19.0,19.0,8.2,1.0,16,Without renovation
+459,114202000.0,Secondary, Улица 1905 года,6.0,Moscow,2.0,127.6,39.2,46.5,4.0,21,Designer
+460,19500000.0,Secondary,Автозаводская,10.0,Moscow,1.0,31.3,8.3,17.0,4.0,10,Designer
+461,13499999.0,Secondary,Филевский парк,7.0,Moscow,2.0,41.0,25.6,6.0,3.0,5,Cosmetic
+462,20508748.0,New building,Каширская,6.0,Moscow,4.0,86.68,46.0,13.8,4.0,10,European-style renovation
+463,6180330.0,New building,Домодедовская,8.0,Moscow region,2.0,41.34,27.1,5.0,7.0,15,Cosmetic
+464,169275000.0,Secondary, Кропоткинская,6.0,Moscow,4.0,225.7,116.2,25.3,3.0,9,Designer
+465,3624028.0,New building,Котельники,8.0,Moscow region,0.0,18.3,9.4,8.2,16.0,17,Cosmetic
+466,7554272.0,New building,Красногвардейская,5.0,Moscow region,2.0,60.5,32.7,11.6,6.0,20,Cosmetic
+467,4129041.0,New building,Красногвардейская,11.0,Moscow region,0.0,22.9,11.1,8.5,2.0,20,Cosmetic
+468,7435256.0,New building,Красногвардейская,5.0,Moscow region,2.0,60.6,32.8,11.7,11.0,20,Cosmetic
+469,11350000.0,Secondary,Планерная,9.0,Moscow,1.0,36.1,21.0,9.0,8.0,9,European-style renovation
+470,9625000.0,Secondary,ЗИЛ,15.0,Moscow,0.0,21.0,12.8,8.4,15.0,28,Cosmetic
+471,24500000.0,Secondary,Марьино,11.0,Moscow,4.0,91.0,63.0,10.0,2.0,14,European-style renovation
+472,35800000.0,Secondary,Тульская,29.0,Moscow,3.0,79.4,48.0,7.3,15.0,16,Without renovation
+473,15316626.0,Secondary, Опалиха,7.0,Moscow region,3.0,71.9,38.5,12.6,3.0,6,Cosmetic
+474,14473080.0,New building,Братиславская,13.0,Moscow,3.0,89.34,54.0,13.7,4.0,16,Cosmetic
+475,5664780.0,New building,Депо,19.0,Moscow,0.0,28.61,18.8,9.0,25.0,11,Cosmetic
+476,14500000.0,Secondary,Бабушкинская,7.0,Moscow,2.0,43.0,30.0,6.0,1.0,4,Cosmetic
+477,9460500.0,New building,Братиславская,13.0,Moscow,2.0,63.07,24.5,17.6,18.0,16,Cosmetic
+478,120000000.0,Secondary,Минская,19.0,Moscow,4.0,302.2,154.9,31.6,14.0,21,European-style renovation
+479,5752270.0,New building,Котельники,10.0,Moscow region,1.0,35.29,13.0,10.0,6.0,17,Cosmetic
+480,16950000.0,Secondary,Академическая,13.0,Moscow,2.0,51.3,30.3,8.3,12.0,17,Cosmetic
+481,14644080.0,New building,Депо,19.0,Moscow,3.0,85.14,45.2,13.7,11.0,11,Cosmetic
+482,125000000.0,Secondary,Терехово,44.0,Moscow,5.0,322.0,138.0,45.0,2.0,4,Designer
+483,5675160.0,New building,Красногвардейская,14.0,Moscow region,2.0,52.27,28.6,11.0,7.0,20,Cosmetic
+484,3499000.0,New building,Аннино,15.0,Moscow region,0.0,24.4,12.0,8.7,4.0,22,Cosmetic
+485,23000000.0,New building,Красногвардейская,5.0,Moscow,1.0,79.0,40.0,20.0,30.0,20,European-style renovation
+486,37950000.0,Secondary,Новаторская,7.0,Moscow,2.0,85.0,43.0,12.0,5.0,20,European-style renovation
+487,3996805.0,New building,Красногвардейская,11.0,Moscow region,0.0,26.69,12.3,5.0,3.0,20,Cosmetic
+488,4174128.0,New building,Красногвардейская,12.0,Moscow region,0.0,26.24,16.9,8.8,14.0,20,Cosmetic
+489,29915127.0,Secondary, Трикотажная,20.0,Moscow,4.0,108.6,59.6,15.6,4.0,20,European-style renovation
+490,5283533.0,New building,Битца,13.0,Moscow region,1.0,36.62,20.6,9.7,6.0,9,Cosmetic
+491,26500000.0,Secondary,Стахановская,6.0,Moscow,3.0,90.2,46.0,17.4,7.0,23,Without renovation
+492,3800000.0,Secondary,Планерная,15.0,Moscow,0.0,11.7,8.0,7.6,1.0,9,Without renovation
+493,8690000.0,Secondary, Мякинино,16.0,Moscow region,1.0,36.3,20.0,8.0,4.0,19,Without renovation
+494,11296271.0,Secondary, Опалиха,7.0,Moscow region,1.0,42.4,23.6,10.1,3.0,6,Cosmetic
+495,11285950.0,New building,Депо,19.0,Moscow,2.0,63.05,34.0,11.9,5.0,11,Cosmetic
+496,14500000.0,Secondary,ЦСКА,11.0,Moscow,0.0,32.1,20.0,5.0,13.0,15,Designer
+497,6179213.0,New building,Красногвардейская,11.0,Moscow region,2.0,44.44,27.3,5.0,16.0,20,Cosmetic
+498,6854400.0,New building,Котельники,9.0,Moscow region,1.0,40.8,14.8,12.3,24.0,17,Cosmetic
+499,5985718.0,New building,Красногвардейская,13.0,Moscow region,1.0,47.68,26.2,10.6,11.0,20,Cosmetic
+500,118000000.0,Secondary,ЦСКА,10.0,Moscow,4.0,187.4,106.5,19.7,18.0,18,European-style renovation
+501,27000000.0,Secondary,Давыдково,23.0,Moscow,1.0,38.0,18.0,12.0,3.0,25,Designer
+502,7517527.0,New building,Красногвардейская,12.0,Moscow region,2.0,45.36,24.7,9.8,3.0,20,Cosmetic
+503,140000000.0,Secondary,Новаторская,18.0,Moscow,4.0,175.0,120.0,15.0,24.0,48,Designer
+504,11776910.0,New building,Депо,13.0,Moscow,2.0,54.7,23.5,19.4,21.0,11,Cosmetic
+505,5596755.0,New building,Красногвардейская,14.0,Moscow region,2.0,52.27,28.6,11.0,5.0,20,Cosmetic
+506,765000000.0,Secondary, Смоленская,10.0,Moscow,5.0,273.2,25.0,29.2,7.0,7,Without renovation
+507,427790837.0,Secondary, Спортивная,12.0,Moscow,5.0,239.6,62.7,82.1,4.0,6,Designer
+508,9346055.0,New building,Красногвардейская,12.0,Moscow region,3.0,72.42,40.2,14.2,7.0,20,Cosmetic
+509,11309420.0,New building,Каширская,4.0,Moscow,2.0,45.88,25.3,10.4,10.0,10,Cosmetic
+510,13590000.0,Secondary,Щелковская,14.0,Moscow,2.0,45.0,28.5,5.6,1.0,5,Cosmetic
+511,15500000.0,Secondary,Профсоюзная,15.0,Moscow,2.0,48.0,31.0,6.9,1.0,8,Cosmetic
+512,5406028.0,New building,Жулебино,14.0,Moscow region,2.0,42.48,26.0,7.9,2.0,14,Cosmetic
+513,12143587.0,New building,Каширская,4.0,Moscow,2.0,48.07,26.4,10.6,9.0,10,Cosmetic
+514,5924880.0,New building,Зябликово,9.0,Moscow region,1.0,42.2,23.5,10.1,14.0,14,Cosmetic
+515,15250000.0,Secondary,Покровское,31.0,Moscow,2.0,54.6,33.0,10.7,18.0,18,European-style renovation
+516,8800000.0,Secondary,Лесопарковая,9.0,Moscow,0.0,22.9,12.7,5.0,21.0,23,Designer
+517,10179579.0,Secondary, Пятницкое шоссе,4.0,Moscow,1.0,32.3,9.4,16.3,15.0,32,Cosmetic
+518,31000000.0,Secondary,Бутырская ,3.0,Moscow,2.0,73.4,36.5,9.1,6.0,7,Designer
+519,40000000.0,Secondary, Петровский Парк,7.0,Moscow,2.0,60.4,33.0,10.0,15.0,17,Designer
+520,8070370.0,New building,Зябликово,9.0,Moscow region,2.0,65.8,35.4,12.1,3.0,14,Cosmetic
+521,8011320.0,New building,Зябликово,9.0,Moscow region,2.0,60.6,32.8,11.7,11.0,14,Cosmetic
+522,72240720.0,Secondary, Терехово ,0.0,Moscow,5.0,144.8,78.6,33.2,6.0,22,Designer
+523,6817600.0,Secondary,Красный Балтиец,14.0,Moscow,0.0,15.6,11.0,2.0,5.0,9,European-style renovation
+524,15499900.0,New building,Каширская,4.0,Moscow,2.0,67.72,31.0,17.7,3.0,10,Cosmetic
+525,68000000.0,Secondary,Сухаревская,4.0,Moscow,3.0,116.8,61.2,17.5,4.0,8,Without renovation
+526,35000000.0,Secondary,Динамо,8.0,Moscow,3.0,84.0,44.6,13.6,8.0,6,Designer
+527,5490599.0,New building,Жулебино,13.0,Moscow region,1.0,38.09,11.9,12.9,8.0,14,Cosmetic
+528,10704982.0,New building,Зябликово,9.0,Moscow region,2.0,63.6,32.6,12.5,4.0,14,Cosmetic
+529,18286490.0,Secondary, Тульская,13.0,Moscow,1.0,38.77,10.7,18.7,4.0,20,European-style renovation
+530,5004250.0,New building,Депо,19.0,Moscow,0.0,27.05,17.6,8.9,8.0,11,Cosmetic
+531,12201040.0,New building,Депо,19.0,Moscow,2.0,66.31,35.7,12.1,17.0,11,Cosmetic
+532,12333660.0,New building,Депо,19.0,Moscow,2.0,66.31,33.3,14.2,23.0,11,Cosmetic
+533,17400000.0,Secondary,Отрадное,14.0,Moscow,2.0,59.6,33.6,10.0,9.0,17,Cosmetic
+534,5650000.0,New building,Битца,14.0,Moscow region,1.0,38.0,16.9,10.4,8.0,9,Cosmetic
+535,41000000.0,Secondary,Студенческая,6.0,Moscow,4.0,78.6,42.0,23.0,4.0,6,Designer
+536,12053143.0,Secondary, Опалиха,7.0,Moscow region,2.0,50.2,27.5,10.8,6.0,6,Cosmetic
+537,5628987.0,New building,Зябликово,7.0,Moscow region,1.0,35.1,12.9,9.1,8.0,14,Cosmetic
+538,16246570.0,Secondary,Некрасовка,19.0,Moscow,3.0,86.7,46.0,13.8,13.0,25,Cosmetic
+539,4776426.0,New building,Котельники,8.0,Moscow region,0.0,31.88,13.0,5.0,2.0,17,Cosmetic
+540,21800000.0,Secondary,Водный стадион,7.0,Moscow,1.0,36.0,20.0,10.0,17.0,34,Designer
+541,91320000.0,Secondary, Минская,13.0,Moscow,4.0,125.6,55.3,33.6,12.0,14,Designer
+542,110887000.0,Secondary, Хорошёво,18.0,Moscow,3.0,108.5,55.3,21.2,2.0,8,Designer
+543,4758547.0,New building,Красногвардейская,11.0,Moscow region,2.0,33.87,19.8,6.0,8.0,20,Cosmetic
+544,7571200.0,New building,Депо,14.0,Moscow,1.0,32.0,9.1,15.9,2.0,11,Cosmetic
+545,5118039.0,New building,Красногвардейская,16.0,Moscow region,2.0,35.31,24.2,3.0,13.0,20,Cosmetic
+546,6760525.0,New building,Жулебино,13.0,Moscow region,2.0,54.6,31.2,9.9,8.0,14,Cosmetic
+547,7811813.0,New building,Красногвардейская,5.0,Moscow region,2.0,59.4,32.2,11.6,15.0,20,Cosmetic
+548,9500000.0,Secondary,Локомотив,23.0,Moscow,1.0,35.1,20.0,10.0,2.0,12,European-style renovation
+549,8801378.0,New building,Битца,13.0,Moscow region,3.0,80.82,43.0,13.3,7.0,9,Cosmetic
+550,30499000.0,Secondary,Люблино,18.0,Moscow,4.0,86.0,45.6,20.0,3.0,17,European-style renovation
+551,8724070.0,New building,Перерва,4.0,Moscow,1.0,44.9,13.2,21.2,5.0,23,Cosmetic
+552,12500000.0,Secondary,Давыдково,19.0,Moscow,3.0,49.5,37.0,9.0,8.0,9,Without renovation
+553,8127000.0,New building,Депо,19.0,Moscow,1.0,43.0,16.4,13.5,10.0,11,Cosmetic
+554,17100000.0,Secondary,Селигерская,16.0,Moscow,0.0,33.0,18.8,9.4,8.0,44,Cosmetic
+555,39000000.0,Secondary,Белорусская,3.0,Moscow,5.0,130.0,84.0,12.0,3.0,6,European-style renovation
+556,6464954.0,New building,Красногвардейская,16.0,Moscow region,2.0,49.13,20.7,9.5,16.0,20,Cosmetic
+557,13000000.0,Secondary,Давыдково,22.0,Moscow,0.0,52.0,30.0,12.0,2.0,7,European-style renovation
+558,20500000.0,Secondary, Полежаевская,17.0,Moscow,0.0,44.0,24.4,10.3,12.0,27,Without renovation
+559,7750880.0,New building,Братиславская,13.0,Moscow,1.0,40.16,16.4,10.0,6.0,16,Cosmetic
+560,3848985.0,New building,Красногвардейская,11.0,Moscow region,0.0,21.36,14.6,8.4,2.0,20,Cosmetic
+561,6340747.0,New building,Жулебино,14.0,Moscow region,2.0,42.29,26.4,7.7,14.0,14,Cosmetic
+562,18200000.0,Secondary,Китай-город,6.0,Moscow,1.0,30.0,17.0,10.0,1.0,8,European-style renovation
+563,6844200.0,New building,Депо,19.0,Moscow,1.0,37.4,13.7,11.0,7.0,11,Cosmetic
+564,8878880.0,New building,Котельники,17.0,Moscow region,2.0,52.6,19.9,19.6,19.0,17,Cosmetic
+565,5532981.0,New building,Красногвардейская,12.0,Moscow region,1.0,37.03,12.0,15.1,7.0,20,Cosmetic
+566,67000000.0,Secondary,Минская,59.0,Moscow,4.0,115.0,66.0,14.0,10.0,14,Without renovation
+567,4538992.0,New building,Красногвардейская,11.0,Moscow region,0.0,25.04,16.2,8.7,16.0,20,Cosmetic
+568,10200000.0,Secondary,Тургеневская,4.0,Moscow,0.0,19.1,11.8,8.2,1.0,8,Cosmetic
+569,22300000.0,Secondary,Тульская,27.0,Moscow,1.0,50.4,27.6,13.2,2.0,18,Designer
+570,2700000.0,Secondary,Отрадное,19.0,Moscow,0.0,10.0,7.2,7.5,1.0,9,Cosmetic
+571,24375000.0,Secondary,Динамо,9.0,Moscow,0.0,32.5,25.5,3.4,3.0,16,Without renovation
+572,7511400.0,New building,Депо,19.0,Moscow,1.0,38.52,16.0,10.0,13.0,11,Cosmetic
+573,6347750.0,Secondary,Селигерская,27.0,Moscow,0.0,19.2,14.2,2.0,1.0,3,European-style renovation
+574,9900000.0,Secondary,Волгоградский проспект,8.0,Moscow,2.0,45.0,3.0,7.0,2.0,21,Without renovation
+575,28500000.0,Secondary,Измайловская,11.0,Moscow,4.0,93.1,63.0,9.4,4.0,5,Cosmetic
+576,10300000.0,New building,Братиславская,4.0,Moscow,1.0,35.7,10.1,17.0,5.0,16,Cosmetic
+577,18330980.0,New building,Каширская,4.0,Moscow,3.0,66.32,35.7,12.1,8.0,10,European-style renovation
+578,6450000.0,Secondary,Петровский парк,16.0,Moscow,0.0,24.2,14.4,8.6,2.0,2,Designer
+579,15317359.0,New building,Каширская,3.0,Moscow,2.0,45.88,25.3,10.4,7.0,10,Cosmetic
+580,11500000.0,Secondary,Люблино,10.0,Moscow,3.0,52.1,34.4,6.4,2.0,9,Without renovation
+581,12400000.0,Secondary,Ясенево,6.0,Moscow,1.0,38.5,17.4,10.1,22.0,22,European-style renovation
+582,49756000.0,Secondary,ЗИЛ,18.0,Moscow,4.0,102.1,53.8,15.1,7.0,16,Without renovation
+583,6959768.0,New building,Красногвардейская,5.0,Moscow region,2.0,52.4,28.6,9.7,7.0,20,Cosmetic
+584,8683760.0,New building,Депо,19.0,Moscow,1.0,44.08,14.0,18.5,13.0,11,Cosmetic
+585,7141856.0,New building,Жулебино,14.0,Moscow region,2.0,55.77,29.8,12.1,11.0,14,Cosmetic
+586,5861810.0,New building,Зябликово,9.0,Moscow region,1.0,41.9,23.3,10.1,12.0,14,Cosmetic
+587,6477946.0,New building,Красногвардейская,11.0,Moscow region,3.0,51.19,33.2,6.4,15.0,20,Cosmetic
+588,4793815.0,New building,Красногвардейская,11.0,Moscow region,2.0,33.5,19.9,5.4,8.0,20,Cosmetic
+589,7634250.0,New building,Депо,19.0,Moscow,1.0,39.15,11.8,16.7,14.0,11,Cosmetic
+590,8956560.0,New building,Депо,19.0,Moscow,1.0,44.56,13.9,18.5,25.0,11,Cosmetic
+591,18600000.0,Secondary,Фонвизинская,8.0,Moscow,2.0,45.0,26.1,8.3,8.0,12,Designer
+592,9700000.0,Secondary, Опалиха,29.0,Moscow region,2.0,60.9,34.2,13.6,1.0,3,Without renovation
+593,8353528.0,New building,Битца,13.0,Moscow region,2.0,60.98,33.0,11.7,16.0,9,Cosmetic
+594,7500000.0,New building,Царицыно,3.0,Moscow,1.0,35.2,19.0,10.0,12.0,13,Cosmetic
+595,4825660.0,New building,Жулебино,14.0,Moscow region,2.0,35.82,22.0,6.3,13.0,14,Cosmetic
+596,65100000.0,Secondary,Алексеевская,13.0,Moscow,1.0,155.0,98.0,14.8,16.0,18,Without renovation
+597,4575000.0,Secondary,Ботанический сад,13.0,Moscow,0.0,18.3,11.4,8.2,3.0,5,Without renovation
+598,15600000.0,Secondary,Давыдково,9.0,Moscow,1.0,36.8,20.7,9.0,4.0,12,European-style renovation
+599,11200000.0,Secondary, Медведково,20.0,Moscow,2.0,50.0,29.0,8.3,7.0,17,Cosmetic
+600,13900000.0,Secondary,Трикотажная,7.0,Moscow,1.0,42.5,23.6,14.3,9.0,20,Without renovation
+601,5297330.0,New building,Депо,13.0,Moscow,0.0,19.7,9.4,5.1,21.0,11,Cosmetic
+602,8308410.0,New building,Братиславская,13.0,Moscow,1.0,44.43,13.9,18.2,9.0,16,Cosmetic
+603,10900000.0,Secondary,Красный Балтиец,14.0,Moscow,0.0,34.2,27.0,9.5,5.0,7,Designer
+604,19500000.0,Secondary,Аминьевская,5.0,Moscow,1.0,40.3,20.0,10.0,21.0,42,Designer
+605,5746831.0,New building,Красногвардейская,5.0,Moscow region,1.0,41.8,23.3,10.1,14.0,20,Cosmetic
+606,14647200.0,New building,Аннино,7.0,Moscow,2.0,81.6,44.1,10.4,32.0,22,Cosmetic
+607,8023800.0,New building,Зябликово,9.0,Moscow region,2.0,64.5,34.7,12.0,10.0,14,Cosmetic
+608,3483841.0,New building,Красногвардейская,11.0,Moscow region,0.0,21.36,14.6,8.4,16.0,20,Cosmetic
+609,18850000.0,Secondary,Братиславская,18.0,Moscow,3.0,77.6,41.4,9.0,16.0,16,Cosmetic
+610,9451250.0,New building,Котельники,9.0,Moscow region,3.0,75.61,41.0,16.0,5.0,17,Cosmetic
+611,4800000.0,Secondary,Некрасовка,9.0,Moscow,0.0,18.0,11.2,8.1,1.0,17,Cosmetic
+612,15800000.0,Secondary, Волоколамская,8.0,Moscow,2.0,55.0,33.0,9.3,14.0,17,European-style renovation
+613,13877820.0,New building,Депо,19.0,Moscow,3.0,85.14,45.2,13.7,12.0,11,Cosmetic
+614,8057688.0,New building,Домодедовская,8.0,Moscow region,2.0,61.61,33.3,11.7,4.0,15,Cosmetic
+615,10757120.0,New building,Братиславская,13.0,Moscow,2.0,61.12,28.1,12.6,4.0,16,Cosmetic
+616,43000000.0,Secondary, Народное Ополчение,10.0,Moscow,4.0,108.2,56.8,15.6,11.0,58,Without renovation
+617,16000000.0,Secondary,Алексеевская,4.0,Moscow,2.0,40.0,24.0,7.0,11.0,12,European-style renovation
+618,5255728.0,New building,Красногвардейская,14.0,Moscow region,1.0,47.68,26.2,10.6,9.0,20,Cosmetic
+619,5927275.0,New building,Битца,13.0,Moscow region,1.0,42.63,23.7,10.2,13.0,9,Cosmetic
+620,89990000.0,Secondary,Минская,19.0,Moscow,4.0,205.0,105.0,25.0,14.0,21,Designer
+621,8000000.0,Secondary, Опалиха,6.0,Moscow region,2.0,50.0,27.4,10.8,8.0,9,Cosmetic
+622,16690000.0,Secondary,Лихоборы,6.0,Moscow,3.0,61.0,37.8,8.4,7.0,12,Cosmetic
+623,15900000.0,Secondary,Яхромская,27.0,Moscow,3.0,74.1,44.0,10.3,12.0,16,Cosmetic
+624,6200000.0,New building,Котельники,5.0,Moscow region,0.0,23.6,18.0,5.6,12.0,17,Cosmetic
+625,23700000.0,Secondary,Бауманская,8.0,Moscow,2.0,69.2,46.0,11.0,11.0,12,Cosmetic
+626,5950000.0,Secondary,Сретенский бульвар,7.0,Moscow,0.0,11.8,8.1,7.6,1.0,3,Without renovation
+627,14367059.0,Secondary, Тульская,13.0,Moscow,6.0,24.93,12.3,4.6,12.0,20,Cosmetic
+628,4835142.0,New building,Битца,13.0,Moscow region,0.0,31.76,18.2,9.3,13.0,9,Cosmetic
+629,16400000.0,Secondary,ЗИЛ,6.0,Moscow,1.0,47.4,22.0,10.0,24.0,26,Designer
+630,42000000.0,Secondary,Аминьевская,5.0,Moscow,3.0,111.0,58.3,15.8,26.0,42,Without renovation
+631,14591580.0,New building,Зябликово,9.0,Moscow region,2.0,78.5,28.5,23.3,2.0,14,Cosmetic
+632,12450000.0,Secondary, Пенягино,16.0,Moscow region,2.0,40.4,22.6,10.0,42.0,44,Designer
+633,3651000.0,Secondary,Выхино,17.0,Moscow,0.0,11.8,8.1,7.6,1.0,9,Cosmetic
+634,270000000.0,Secondary, Спортивная,6.0,Moscow,5.0,210.2,122.0,15.0,16.0,16,Without renovation
+635,31000000.0,Secondary,Тульская,26.0,Moscow,4.0,100.0,69.4,8.0,3.0,5,Without renovation
+636,34050000.0,Secondary, Терехово ,8.0,Moscow,1.0,81.3,43.2,13.4,10.0,13,European-style renovation
+637,3750000.0,Secondary,Планерная,13.0,Moscow,0.0,11.5,7.9,7.6,1.0,9,Cosmetic
+638,8950000.0,Secondary,Преображенская площадь,12.0,Moscow,0.0,21.1,19.0,2.1,1.0,4,Designer
+639,3100000.0,Secondary,Улица Скобелевская,16.0,Moscow,0.0,14.0,11.2,7.8,2.0,34,European-style renovation
+640,21900000.0,Secondary,Партизанская,26.0,Moscow,2.0,73.9,41.6,11.6,3.0,23,Cosmetic
+641,95000000.0,Secondary,Минская,29.0,Moscow,4.0,157.0,81.5,19.6,44.0,53,Designer
+642,4900000.0,Secondary,Новопеределкино,10.0,Moscow,0.0,17.0,10.7,8.0,1.0,14,Cosmetic
+643,10346749.0,New building,Красногвардейская,5.0,Moscow region,3.0,82.9,44.0,13.5,15.0,20,Cosmetic
+644,6548620.0,New building,Братиславская,13.0,Moscow,1.0,36.79,14.0,10.9,4.0,16,Cosmetic
+645,7400000.0,Secondary,Прокшино,20.0,Moscow,0.0,22.4,13.5,8.5,8.0,16,Cosmetic
+646,6886277.0,New building,Красногвардейская,11.0,Moscow region,3.0,53.54,35.1,5.7,8.0,20,Cosmetic
+647,26601191.0,Secondary,Панфиловская,6.0,Moscow,2.0,47.2,15.8,13.5,5.0,18,European-style renovation
+648,18500000.0,Secondary,Новогиреево,19.0,Moscow,3.0,64.0,50.0,9.5,2.0,12,Designer
+649,7218200.0,New building,Братиславская,13.0,Moscow,1.0,37.4,21.0,9.7,3.0,16,Cosmetic
+650,80000000.0,Secondary,Щукинская,13.0,Moscow,4.0,170.0,97.0,25.0,16.0,34,Designer
+651,82000000.0,Secondary, Ломоносовский проспект,4.0,Moscow,2.0,65.6,35.3,12.1,3.0,9,Without renovation
+652,234660000.0,Secondary,Тверская,10.0,Moscow,3.0,150.8,78.4,19.1,4.0,5,Designer
+653,15000000.0,Secondary,ВДНХ,18.0,Moscow,2.0,50.5,25.0,8.0,1.0,8,Without renovation
+654,5792430.0,New building,Жулебино,14.0,Moscow region,2.0,37.43,25.2,4.0,15.0,14,Cosmetic
+655,7707765.0,New building,Зябликово,9.0,Moscow region,2.0,61.1,33.0,11.7,17.0,14,Cosmetic
+656,5770000.0,Secondary, Селигерская,23.0,Moscow,0.0,17.0,10.7,8.0,1.0,3,European-style renovation
+657,14000000.0,Secondary,Стахановская,7.0,Moscow,2.0,58.3,32.4,9.6,2.0,7,Cosmetic
+658,17200000.0,Secondary,Бескудниково,12.0,Moscow,3.0,72.8,43.8,10.5,1.0,17,European-style renovation
+659,6318136.0,New building,Красногвардейская,5.0,Moscow region,1.0,46.7,25.7,9.1,8.0,20,Cosmetic
+660,8644470.0,New building,Братиславская,13.0,Moscow,1.0,44.79,24.8,10.3,7.0,16,Cosmetic
+661,7692956.0,Secondary, Бульвар Рокоссовского,3.0,Moscow,6.0,19.9,9.8,5.0,28.0,33,Cosmetic
+662,8816000.0,New building,Депо,19.0,Moscow,1.0,44.08,24.4,10.3,15.0,11,Cosmetic
+663,10734520.0,New building,Депо,19.0,Moscow,2.0,62.41,32.7,10.7,14.0,11,Cosmetic
+664,10000000.0,Secondary,Щелковская,19.0,Moscow,2.0,38.2,21.4,9.8,13.0,14,Cosmetic
+665,16399577.0,New building,Каширская,4.0,Moscow,3.0,63.73,34.4,11.9,3.0,10,Cosmetic
+666,19854733.0,New building,Каширская,3.0,Moscow,3.0,72.7,38.9,12.7,3.0,10,European-style renovation
+667,30900000.0,Secondary,Павелецкая,18.0,Moscow,2.0,66.3,20.3,23.6,19.0,46,Without renovation
+668,93000000.0,Secondary, Шаболовская,8.0,Moscow,4.0,128.9,67.3,17.3,10.0,16,Designer
+669,18990000.0,Secondary,Новопеределкино,20.0,Moscow,3.0,83.0,48.0,10.5,15.0,17,European-style renovation
+670,77000000.0,Secondary,Хорошёвская,6.0,Moscow,5.0,133.0,90.0,15.0,23.0,24,Designer
+671,340000000.0,Secondary, Смоленская,13.0,Moscow,4.0,180.0,126.0,25.0,5.0,7,Designer
+672,26500000.0,Secondary,Фонвизинская,15.0,Moscow,3.0,70.9,46.1,11.1,2.0,13,European-style renovation
+673,4319350.0,New building,Домодедовская,8.0,Moscow region,0.0,24.41,11.4,5.0,3.0,15,Cosmetic
+674,6192058.0,New building,Красногвардейская,11.0,Moscow region,2.0,44.44,27.3,5.0,8.0,20,Cosmetic
+675,6813530.0,New building,Красногвардейская,5.0,Moscow region,1.0,46.7,25.7,10.5,2.0,20,Cosmetic
+676,21000000.0,Secondary,Алексеевская,4.0,Moscow,0.0,38.9,28.1,9.9,4.0,15,Designer
+677,100000000.0,Secondary,Минская,12.0,Moscow,3.0,120.0,65.0,13.0,2.0,39,Designer
+678,40990000.0,Secondary,Крылатское,9.0,Moscow,5.0,132.0,68.9,10.0,3.0,15,Without renovation
+679,6464790.0,New building,Зябликово,9.0,Moscow region,1.0,32.7,16.2,8.5,9.0,14,Cosmetic
+680,3950000.0,Secondary,Бибирево,7.0,Moscow,0.0,10.6,7.5,7.5,1.0,12,Cosmetic
+681,12608742.0,Secondary, Калитники,10.0,Moscow,1.0,42.94,23.8,10.2,4.0,16,Cosmetic
+682,22800000.0,Secondary,Юго-Западная,15.0,Moscow,1.0,54.0,27.0,13.0,18.0,24,European-style renovation
+683,8120400.0,New building,Зябликово,9.0,Moscow region,2.0,60.6,32.8,11.7,12.0,14,Cosmetic
+684,4090000.0,Secondary,Нижегородская,12.0,Moscow,0.0,14.7,9.6,7.9,2.0,4,European-style renovation
+685,12135426.0,New building,Варшавская,6.0,Moscow,2.0,44.39,24.6,10.3,7.0,15,Cosmetic
+686,260000000.0,Secondary, Кропоткинская,10.0,Moscow,5.0,230.0,15.0,25.7,7.0,7,Designer
+687,242003752.0,Secondary,Курская,11.0,Moscow,4.0,165.8,86.0,20.4,7.0,11,Without renovation
+688,573017485.0,Secondary,Лужники,8.0,Moscow,6.0,380.0,194.2,20.0,1.0,7,European-style renovation
+689,16500000.0,Secondary,Автозаводская,7.0,Moscow,1.0,38.9,18.0,10.0,4.0,22,Cosmetic
+690,15200000.0,Secondary,Люблино,12.0,Moscow,3.0,64.0,34.5,6.5,12.0,12,Cosmetic
+691,15400000.0,Secondary, Давыдково,22.0,Moscow,0.0,30.0,17.3,9.1,10.0,30,Designer
+692,19042506.0,New building,Каширская,4.0,Moscow,3.0,70.76,37.9,12.5,11.0,10,European-style renovation
+693,373660800.0,Secondary,Фрунзенская,6.0,Moscow,4.0,135.0,70.4,20.0,7.0,14,Designer
+694,5619425.0,New building,Красногвардейская,5.0,Moscow region,1.0,41.8,23.3,10.6,10.0,20,Cosmetic
+695,5400000.0,New building,Аннино,15.0,Moscow region,2.0,49.6,27.2,10.0,3.0,22,Cosmetic
+696,7347228.0,New building,Красногвардейская,12.0,Moscow region,2.0,49.91,27.6,11.2,8.0,20,Cosmetic
+697,5858140.0,New building,Котельники,10.0,Moscow region,1.0,35.29,13.0,10.0,21.0,17,Cosmetic
+698,14025000.0,New building,Аннино,7.0,Moscow,2.0,85.0,41.2,11.4,2.0,22,Cosmetic
+699,5282166.0,New building,Жулебино,13.0,Moscow region,1.0,35.43,14.9,9.4,16.0,14,Cosmetic
+700,15174846.0,Secondary, Строгино,19.0,Moscow region,3.0,51.13,32.2,6.0,13.0,24,Cosmetic
+701,3900000.0,New building,Аннино,7.0,Moscow region,0.0,23.8,11.5,5.0,5.0,22,Cosmetic
+702,2540000.0,Secondary,Кузьминки,18.0,Moscow,0.0,19.1,17.0,8.2,1.0,5,Without renovation
+703,7500000.0,New building,Царицыно,4.0,Moscow,1.0,33.77,27.1,9.4,8.0,13,Cosmetic
+704,70000000.0,Secondary, Тульская,5.0,Moscow,4.0,185.0,95.7,21.9,8.0,8,Without renovation
+705,38000000.0,Secondary,Новокузнецкая,10.0,Moscow,2.0,55.0,29.9,11.2,2.0,5,Designer
+706,15200000.0,Secondary,Академическая,15.0,Moscow,2.0,49.5,31.0,9.0,12.0,14,Without renovation
+707,6199200.0,New building,Зябликово,8.0,Moscow region,1.0,27.0,11.9,6.4,13.0,14,Cosmetic
+708,7662960.0,New building,Братиславская,13.0,Moscow,1.0,44.04,14.0,17.9,8.0,16,Cosmetic
+709,9057419.0,Secondary, Строгино,19.0,Moscow region,2.0,32.76,19.1,5.2,23.0,24,Cosmetic
+710,3121350.0,New building,Красногвардейская,14.0,Moscow region,0.0,27.85,16.2,8.9,10.0,20,Cosmetic
+711,20400000.0,Secondary,Динамо,6.0,Moscow,2.0,63.2,34.1,11.0,2.0,7,Without renovation
+712,13923488.0,New building,Зябликово,9.0,Moscow region,3.0,90.1,53.7,11.4,7.0,14,Cosmetic
+713,10300000.0,Secondary,Выхино,15.0,Moscow,1.0,38.6,19.6,9.6,10.0,16,Cosmetic
+714,36000000.0,Secondary,Тульская,27.0,Moscow,2.0,94.2,55.0,21.0,7.0,8,Designer
+715,9950000.0,Secondary,Некрасовка,18.0,Moscow,2.0,52.2,26.9,11.9,15.0,18,Without renovation
+716,16158318.0,New building,Каширская,4.0,Moscow,3.0,74.3,39.7,12.8,15.0,10,Cosmetic
+717,27000000.0,Secondary, Минская,7.0,Moscow,2.0,78.0,54.6,18.4,15.0,52,European-style renovation
+718,242970000.0,Secondary, Новокузнецкая,3.0,Moscow,5.0,289.0,20.0,30.6,9.0,10,Without renovation
+719,25918000.0,Secondary, Бауманская,19.0,Moscow,0.0,85.2,75.2,5.0,7.0,7,Without renovation
+720,194800000.0,Secondary, Киевская,5.0,Moscow,3.0,160.0,83.0,19.9,47.0,54,European-style renovation
+721,8308410.0,New building,Братиславская,13.0,Moscow,1.0,44.43,13.9,18.2,4.0,16,Cosmetic
+722,7428225.0,New building,Красногвардейская,5.0,Moscow region,2.0,52.5,28.7,11.0,15.0,20,Cosmetic
+723,13890000.0,Secondary,Курская,9.0,Moscow,0.0,22.2,9.5,5.4,2.0,11,Without renovation
+724,15934067.0,New building,Каширская,4.0,Moscow,3.0,70.53,37.8,12.5,3.0,10,Cosmetic
+725,6600000.0,New building,Депо,19.0,Moscow,0.0,27.25,15.9,8.9,9.0,11,Cosmetic
+726,14600000.0,Secondary,Октябрьское поле,22.0,Moscow,1.0,38.6,16.8,11.7,25.0,25,Without renovation
+727,5263036.0,New building,Красногвардейская,12.0,Moscow region,1.0,34.44,11.4,14.4,17.0,20,Cosmetic
+728,109900000.0,Secondary,Белорусская,14.0,Moscow,2.0,87.6,46.4,40.0,4.0,9,Designer
+729,7121700.0,New building,Депо,19.0,Moscow,1.0,36.9,20.8,9.7,6.0,11,Cosmetic
+730,360577353.0,Secondary,Тверская,8.0,Moscow,4.0,254.1,200.0,35.0,11.0,11,Without renovation
+731,10500000.0,Secondary, Тёплый Стан,20.0,Moscow,1.0,34.5,19.5,9.5,3.0,16,Without renovation
+732,7650000.0,New building,Депо,19.0,Moscow,1.0,37.5,21.1,9.7,18.0,11,Cosmetic
+733,14580384.0,New building,Перерва,4.0,Moscow,2.0,66.76,39.2,12.3,10.0,23,Cosmetic
+734,5039706.0,New building,Красногвардейская,12.0,Moscow region,1.0,32.69,14.5,9.6,8.0,20,Cosmetic
+735,10276500.0,New building,Братиславская,13.0,Moscow,2.0,66.3,26.3,19.9,20.0,16,Cosmetic
+736,7900000.0,Secondary,Зюзино,15.0,Moscow,0.0,28.0,20.0,9.0,4.0,5,Designer
+737,16530000.0,Secondary,Новые Черемушки,16.0,Moscow,2.0,38.2,24.2,6.2,1.0,9,European-style renovation
+738,160000000.0,Secondary, Парк Культуры,6.0,Moscow,5.0,250.0,130.0,25.0,5.0,9,Designer
+739,150000000.0,Secondary, Новослободская,2.0,Moscow,6.0,350.0,239.0,15.3,17.0,17,Designer
+740,12600000.0,Secondary,Пятницкое шоссе,17.0,Moscow,1.0,42.0,20.0,10.0,14.0,14,Cosmetic
+741,75500000.0,Secondary,Фрунзенская,9.0,Moscow,2.0,77.0,18.0,10.0,6.0,13,Without renovation
+742,6509421.0,New building,Красногвардейская,11.0,Moscow region,2.0,46.36,28.5,5.4,14.0,20,Cosmetic
+743,6910818.0,New building,Красногвардейская,12.0,Moscow region,2.0,55.76,30.0,13.7,4.0,20,Cosmetic
+744,8143483.0,Secondary, Павшино,5.0,Moscow region,1.0,32.19,18.4,9.3,17.0,24,Cosmetic
+745,5961969.0,New building,Зябликово,9.0,Moscow region,1.0,36.4,11.1,10.8,10.0,14,Cosmetic
+746,7585565.0,New building,Зябликово,9.0,Moscow region,2.0,61.1,33.0,11.7,9.0,14,Cosmetic
+747,450000000.0,Secondary,Арбатская,7.0,Moscow,4.0,207.0,106.8,23.8,6.0,8,European-style renovation
+748,29000000.0,Secondary, Крылатское,7.0,Moscow,2.0,81.1,43.1,13.3,11.0,15,European-style renovation
+749,7461579.0,New building,Жулебино,13.0,Moscow region,2.0,62.31,25.0,20.5,3.0,14,Cosmetic
+750,24000000.0,Secondary,Новые Черемушки,12.0,Moscow,3.0,74.8,45.3,10.2,13.0,17,European-style renovation
+751,75500000.0,Secondary, Воробьёвы горы,8.0,Moscow,5.0,130.0,88.0,12.0,22.0,41,Designer
+752,17995000.0,Secondary,Дмитровская,13.0,Moscow,1.0,37.1,20.0,10.0,8.0,47,European-style renovation
+753,6432450.0,New building,Депо,19.0,Moscow,1.0,35.15,17.6,8.8,6.0,11,Cosmetic
+754,200000000.0,Secondary,Славянский бульвар,20.0,Moscow,4.0,204.9,105.7,23.6,28.0,31,Designer
+755,5363899.0,New building,Красногвардейская,11.0,Moscow region,1.0,33.88,14.8,10.9,16.0,20,Cosmetic
+756,7884800.0,New building,Котельники,8.0,Moscow region,2.0,56.0,21.0,21.4,20.0,17,Cosmetic
+757,38972930.0,Secondary, Серпуховская,16.0,Moscow,3.0,79.4,34.2,25.2,9.0,27,Without renovation
+758,6500983.0,New building,Красногвардейская,11.0,Moscow region,2.0,46.36,28.5,5.4,13.0,20,Cosmetic
+759,13690000.0,Secondary,Окская,15.0,Moscow,1.0,36.5,15.8,12.2,2.0,30,Cosmetic
+760,16900000.0,Secondary,Лермонтовский проспект,15.0,Moscow,3.0,75.0,75.0,12.8,5.0,17,Cosmetic
+761,15500000.0,Secondary,Новопеределкино,25.0,Moscow,2.0,53.7,32.0,9.0,17.0,17,European-style renovation
+762,18500000.0,Secondary,Ховрино,18.0,Moscow,4.0,80.3,56.6,6.7,3.0,12,European-style renovation
+763,16200000.0,Secondary,Бунинская Аллея,10.0,Moscow,3.0,75.0,42.8,10.0,7.0,10,Cosmetic
+764,14000000.0,Secondary,Нижегородская,10.0,Moscow,1.0,42.9,17.0,12.0,7.0,28,Without renovation
+765,10066524.0,New building,Домодедовская,8.0,Moscow region,3.0,67.47,36.2,12.2,1.0,15,Cosmetic
+766,14198800.0,New building,Депо,13.0,Moscow,3.0,77.0,36.2,22.3,14.0,11,Cosmetic
+767,22000000.0,Secondary,Курская,9.0,Moscow,0.0,19.6,13.5,5.0,3.0,11,Designer
+768,8411640.0,New building,Братиславская,13.0,Moscow,1.0,44.04,14.0,17.9,15.0,16,Cosmetic
+769,22342465.0,Secondary, Опалиха,7.0,Moscow region,3.0,108.9,57.2,15.6,2.0,6,European-style renovation
+770,5449200.0,New building,Депо,19.0,Moscow,0.0,28.68,18.6,9.0,10.0,11,Cosmetic
+771,5450000.0,New building,Депо,19.0,Moscow,0.0,27.25,17.6,8.9,7.0,11,Cosmetic
+772,8011320.0,New building,Зябликово,9.0,Moscow region,2.0,60.6,32.8,11.7,11.0,14,Cosmetic
+773,4699000.0,Secondary,Отрадное,12.0,Moscow,0.0,17.8,11.1,8.1,1.0,9,Without renovation
+774,30000000.0,Secondary,Хорошёвская,10.0,Moscow,3.0,73.0,45.0,10.0,9.0,16,Without renovation
+775,8072160.0,New building,Братиславская,13.0,Moscow,1.0,40.16,22.4,10.0,12.0,16,Cosmetic
+776,11700000.0,Secondary, Кунцевская,27.0,Moscow,1.0,34.4,18.9,9.0,12.0,16,Without renovation
+777,11713860.0,New building,Братиславская,13.0,Moscow,2.0,66.18,32.8,14.2,19.0,16,Cosmetic
+778,8090000.0,Secondary,Остафьево,16.0,Moscow,1.0,44.0,18.0,18.0,5.0,20,Cosmetic
+779,155000000.0,Secondary, Чистые пруды,6.0,Moscow,5.0,200.0,12.0,23.2,3.0,6,Designer
+780,220000000.0,Secondary, Деловой центр,4.0,Moscow,3.0,239.0,176.0,10.0,53.0,73,Designer
+781,146000000.0,Secondary,Кропоткинская,4.0,Moscow,4.0,155.0,120.0,20.0,6.0,7,Designer
+782,6607361.0,New building,Красногвардейская,12.0,Moscow region,2.0,50.37,27.1,9.1,14.0,20,Cosmetic
+783,15534000.0,New building,Аннино,7.0,Moscow,2.0,86.3,45.8,13.8,2.0,22,Cosmetic
+784,95700000.0,Secondary, Китай-город,11.0,Moscow,3.0,86.0,54.0,8.0,2.0,9,Designer
+785,200000000.0,Secondary,Фрунзенская,8.0,Moscow,4.0,169.8,88.0,20.7,6.0,12,European-style renovation
+786,5313602.0,New building,Бутово,6.0,Moscow region,2.0,35.51,20.1,9.6,5.0,15,Cosmetic
+787,87000000.0,Secondary,Сретенский бульвар,4.0,Moscow,4.0,153.3,58.0,19.3,3.0,8,European-style renovation
+788,11500000.0,Secondary,Депо,11.0,Moscow,2.0,46.7,30.7,6.2,3.0,9,Cosmetic
+789,7850000.0,Secondary, Преображенская площадь,10.0,Moscow,0.0,20.6,12.5,8.3,3.0,4,Cosmetic
+790,22999999.0,Secondary,Маяковская,2.0,Moscow,1.0,35.0,20.0,10.0,2.0,8,Designer
+791,306625000.0,Secondary, Смоленская,8.0,Moscow,5.0,223.0,114.9,25.1,13.0,13,Designer
+792,10308200.0,New building,Братиславская,13.0,Moscow,2.0,55.72,30.3,11.2,13.0,16,Cosmetic
+793,176400000.0,Secondary, Баррикадная,16.0,Moscow,4.0,195.2,20.0,22.8,5.0,5,European-style renovation
+794,8918190.0,New building,Братиславская,13.0,Moscow,1.0,45.27,25.0,10.4,13.0,16,Cosmetic
+795,14255980.0,New building,Депо,19.0,Moscow,3.0,87.46,46.4,13.9,14.0,11,Cosmetic
+796,4993750.0,New building,Красногвардейская,13.0,Moscow region,2.0,47.5,26.1,10.6,16.0,20,Cosmetic
+797,19000000.0,Secondary,Шелепиха,13.0,Moscow,0.0,30.0,20.0,9.1,22.0,24,Designer
+798,3600000.0,Secondary,Кантемировская,6.0,Moscow,0.0,12.5,8.5,7.7,1.0,9,Cosmetic
+799,16500000.0,Secondary, Шелепиха,12.0,Moscow,1.0,32.5,13.0,9.3,8.0,32,Cosmetic
+800,5139168.0,New building,Красногвардейская,5.0,Moscow region,1.0,37.6,21.1,9.8,13.0,20,Cosmetic
+801,78000000.0,Secondary,Площадь Гагарина,7.0,Moscow,2.0,85.2,41.5,12.0,9.0,19,Designer
+802,12430050.0,New building,Депо,19.0,Moscow,3.0,71.85,38.5,12.6,7.0,11,Cosmetic
+803,7864789.0,Secondary, Преображенская площадь,10.0,Moscow,0.0,22.3,15.3,2.0,2.0,2,Designer
+804,94000000.0,Secondary, ЦСКА,13.0,Moscow,5.0,225.0,115.9,25.3,22.0,23,Designer
+805,10822711.0,Secondary, Опалиха,7.0,Moscow region,1.0,41.8,23.3,10.1,6.0,6,Cosmetic
+806,23300000.0,Secondary,Славянский бульвар,12.0,Moscow,3.0,71.7,48.9,7.1,4.0,19,Cosmetic
+807,116000000.0,Secondary, Пушкинская,9.0,Moscow,5.0,125.0,7.0,17.0,4.0,6,Designer
+808,9200000.0,Secondary,Покровское,33.0,Moscow,1.0,44.0,19.0,9.5,8.0,20,Without renovation
+809,11783400.0,New building,Депо,19.0,Moscow,3.0,71.85,38.5,12.6,8.0,11,Cosmetic
+810,3094710.0,New building,Красногвардейская,14.0,Moscow region,0.0,27.61,16.1,8.9,14.0,20,Cosmetic
+811,6350000.0,New building,Котельники,12.0,Moscow region,2.0,66.0,29.0,16.0,11.0,17,Cosmetic
+812,3950000.0,Secondary,Выхино,17.0,Moscow,0.0,11.5,7.9,7.6,1.0,9,Cosmetic
+813,21528003.0,Secondary,ЗИЛ,22.0,Moscow,1.0,45.2,12.6,21.7,11.0,15,Without renovation
+814,65000000.0,Secondary,Китай-город,6.0,Moscow,4.0,103.0,70.5,12.0,5.0,7,Without renovation
+815,4390000.0,New building,Красногвардейская,12.0,Moscow region,0.0,24.5,10.0,6.0,3.0,20,Cosmetic
+816,5983320.0,New building,Зябликово,9.0,Moscow region,1.0,41.9,23.3,10.1,8.0,14,Cosmetic
+817,12542530.0,New building,Депо,19.0,Moscow,2.0,70.07,37.6,12.4,2.0,11,Cosmetic
+818,254035000.0,Secondary,Минская,12.0,Moscow,4.0,240.7,123.8,26.6,5.0,36,Without renovation
+819,5961259.0,New building,Красногвардейская,13.0,Moscow region,1.0,47.71,26.3,10.6,7.0,20,Cosmetic
+820,52500000.0,Secondary,Улица 1905 года,14.0,Moscow,0.0,50.0,27.4,10.0,5.0,13,Designer
+821,8249500.0,Secondary,Сретенский бульвар,7.0,Moscow,0.0,15.8,10.1,7.9,1.0,3,Without renovation
+822,20109100.0,New building,Аннино,7.0,Moscow,3.0,111.1,52.6,18.5,8.0,22,European-style renovation
+823,23000000.0,Secondary,Свиблово,10.0,Moscow,3.0,85.0,45.1,13.7,1.0,3,European-style renovation
+824,11600000.0,Secondary,Царицыно,17.0,Moscow,2.0,45.0,28.3,6.0,10.0,12,Cosmetic
+825,8085000.0,Secondary,Филатов Луг,14.0,Moscow,0.0,20.0,9.4,5.1,5.0,16,European-style renovation
+826,378495286.0,Secondary, Парк Победы,7.0,Moscow,5.0,266.8,234.7,28.7,31.0,34,Designer
+827,2873508.0,New building,Красногвардейская,14.0,Moscow region,0.0,23.89,14.2,8.6,10.0,20,Cosmetic
+828,7124028.0,New building,Красногвардейская,11.0,Moscow region,3.0,58.44,39.7,5.5,17.0,20,Cosmetic
+829,60000000.0,Secondary, Полянка,9.0,Moscow,1.0,49.3,36.3,8.0,2.0,11,Designer
+830,15117080.0,New building,Кантемировская,20.0,Moscow,3.0,74.8,34.6,26.7,11.0,14,Cosmetic
+831,6090033.0,New building,Красногвардейская,13.0,Moscow region,1.0,47.5,26.1,10.6,12.0,20,Cosmetic
+832,8411640.0,New building,Братиславская,13.0,Moscow,1.0,44.04,24.4,10.3,15.0,16,Cosmetic
+833,7650000.0,Secondary, Опалиха,6.0,Moscow region,1.0,38.1,18.0,10.0,20.0,26,European-style renovation
+834,8253110.0,New building,Депо,19.0,Moscow,1.0,43.21,13.9,18.1,14.0,11,Cosmetic
+835,9627410.0,New building,Котельники,16.0,Moscow region,3.0,71.9,41.8,12.6,20.0,17,Cosmetic
+836,8369463.0,New building,Жулебино,14.0,Moscow region,4.0,71.69,51.5,5.3,8.0,14,Cosmetic
+837,3800000.0,Secondary,Планерная,15.0,Moscow,0.0,12.0,8.2,7.6,1.0,9,European-style renovation
+838,8072160.0,New building,Братиславская,13.0,Moscow,1.0,40.16,16.4,10.0,12.0,16,Cosmetic
+839,7472880.0,New building,Депо,13.0,Moscow,2.0,32.1,19.2,3.8,11.0,11,Cosmetic
+840,13959990.0,New building,Братиславская,5.0,Moscow,3.0,71.7,36.5,20.8,6.0,16,Cosmetic
+841,35000000.0,Secondary, Тушинская,6.0,Moscow,6.0,88.2,60.9,10.0,12.0,17,Without renovation
+842,31662000.0,Secondary,ЗИЛ,22.0,Moscow,3.0,75.6,40.4,12.9,7.0,15,European-style renovation
+843,51000000.0,Secondary,Кунцевская,18.0,Moscow,4.0,134.0,90.0,24.0,12.0,16,Designer
+844,10283300.0,New building,Депо,19.0,Moscow,2.0,60.49,32.7,11.6,2.0,11,Cosmetic
+845,42200000.0,Secondary, ВДНХ,10.0,Moscow,4.0,102.0,53.7,15.1,7.0,22,Without renovation
+846,169400000.0,Secondary,Улица 1905 года,7.0,Moscow,4.0,154.0,76.0,45.0,16.0,18,European-style renovation
+847,7986480.0,New building,Депо,13.0,Moscow,2.0,32.1,19.2,3.8,15.0,11,Cosmetic
+848,13700000.0,Secondary,Бунинская Аллея,22.0,Moscow,2.0,56.7,29.0,8.0,12.0,16,Cosmetic
+849,32300000.0,Secondary, Кунцевская,4.0,Moscow,3.0,85.0,60.0,20.0,29.0,29,Without renovation
+850,6236933.0,Secondary, Ольховая,17.0,Moscow,6.0,20.4,8.5,5.1,13.0,15,Cosmetic
+851,15700000.0,Secondary,Коломенская,18.0,Moscow,3.0,59.1,45.0,6.0,5.0,9,European-style renovation
+852,20500000.0,Secondary,Угрешская,7.0,Moscow,2.0,60.5,29.0,20.0,13.0,30,Without renovation
+853,41364600.0,Secondary, Беговая,13.0,Moscow,4.0,106.5,56.0,15.5,25.0,25,Without renovation
+854,18200000.0,Secondary,Коммунарка,24.0,Moscow,2.0,72.9,38.0,21.0,2.0,12,European-style renovation
+855,5282871.0,New building,Красногвардейская,13.0,Moscow region,1.0,47.71,26.3,10.6,6.0,20,Cosmetic
+856,15000000.0,Secondary,Нахимовский проспект,2.0,Moscow,2.0,44.3,27.5,6.2,12.0,12,Designer
+857,7204201.0,New building,Жулебино,13.0,Moscow region,2.0,57.06,29.8,12.1,7.0,14,Cosmetic
+858,11765300.0,Secondary, Опалиха,7.0,Moscow region,2.0,48.7,26.8,10.7,6.0,6,Cosmetic
+859,5733793.0,New building,Красногвардейская,11.0,Moscow region,2.0,39.84,26.3,5.0,17.0,20,Cosmetic
+860,7700000.0,Secondary,Прокшино,13.0,Moscow,0.0,25.2,14.9,5.9,2.0,18,Cosmetic
+861,20643892.0,Secondary, Кожуховская,9.0,Moscow,3.0,71.6,27.6,25.4,7.0,68,European-style renovation
+862,6326540.0,New building,Братиславская,13.0,Moscow,0.0,32.78,22.2,9.4,16.0,16,Cosmetic
+863,125000000.0,Secondary,Баррикадная,12.0,Moscow,4.0,147.0,85.0,15.0,3.0,5,Designer
+864,11400000.0,Secondary, Аэропорт,3.0,Moscow,0.0,25.8,15.8,5.0,3.0,4,Designer
+865,30245050.0,Secondary, Коммунарка,10.0,Moscow,5.0,139.7,60.8,43.6,9.0,17,European-style renovation
+866,4838232.0,New building,Красногвардейская,11.0,Moscow region,2.0,35.68,22.7,5.0,6.0,20,Cosmetic
+867,10700000.0,Secondary,Чистые пруды,8.0,Moscow,0.0,13.2,9.0,2.0,1.0,4,European-style renovation
+868,6500000.0,Secondary, Тушинская,17.0,Moscow region,1.0,31.8,13.7,10.0,19.0,25,Cosmetic
+869,15000000.0,Secondary,Аннино,6.0,Moscow,1.0,36.7,12.0,17.5,2.0,25,Designer
+870,19900000.0,Secondary,Аминьевская,11.0,Moscow,2.0,52.4,27.6,11.3,10.0,30,Without renovation
+871,20986800.0,Secondary,Трикотажная,16.0,Moscow,2.0,62.2,33.6,16.5,17.0,20,Cosmetic
+872,14182075.0,New building,Зябликово,9.0,Moscow region,3.0,90.1,53.7,11.4,7.0,14,Cosmetic
+873,251910000.0,Secondary,Фрунзенская,10.0,Moscow,4.0,186.6,61.0,22.1,10.0,15,Without renovation
+874,11171390.0,New building,Депо,19.0,Moscow,2.0,62.41,33.7,11.8,10.0,11,Cosmetic
+875,12248520.0,Secondary, Зорге,13.0,Moscow,6.0,28.12,19.0,9.0,7.0,21,Cosmetic
+876,2928720.0,New building,Алма-Атинская,13.0,Moscow region,0.0,26.84,15.7,8.9,9.0,16,Cosmetic
+877,3899000.0,Secondary,Яхромская,27.0,Moscow,0.0,15.1,9.8,7.9,2.0,9,Without renovation
+878,13800000.0,Secondary,Некрасовка,13.0,Moscow,2.0,62.8,42.0,18.0,23.0,19,Cosmetic
+879,4000000.0,Secondary,Ясенево,7.0,Moscow,0.0,14.5,9.5,3.0,1.0,9,Cosmetic
+880,179000000.0,Secondary,Таганская,10.0,Moscow,4.0,140.0,72.9,40.0,4.0,9,Without renovation
+881,12500000.0,Secondary,Братиславская,19.0,Moscow,1.0,38.3,18.0,9.0,18.0,18,Designer
+882,2763080.0,New building,Красногвардейская,13.0,Moscow region,0.0,24.08,14.3,8.6,7.0,20,Cosmetic
+883,30900000.0,Secondary, Красные ворота,7.0,Moscow,6.0,40.0,25.0,4.0,14.0,19,European-style renovation
+884,11393350.0,New building,Депо,19.0,Moscow,2.0,63.65,34.3,11.9,9.0,11,Cosmetic
+885,14371144.0,New building,Зябликово,9.0,Moscow region,3.0,90.8,53.7,11.9,2.0,14,Cosmetic
+886,18271282.0,New building,Каширская,4.0,Moscow,3.0,67.7,36.4,12.2,11.0,10,European-style renovation
+887,7972620.0,New building,Братиславская,13.0,Moscow,1.0,44.79,17.5,11.7,13.0,16,Cosmetic
+888,8633790.0,New building,Депо,19.0,Moscow,1.0,46.17,14.2,18.7,23.0,11,Cosmetic
+889,17950000.0,Secondary,Москва-Товарная,8.0,Moscow,2.0,50.0,31.0,9.6,8.0,12,European-style renovation
+890,51058942.0,Secondary, Фили,5.0,Moscow,3.0,102.15,53.8,15.1,44.0,57,Without renovation
+891,8644470.0,New building,Братиславская,13.0,Moscow,1.0,44.79,24.8,10.3,7.0,16,Cosmetic
+892,6584500.0,New building,Красногвардейская,11.0,Moscow region,2.0,50.81,27.5,10.1,15.0,20,Cosmetic
+893,3900000.0,Secondary,Яхромская,27.0,Moscow,0.0,15.0,9.7,7.9,2.0,9,Without renovation
+894,18000000.0,Secondary,Новогиреево,12.0,Moscow,2.0,57.8,33.3,10.0,4.0,23,Cosmetic
+895,3950000.0,Secondary,Домодедовская,10.0,Moscow,0.0,14.0,9.2,7.8,1.0,9,Without renovation
+896,141035323.0,Secondary, Павелецкая,15.0,Moscow,5.0,188.7,97.5,22.3,5.0,11,Designer
+897,7800000.0,Secondary,Измайлово,9.0,Moscow,0.0,18.4,11.4,8.2,3.0,4,Cosmetic
+898,14700000.0,Secondary,Коммунарка,12.0,Moscow,2.0,53.9,33.0,14.0,3.0,15,Designer
+899,24956978.0,New building,Каширская,4.0,Moscow,4.0,105.04,55.2,15.3,5.0,10,European-style renovation
+900,9979760.0,New building,Жулебино,8.0,Moscow region,3.0,70.28,36.4,13.6,22.0,14,Cosmetic
+901,5840860.0,New building,Зябликово,9.0,Moscow region,1.0,41.9,23.3,10.1,10.0,14,Cosmetic
+902,7094616.0,New building,Красногвардейская,12.0,Moscow region,2.0,55.49,29.8,12.1,3.0,20,Cosmetic
+903,65000000.0,Secondary,Проспект Вернадского,9.0,Moscow,4.0,110.0,70.0,18.0,6.0,22,Designer
+904,2278998.0,New building,Алма-Атинская,12.0,Moscow region,0.0,17.3,10.9,8.1,5.0,16,Cosmetic
+905,4909449.0,New building,Красногвардейская,12.0,Moscow region,0.0,26.69,12.3,5.0,13.0,20,Cosmetic
+906,8209688.0,Secondary, Щербинка,11.0,Moscow,1.0,32.28,9.5,16.2,17.0,17,Cosmetic
+907,23000000.0,Secondary, Рассказовка,5.0,Moscow,0.0,85.0,60.0,11.0,10.0,22,European-style renovation
+908,27000000.0,Secondary,Таганская,11.0,Moscow,3.0,76.0,40.6,12.9,7.0,10,European-style renovation
+909,4759245.0,New building,Красногвардейская,11.0,Moscow region,2.0,37.16,24.0,5.0,15.0,20,Cosmetic
+910,18500000.0,Secondary,Долгопрудная,12.0,Moscow,3.0,70.0,43.0,13.0,10.0,14,Cosmetic
+911,148800000.0,Secondary,Савеловская,9.0,Moscow,4.0,230.0,209.0,9.0,17.0,20,Designer
+912,10249480.0,New building,Братиславская,13.0,Moscow,2.0,59.59,27.2,16.7,14.0,16,Cosmetic
+913,9250816.0,New building,Зябликово,9.0,Moscow region,2.0,44.7,26.4,6.9,6.0,14,Cosmetic
+914,36000000.0,Secondary, Шелепиха,13.0,Moscow,3.0,77.0,36.0,25.0,4.0,6,Designer
+915,10550000.0,Secondary,Орехово,15.0,Moscow,1.0,37.9,18.9,8.0,14.0,17,Cosmetic
+916,6828941.0,New building,Красногвардейская,5.0,Moscow region,1.0,46.7,25.7,10.5,7.0,20,Cosmetic
+917,16900000.0,Secondary,Кунцевская,10.0,Moscow,2.0,47.6,34.0,7.0,3.0,9,Designer
+918,4894146.0,New building,Битца,12.0,Moscow region,1.0,34.1,10.3,11.7,10.0,9,Cosmetic
+919,15990000.0,Secondary,Говорово,11.0,Moscow,1.0,50.3,12.2,8.0,2.0,6,European-style renovation
+920,10000000.0,Secondary,Бунинская Аллея,14.0,Moscow,1.0,38.2,12.0,10.2,22.0,22,Cosmetic
+921,8896250.0,New building,Зябликово,9.0,Moscow region,2.0,64.7,33.5,14.7,3.0,14,Cosmetic
+922,7702320.0,Secondary, Яхромская,7.0,Moscow,6.0,20.1,9.8,5.1,28.0,33,Cosmetic
+923,14000000.0,Secondary,Щелковская,6.0,Moscow,2.0,48.3,32.3,7.2,10.0,10,European-style renovation
+924,11200000.0,Secondary,Ясенево,16.0,Moscow,2.0,44.3,29.0,6.2,1.0,9,Cosmetic
+925,142000000.0,Secondary,Курская,9.0,Moscow,4.0,189.0,105.0,26.0,2.0,10,Designer
+926,7095854.0,New building,Красногвардейская,12.0,Moscow region,2.0,54.83,29.0,13.6,12.0,20,Cosmetic
+927,5958180.0,New building,Зябликово,9.0,Moscow region,1.0,41.9,23.3,10.1,6.0,14,Cosmetic
+928,295500000.0,Secondary, Кропоткинская,6.0,Moscow,5.0,193.0,135.0,30.0,2.0,6,Designer
+929,9550000.0,Secondary, Пенягино,18.0,Moscow region,1.0,34.0,14.0,9.5,3.0,7,European-style renovation
+930,11909404.0,New building,Зябликово,9.0,Moscow region,2.0,64.7,31.1,13.2,2.0,14,Cosmetic
+931,12000000.0,New building,Варшавская,16.0,Moscow,1.0,45.5,25.1,10.4,3.0,15,Cosmetic
+932,4883790.0,New building,Котельники,10.0,Moscow region,0.0,28.23,17.0,5.0,8.0,17,Cosmetic
+933,6103696.0,New building,Котельники,8.0,Moscow region,1.0,44.34,16.0,11.5,11.0,17,Cosmetic
+934,145961250.0,Secondary,Кузнецкий мост,5.0,Moscow,4.0,221.0,152.8,66.1,5.0,5,European-style renovation
+935,3488577.0,New building,Жулебино,14.0,Moscow region,0.0,21.38,10.4,4.1,13.0,14,Cosmetic
+936,49797539.0,Secondary, Мичуринский проспект,10.0,Moscow,5.0,116.1,56.5,30.0,20.0,30,Without renovation
+937,5802882.0,New building,Красногвардейская,11.0,Moscow region,2.0,42.32,28.0,6.1,8.0,20,Cosmetic
+938,58813000.0,Secondary,ЗИЛ,12.0,Moscow,4.0,115.4,60.5,16.2,24.0,40,Without renovation
+939,13757200.0,New building,Братиславская,13.0,Moscow,3.0,84.4,44.8,13.6,14.0,16,Cosmetic
+940,7662990.0,New building,Братиславская,13.0,Moscow,1.0,42.81,16.4,13.2,3.0,16,Cosmetic
+941,11128780.0,New building,Депо,14.0,Moscow,2.0,59.8,24.2,21.0,22.0,11,Cosmetic
+942,8369560.0,New building,Братиславская,5.0,Moscow,1.0,35.6,10.1,17.0,11.0,16,Cosmetic
+943,32700000.0,Secondary,Физтех,3.0,Moscow,3.0,133.0,42.0,67.4,4.0,5,Designer
+944,12800000.0,Secondary,Бабушкинская,28.0,Moscow,4.0,62.5,46.0,7.0,1.0,9,Cosmetic
+945,153000000.0,Secondary, Арбатская,6.0,Moscow,3.0,94.0,57.0,8.0,2.0,7,Designer
+946,19000000.0,Secondary,Багратионовская,8.0,Moscow,2.0,54.5,29.7,8.0,2.0,5,European-style renovation
+947,6800000.0,New building,Красногвардейская,5.0,Moscow region,2.0,57.0,30.0,9.0,10.0,20,Cosmetic
+948,7541064.0,New building,Красногвардейская,5.0,Moscow region,2.0,60.6,32.8,7.9,17.0,20,Cosmetic
+949,6600000.0,New building,Депо,19.0,Moscow,0.0,27.25,15.9,8.9,9.0,11,Cosmetic
+950,27800000.0,Secondary,ВДНХ,16.0,Moscow,3.0,73.6,44.6,10.0,15.0,16,Cosmetic
+951,7050000.0,Secondary,Аминьевская,18.0,Moscow,0.0,16.9,12.0,4.0,3.0,9,Cosmetic
+952,9777649.0,New building,Красногвардейская,5.0,Moscow region,3.0,83.4,44.3,8.9,14.0,20,Cosmetic
+953,24900000.0,Secondary,Павелецкая,6.0,Moscow,2.0,45.3,29.9,5.0,5.0,9,European-style renovation
+954,33842369.0,Secondary, Прокшино,11.0,Moscow,5.0,164.2,48.6,37.0,2.0,16,European-style renovation
+955,9375950.0,New building,Депо,19.0,Moscow,2.0,60.49,27.6,16.7,18.0,11,Cosmetic
+956,9014109.0,New building,Котельники,9.0,Moscow region,3.0,85.72,52.5,9.8,4.0,17,Cosmetic
+957,64500000.0,Secondary,Тургеневская,4.0,Moscow,3.0,10.0,7.2,7.5,3.0,6,Designer
+958,21900000.0,Secondary, Хорошёво,26.0,Moscow,1.0,39.1,21.9,9.9,17.0,43,European-style renovation
+959,65000000.0,Secondary,Чеховская,2.0,Moscow,4.0,110.2,57.8,15.8,3.0,7,European-style renovation
+960,8644470.0,New building,Братиславская,13.0,Moscow,1.0,44.79,17.5,11.7,2.0,16,Cosmetic
+961,53000000.0,Secondary, Коломенская,7.0,Moscow,0.0,330.4,282.3,47.1,1.0,21,Without renovation
+962,11058900.0,New building,Зябликово,9.0,Moscow region,2.0,57.3,29.7,12.0,9.0,14,Cosmetic
+963,5605990.0,New building,Котельники,3.0,Moscow region,2.0,37.7,22.4,5.9,8.0,17,Cosmetic
+964,230000000.0,Secondary,Арбатская,6.0,Moscow,6.0,187.0,102.0,17.0,5.0,4,Without renovation
+965,186000000.0,Secondary,Кропоткинская,11.0,Moscow,4.0,184.6,142.0,20.0,2.0,8,Designer
+966,84900000.0,Secondary,Минская,1.0,Moscow,5.0,132.0,68.9,17.6,8.0,14,Without renovation
+967,5712208.0,New building,Жулебино,14.0,Moscow region,1.0,31.71,14.1,10.0,15.0,14,Cosmetic
+968,13000000.0,Secondary,Бабушкинская,30.0,Moscow,3.0,51.2,34.5,6.9,1.0,9,Cosmetic
+969,8005470.0,New building,Братиславская,13.0,Moscow,1.0,42.81,16.4,13.2,5.0,16,Cosmetic
+970,83000000.0,Secondary,Новокузнецкая,8.0,Moscow,4.0,85.5,60.0,21.7,3.0,5,Without renovation
+971,7059523.0,New building,Жулебино,7.0,Moscow region,1.0,45.73,18.4,11.3,17.0,14,Cosmetic
+972,6722821.0,New building,Котельники,8.0,Moscow region,2.0,55.55,32.7,5.0,2.0,17,Cosmetic
+973,8463360.0,New building,Депо,19.0,Moscow,1.0,44.08,24.4,10.3,9.0,11,Cosmetic
+974,7492766.0,New building,Красногвардейская,12.0,Moscow region,2.0,49.91,27.6,11.2,9.0,20,Cosmetic
+975,5452539.0,New building,Красногвардейская,11.0,Moscow region,2.0,37.16,24.0,5.0,13.0,20,Cosmetic
+976,6419506.0,New building,Красногвардейская,16.0,Moscow region,2.0,45.04,27.5,4.8,6.0,20,Cosmetic
+977,11978383.0,Secondary, Опалиха,16.0,Moscow region,2.0,50.5,27.7,10.8,1.0,6,Cosmetic
+978,4225653.0,New building,Жулебино,6.0,Moscow region,1.0,29.9,13.6,7.8,17.0,14,Cosmetic
+979,285000000.0,Secondary,Давыдково,19.0,Moscow,6.0,360.0,240.0,30.0,5.0,9,Designer
+980,6906320.0,New building,Красногвардейская,5.0,Moscow region,2.0,52.4,28.6,9.7,3.0,20,Cosmetic
+981,51900000.0,Secondary,Отрадное,16.0,Moscow,4.0,150.0,106.5,17.7,22.0,23,Designer
+982,5851335.0,New building,Зябликово,9.0,Moscow region,1.0,41.9,23.3,10.1,11.0,14,Cosmetic
+983,37352000.0,Secondary,ЗИЛ,22.0,Moscow,3.0,86.1,45.7,13.8,13.0,15,European-style renovation
+984,24500000.0,Secondary,Маяковская,8.0,Moscow,1.0,44.0,24.4,9.3,2.0,17,Cosmetic
+985,96000000.0,Secondary,Раменки,3.0,Moscow,5.0,347.0,315.0,30.0,17.0,19,Designer
+986,11386331.0,Secondary, Строгино,19.0,Moscow region,2.0,31.6,18.5,4.8,23.0,24,Cosmetic
+987,6910078.0,Secondary, Рассказовка,18.0,Moscow,1.0,32.03,12.0,10.9,9.0,9,Cosmetic
+988,23381500.0,Secondary, Беговая,13.0,Moscow,1.0,46.3,25.5,10.5,15.0,25,European-style renovation
+989,12500000.0,Secondary,Бескудниково,14.0,Moscow,2.0,54.0,32.0,8.0,5.0,12,Without renovation
+990,11800000.0,Secondary,Савеловская,12.0,Moscow,1.0,32.4,20.0,10.0,1.0,12,European-style renovation
+991,6576755.0,New building,Красногвардейская,11.0,Moscow region,3.0,52.88,35.0,5.7,11.0,20,Cosmetic
+992,8000000.0,Secondary,Внуково,25.0,Moscow,1.0,34.2,15.8,10.7,9.0,9,European-style renovation
+993,14450000.0,Secondary,Динамо,8.0,Moscow,0.0,22.0,18.0,4.0,2.0,6,Designer
+994,9600000.0,Secondary,Локомотив,15.0,Moscow,0.0,20.0,10.0,4.0,10.0,5,European-style renovation
+995,5099000.0,Secondary,Некрасовка,8.0,Moscow,0.0,20.6,12.5,8.3,2.0,17,European-style renovation
+996,9830080.0,New building,Кантемировская,4.0,Moscow,1.0,44.2,16.0,19.5,8.0,14,Cosmetic
+997,3272437.0,New building,Красногвардейская,14.0,Moscow region,0.0,27.85,16.2,8.9,11.0,20,Cosmetic
+998,6624126.0,New building,Красногвардейская,5.0,Moscow region,2.0,50.9,27.9,10.9,11.0,20,Cosmetic
+999,11911900.0,New building,Депо,19.0,Moscow,2.0,70.07,32.3,14.5,8.0,11,Cosmetic
+1000,11000000.0,Secondary,Лесопарковая,10.0,Moscow,1.0,35.0,16.0,11.5,13.0,26,Cosmetic
+1001,12800000.0,Secondary,Дмитровская,14.0,Moscow,0.0,26.5,16.9,8.8,29.0,49,Designer
+1002,9003150.0,New building,Депо,19.0,Moscow,1.0,46.17,14.2,18.7,24.0,11,Cosmetic
+1003,8346999.0,New building,Зябликово,9.0,Moscow region,1.0,41.1,18.5,9.8,1.0,14,Cosmetic
+1004,500000000.0,Secondary, Выставочная,5.0,Moscow,6.0,941.7,20.0,84.6,59.0,60,Designer
+1005,6172806.0,New building,Красногвардейская,5.0,Moscow region,1.0,46.7,25.7,10.5,7.0,20,Cosmetic
+1006,10900000.0,Secondary,Проспект Вернадского,9.0,Moscow,0.0,18.0,11.0,4.0,10.0,10,Designer
+1007,45600000.0,New building,Красногвардейская,5.0,Moscow,3.0,156.6,100.0,20.0,30.0,20,Without renovation
+1008,9506683.0,New building,Домодедовская,8.0,Moscow region,3.0,80.09,51.1,11.2,14.0,15,Cosmetic
+1009,25000000.0,Secondary,Печатники,8.0,Moscow,3.0,71.9,41.4,12.0,5.0,16,European-style renovation
+1010,10600000.0,Secondary,Бунинская Аллея,5.0,Moscow,1.0,35.0,20.0,9.0,16.0,17,Designer
+1011,5700000.0,Secondary,Южная,14.0,Moscow,0.0,30.0,11.0,4.0,2.0,6,Without renovation
+1012,8700000.0,Secondary,Саларьево,12.0,Moscow,0.0,20.1,15.0,5.0,1.0,25,Cosmetic
+1013,5674779.0,New building,Алма-Атинская,12.0,Moscow region,2.0,52.04,28.4,10.9,12.0,16,Cosmetic
+1014,2689305.0,New building,Красногвардейская,14.0,Moscow region,0.0,23.43,14.0,8.6,14.0,20,Cosmetic
+1015,6391025.0,New building,Жулебино,14.0,Moscow region,1.0,40.04,16.9,13.7,13.0,14,Cosmetic
+1016,8268120.0,New building,Депо,13.0,Moscow,1.0,35.7,10.1,16.4,25.0,11,Cosmetic
+1017,25688291.0,Secondary,Панфиловская,5.0,Moscow,2.0,72.6,42.7,5.5,5.0,11,European-style renovation
+1018,5811450.0,New building,Братиславская,5.0,Moscow,0.0,21.5,10.2,5.6,13.0,16,Cosmetic
+1019,176000000.0,Secondary, Улица 1905 года,7.0,Moscow,5.0,190.0,70.0,50.0,10.0,21,Designer
+1020,13500000.0,Secondary,Алтуфьево,20.0,Moscow,2.0,52.2,30.3,8.7,9.0,12,Cosmetic
+1021,6825401.0,New building,Жулебино,14.0,Moscow region,2.0,58.34,30.2,13.2,14.0,14,Cosmetic
+1022,22000000.0,Secondary,Юго-Восточная,15.0,Moscow,3.0,78.2,46.1,10.3,10.0,14,European-style renovation
+1023,4302235.0,New building,Красногвардейская,11.0,Moscow region,2.0,33.5,19.9,5.4,2.0,20,Cosmetic
+1024,6884570.0,New building,Красногвардейская,11.0,Moscow region,3.0,52.88,35.0,5.7,17.0,20,Cosmetic
+1025,21500000.0,Secondary,Речной вокзал,9.0,Moscow,1.0,49.4,15.1,10.0,28.0,35,Without renovation
+1026,9000000.0,Secondary, Строгино,8.0,Moscow region,1.0,38.0,20.0,15.0,7.0,33,European-style renovation
+1027,65000000.0,Secondary,Парк Победы,10.0,Moscow,3.0,83.7,28.4,31.7,14.0,32,Cosmetic
+1028,37749999.0,Secondary,Технопарк,10.0,Moscow,4.0,93.0,49.2,23.0,8.0,13,Without renovation
+1029,55000000.0,Secondary,Студенческая,2.0,Moscow,4.0,78.0,54.0,15.0,6.0,6,Without renovation
+1030,7723123.0,New building,Красногвардейская,12.0,Moscow region,2.0,54.6,31.2,9.9,12.0,20,Cosmetic
+1031,12500000.0,Secondary,Ростокино,29.0,Moscow,3.0,58.5,43.9,5.9,6.0,9,Cosmetic
+1032,8950000.0,Secondary,Лермонтовский проспект,13.0,Moscow,1.0,35.1,19.9,10.0,9.0,24,Cosmetic
+1033,19900000.0,Secondary,Волгоградский проспект,5.0,Moscow,2.0,61.0,34.0,12.1,4.0,24,European-style renovation
+1034,13850000.0,Secondary,Окружная,8.0,Moscow,0.0,35.0,27.0,3.0,1.0,5,Designer
+1035,26757800.0,Secondary, Октябрьское поле,4.0,Moscow,3.0,79.4,40.2,12.5,12.0,27,European-style renovation
+1036,10750000.0,Secondary,Красный Балтиец,14.0,Moscow,0.0,22.0,13.3,8.5,6.0,7,Without renovation
+1037,252000000.0,Secondary, Сухаревская,6.0,Moscow,4.0,150.0,54.3,55.0,3.0,8,Designer
+1038,52950000.0,Secondary,Автозаводская,20.0,Moscow,4.0,101.0,59.3,6.0,15.0,29,European-style renovation
+1039,10646920.0,New building,Депо,19.0,Moscow,2.0,59.48,32.2,11.6,6.0,11,Cosmetic
+1040,63000000.0,Secondary,Шаболовская,16.0,Moscow,4.0,151.4,66.0,45.0,26.0,29,Without renovation
+1041,15421200.0,New building,Аннино,7.0,Moscow,2.0,85.0,45.1,13.7,4.0,22,Cosmetic
+1042,300000000.0,Secondary, Улица 1905 года,7.0,Moscow,4.0,237.0,175.0,26.2,15.0,15,Designer
+1043,11054560.0,New building,Братиславская,13.0,Moscow,2.0,62.81,33.9,11.8,2.0,16,Cosmetic
+1044,8862986.0,New building,Красногвардейская,16.0,Moscow region,3.0,58.31,38.1,4.7,9.0,20,Cosmetic
+1045,13500000.0,Secondary,Коптево,17.0,Moscow,3.0,55.2,30.0,6.0,4.0,5,Cosmetic
+1046,7662990.0,New building,Братиславская,13.0,Moscow,1.0,42.81,16.4,13.2,5.0,16,Cosmetic
+1047,297000000.0,Secondary, Ломоносовский проспект,4.0,Moscow,6.0,239.0,123.0,26.4,3.0,8,Without renovation
+1048,6870929.0,New building,Красногвардейская,11.0,Moscow region,3.0,58.32,39.5,5.5,6.0,20,Cosmetic
+1049,17650000.0,Secondary, Рязанский проспект,5.0,Moscow,3.0,60.0,40.0,14.0,4.0,17,Designer
+1050,5260582.0,New building,Красногвардейская,16.0,Moscow region,2.0,33.88,23.3,3.0,10.0,20,Cosmetic
+1051,8249000.0,New building,Домодедовская,8.0,Moscow region,2.0,53.47,25.1,13.8,3.0,15,Cosmetic
+1052,14400000.0,Secondary,Крылатское,12.0,Moscow,1.0,38.5,20.0,10.1,10.0,22,Cosmetic
+1053,7340000.0,New building,Битца,12.0,Moscow region,1.0,43.2,24.0,10.2,6.0,9,Cosmetic
+1054,22800000.0,New building,Варшавская,6.0,Moscow,5.0,107.75,77.0,4.0,3.0,15,European-style renovation
+1055,5053101.0,New building,Красногвардейская,11.0,Moscow region,2.0,33.88,19.8,6.0,17.0,20,Cosmetic
+1056,3420000.0,Secondary, Лихоборы,7.0,Moscow,0.0,15.0,9.7,7.9,1.0,5,European-style renovation
+1057,3390000.0,Secondary, Нижегородская,7.0,Moscow,0.0,10.4,7.4,7.5,2.0,3,European-style renovation
+1058,15772200.0,New building,Аннино,7.0,Moscow,2.0,81.0,43.1,13.3,31.0,22,Cosmetic
+1059,52000000.0,Secondary, Раменки,10.0,Moscow,4.0,107.0,15.0,15.5,14.0,52,European-style renovation
+1060,6998002.0,Secondary, Павшино,5.0,Moscow region,1.0,32.5,18.6,9.3,24.0,24,Cosmetic
+1061,4474727.0,New building,Красногвардейская,11.0,Moscow region,2.0,33.5,19.9,5.4,15.0,20,Cosmetic
+1062,34000000.0,Secondary, Минская,28.0,Moscow,2.0,65.2,32.0,13.5,1.0,14,Without renovation
+1063,6300000.0,Secondary,Марьина Роща (Шереметьевская),18.0,Moscow,0.0,17.0,14.0,3.0,5.0,9,European-style renovation
+1064,33000000.0,Secondary, Динамо,17.0,Moscow,1.0,45.5,19.1,6.3,3.0,40,European-style renovation
+1065,105000000.0,Secondary,Парк Победы,10.0,Moscow,4.0,135.2,101.0,20.0,2.0,10,Designer
+1066,120000000.0,Secondary,Аэропорт,9.0,Moscow,4.0,156.0,89.0,18.0,49.0,57,Designer
+1067,4787502.0,New building,Битца,13.0,Moscow region,0.0,31.76,18.2,9.3,10.0,9,Cosmetic
+1068,67000000.0,Secondary, Охотный ряд,4.0,Moscow,4.0,84.8,59.0,10.0,2.0,8,Without renovation
+1069,199000000.0,Secondary, Менделеевская,0.0,Moscow,6.0,320.0,163.9,33.1,3.0,20,Designer
+1070,18300000.0,Secondary,Лухмановская,10.0,Moscow,3.0,81.2,52.1,10.7,2.0,12,Cosmetic
+1071,25565315.0,New building,Каширская,6.0,Moscow,3.0,104.48,55.0,15.3,10.0,10,European-style renovation
+1072,12190700.0,New building,Братиславская,13.0,Moscow,2.0,71.71,38.4,12.6,8.0,16,Cosmetic
+1073,8031610.0,New building,Котельники,9.0,Moscow region,2.0,61.31,28.0,13.0,21.0,17,Cosmetic
+1074,5131860.0,New building,Красногвардейская,12.0,Moscow region,1.0,32.69,14.5,9.6,16.0,20,Cosmetic
+1075,11000000.0,Secondary,Некрасовка,18.0,Moscow,1.0,37.7,19.0,8.0,7.0,17,Cosmetic
+1076,6433760.0,New building,Красногвардейская,5.0,Moscow region,2.0,50.9,27.9,10.9,16.0,20,Cosmetic
+1077,37500000.0,Secondary, Новокузнецкая,6.0,Moscow,0.0,42.0,27.0,10.0,3.0,5,Without renovation
+1078,8028161.0,Secondary, Бульвар Адмирала Ушакова,8.0,Moscow,6.0,23.8,8.9,7.4,7.0,17,Cosmetic
+1079,7884006.0,New building,Жулебино,14.0,Moscow region,4.0,72.28,51.9,5.4,17.0,14,Cosmetic
+1080,17420000.0,Secondary,Ольховая,18.0,Moscow,2.0,61.9,33.4,11.8,6.0,8,Without renovation
+1081,8428000.0,New building,Депо,19.0,Moscow,1.0,43.0,23.9,10.2,3.0,11,Cosmetic
+1082,140197602.0,Secondary, Павелецкая,15.0,Moscow,5.0,178.2,92.2,21.4,8.0,11,Designer
+1083,3150000.0,Secondary,Бибирево,10.0,Moscow,0.0,12.0,8.2,7.6,1.0,12,Cosmetic
+1084,5429596.0,New building,Жулебино,13.0,Moscow region,0.0,27.33,17.1,8.9,3.0,14,Cosmetic
+1085,11500000.0,Secondary,Молодежная,18.0,Moscow,2.0,46.0,30.0,7.0,1.0,9,Cosmetic
+1086,417450000.0,Secondary, Минская,13.0,Moscow,6.0,379.5,370.0,38.0,5.0,6,Without renovation
+1087,36900000.0,Secondary, Филёвский парк,7.0,Moscow,3.0,82.0,55.5,12.2,3.0,5,Designer
+1088,4143936.0,New building,Зябликово,7.0,Moscow region,0.0,24.0,14.3,8.6,8.0,14,Cosmetic
+1089,11500000.0,Secondary,Яхромская,11.0,Moscow,1.0,38.8,20.9,8.9,2.0,14,European-style renovation
+1090,6749801.0,Secondary,Селигерская,27.0,Moscow,0.0,20.1,12.3,8.3,2.0,3,Designer
+1091,15800000.0,Secondary,Измайловская,19.0,Moscow,2.0,47.0,30.0,7.0,10.0,12,Designer
+1092,260000000.0,Secondary,Трубная,5.0,Moscow,3.0,124.0,64.8,15.0,7.0,10,Designer
+1093,5950000.0,Secondary,Окружная,7.0,Moscow,0.0,18.6,11.5,8.2,2.0,5,Designer
+1094,13500000.0,Secondary,Новокосино,12.0,Moscow,2.0,54.5,33.0,9.0,6.0,17,Cosmetic
+1095,250000000.0,Secondary, Спортивная,8.0,Moscow,3.0,137.0,71.4,18.0,9.0,15,Designer
+1096,5734000.0,Secondary, Зеленоград — Крюково,13.0,Moscow,0.0,18.8,16.3,8.2,7.0,9,European-style renovation
+1097,3700000.0,Secondary,Первомайская,7.0,Moscow,0.0,11.5,7.9,7.6,1.0,10,Cosmetic
+1098,6789305.0,Secondary,Лесопарковая,11.0,Moscow,0.0,18.4,14.9,8.2,1.0,22,European-style renovation
+1099,12500000.0,Secondary,Чертановская,11.0,Moscow,1.0,33.0,6.0,19.0,9.0,9,European-style renovation
+1100,15600000.0,Secondary,Таганская,6.0,Moscow,1.0,40.0,22.4,11.0,12.0,16,Cosmetic
+1101,12333660.0,New building,Депо,19.0,Moscow,2.0,66.31,33.3,14.2,18.0,11,Cosmetic
+1102,15590000.0,Secondary,Верхние Котлы,4.0,Moscow,2.0,44.7,30.4,5.4,5.0,8,European-style renovation
+1103,150000000.0,Secondary,ЦСКА,13.0,Moscow,5.0,153.5,102.4,8.0,21.0,40,Designer
+1104,5728683.0,New building,Красногвардейская,16.0,Moscow region,2.0,39.71,27.1,4.1,9.0,20,Cosmetic
+1105,108000000.0,Secondary,Тушинская,43.0,Moscow,5.0,203.0,104.8,30.4,2.0,5,Designer
+1106,10700820.0,New building,Зябликово,9.0,Moscow region,2.0,58.5,31.9,12.0,1.0,14,Cosmetic
+1107,3638974.0,New building,Жулебино,14.0,Moscow region,0.0,25.76,11.8,4.1,2.0,14,Cosmetic
+1108,700000000.0,Secondary, Киевская,11.0,Moscow,6.0,283.0,145.2,30.1,11.0,14,Designer
+1109,22000000.0,Secondary, Водный стадион,11.0,Moscow,2.0,49.7,7.0,10.8,21.0,23,Designer
+1110,7446706.0,New building,Зябликово,7.0,Moscow region,2.0,44.2,24.5,10.3,12.0,14,Cosmetic
+1111,8250000.0,Secondary,Бунинская Аллея,27.0,Moscow,1.0,40.8,20.0,11.2,9.0,16,Without renovation
+1112,61990000.0,Secondary, Славянский бульвар,11.0,Moscow,4.0,92.0,48.6,14.3,9.0,26,Without renovation
+1113,8209600.0,New building,Котельники,9.0,Moscow region,3.0,74.8,39.9,12.8,21.0,17,Cosmetic
+1114,20000000.0,Secondary,Щелковская,22.0,Moscow,4.0,91.0,57.0,8.5,4.0,12,European-style renovation
+1115,11600000.0,Secondary, Мякинино,15.0,Moscow region,2.0,50.0,28.0,9.8,18.0,23,Designer
+1116,4560979.0,New building,Жулебино,14.0,Moscow region,2.0,31.97,18.9,4.7,10.0,14,Cosmetic
+1117,86915220.0,Secondary, Баррикадная,2.0,Moscow,3.0,92.12,48.7,14.3,3.0,21,Designer
+1118,17737498.0,New building,Варшавская,6.0,Moscow,3.0,74.71,39.9,12.8,4.0,15,European-style renovation
+1119,80000000.0,Secondary, Петровский Парк,12.0,Moscow,4.0,136.0,60.0,45.0,3.0,41,Without renovation
+1120,55000000.0,Secondary,Автозаводская,21.0,Moscow,3.0,117.0,50.0,15.0,10.0,29,Without renovation
+1121,7333853.0,Secondary, Красный Строитель,3.0,Moscow,6.0,20.02,9.8,5.1,18.0,33,Cosmetic
+1122,10803320.0,New building,Братиславская,13.0,Moscow,2.0,62.81,33.9,11.8,14.0,16,Cosmetic
+1123,5100000.0,Secondary,Преображенская площадь,17.0,Moscow,0.0,13.8,9.1,7.8,1.0,5,European-style renovation
+1124,5637239.0,New building,Жулебино,13.0,Moscow region,1.0,36.58,12.0,14.6,13.0,14,Cosmetic
+1125,38900000.0,Secondary,Народное Ополчение,20.0,Moscow,3.0,73.2,28.0,26.0,16.0,30,Designer
+1126,12055650.0,New building,Депо,19.0,Moscow,2.0,67.35,36.2,12.2,5.0,11,Cosmetic
+1127,5007502.0,New building,Красногвардейская,16.0,Moscow region,0.0,26.69,12.8,4.5,15.0,20,Cosmetic
+1128,7071120.0,New building,Депо,19.0,Moscow,1.0,38.64,16.0,10.0,5.0,11,Cosmetic
+1129,14259400.0,New building,Аннино,7.0,Moscow,2.0,85.9,41.0,11.4,4.0,22,Cosmetic
+1130,20500000.0,Secondary,Ольховая,17.0,Moscow,3.0,93.0,53.0,16.0,10.0,17,European-style renovation
+1131,48000000.0,Secondary,Авиамоторная,18.0,Moscow,4.0,106.0,53.0,15.0,10.0,17,Without renovation
+1132,8249835.0,New building,Зябликово,7.0,Moscow region,2.0,54.2,24.5,15.6,4.0,14,Cosmetic
+1133,79950000.0,Secondary, Маяковская,4.0,Moscow,4.0,132.3,69.0,17.6,6.0,8,Designer
+1134,7908990.0,New building,Котельники,9.0,Moscow region,2.0,61.31,28.0,13.0,12.0,17,Cosmetic
+1135,7900000.0,Secondary, Строгино,4.0,Moscow region,1.0,28.2,13.1,8.1,16.0,34,Cosmetic
+1136,7743300.0,New building,Зябликово,9.0,Moscow region,2.0,48.7,30.8,6.8,2.0,14,Cosmetic
+1137,6318924.0,New building,Красногвардейская,11.0,Moscow region,2.0,47.4,29.1,9.2,10.0,20,Cosmetic
+1138,39618984.0,Secondary, Лужники,3.0,Moscow,2.0,69.5,37.3,12.4,8.0,41,Without renovation
+1139,19500000.0,Secondary,Фонвизинская,9.0,Moscow,2.0,61.5,31.8,8.1,5.0,5,Cosmetic
+1140,5699200.0,New building,Депо,19.0,Moscow,0.0,27.4,17.9,8.9,18.0,11,Cosmetic
+1141,11285950.0,New building,Депо,19.0,Moscow,2.0,63.05,34.0,11.9,7.0,11,Cosmetic
+1142,15500000.0,Secondary,Ростокино,28.0,Moscow,2.0,42.9,23.8,10.2,22.0,22,Cosmetic
+1143,6113224.0,New building,Жулебино,14.0,Moscow region,2.0,40.48,27.1,3.6,6.0,14,Cosmetic
+1144,6039460.0,New building,Котельники,3.0,Moscow region,2.0,35.8,10.2,17.0,7.0,17,Cosmetic
+1145,9973880.0,New building,Братиславская,13.0,Moscow,2.0,55.72,30.9,9.0,12.0,16,Cosmetic
+1146,69000000.0,Secondary,Полянка,4.0,Moscow,4.0,100.7,65.3,10.7,5.0,14,Cosmetic
+1147,12000000.0,Secondary,Царицыно,18.0,Moscow,2.0,50.0,29.0,7.0,5.0,9,Cosmetic
+1148,29000000.0,Secondary,Авиамоторная,17.0,Moscow,2.0,82.0,43.2,17.9,19.0,24,Without renovation
+1149,8990000.0,Secondary,Отрадное,20.0,Moscow,0.0,25.2,10.7,6.3,6.0,25,Designer
+1150,370000000.0,Secondary, Новослободская,6.0,Moscow,0.0,343.7,50.0,35.1,3.0,3,Without renovation
+1151,5792800.0,New building,Депо,19.0,Moscow,0.0,27.85,17.9,8.9,21.0,11,Cosmetic
+1152,10781275.0,Secondary, Бунинская аллея,9.0,Moscow,1.0,38.0,14.7,10.9,14.0,18,Cosmetic
+1153,7077330.0,New building,Котельники,10.0,Moscow region,2.0,60.49,28.0,13.0,3.0,17,Cosmetic
+1154,5128692.0,New building,Красногвардейская,16.0,Moscow region,2.0,37.1,20.9,9.7,2.0,20,Cosmetic
+1155,190000000.0,Secondary, Минская,6.0,Moscow,4.0,233.1,120.0,25.9,4.0,5,Designer
+1156,14800000.0,Secondary,Тушинская,18.0,Moscow,2.0,57.5,33.0,7.0,1.0,5,Cosmetic
+1157,5250000.0,New building,Красногвардейская,12.0,Moscow region,2.0,37.0,20.8,14.4,2.0,20,Cosmetic
+1158,10246000.0,New building,Депо,19.0,Moscow,2.0,54.5,29.7,11.1,13.0,11,Cosmetic
+1159,9900000.0,Secondary,Прокшино,24.0,Moscow,1.0,34.5,15.0,10.8,8.0,9,European-style renovation
+1160,20913023.0,New building,Варшавская,6.0,Moscow,4.0,86.68,46.0,13.8,10.0,15,European-style renovation
+1161,8778840.0,New building,Братиславская,13.0,Moscow,1.0,44.79,24.8,10.3,13.0,16,Cosmetic
+1162,15900000.0,Secondary,Шелепиха,5.0,Moscow,0.0,30.0,15.0,5.0,6.0,33,Cosmetic
+1163,14500000.0,Secondary,Говорово,9.0,Moscow,1.0,41.0,19.0,12.2,7.0,15,Cosmetic
+1164,14327011.0,Secondary, Опалиха,7.0,Moscow region,2.0,66.0,35.5,12.1,3.0,6,Cosmetic
+1165,18800000.0,Secondary,Молодежная,11.0,Moscow,2.0,59.1,33.4,10.0,3.0,12,Cosmetic
+1166,5100000.0,Secondary,Щелковская,15.0,Moscow,0.0,18.5,15.5,3.0,1.0,9,European-style renovation
+1167,68000000.0,Secondary, Чистые пруды,8.0,Moscow,5.0,136.0,100.0,20.0,2.0,6,European-style renovation
+1168,70000000.0,Secondary,Рабочий Посёлок,14.0,Moscow,4.0,199.0,102.7,23.1,24.0,24,Designer
+1169,10990000.0,Secondary,Братиславская,22.0,Moscow,1.0,38.0,20.0,8.0,12.0,17,Cosmetic
+1170,3140205.0,New building,Красногвардейская,14.0,Moscow region,0.0,26.6,15.6,8.8,12.0,20,Cosmetic
+1171,341000000.0,Secondary, Спортивная,7.0,Moscow,6.0,227.82,40.0,25.5,3.0,12,Without renovation
+1172,7900000.0,Secondary,Окружная,8.0,Moscow,0.0,19.0,11.7,8.2,5.0,5,Designer
+1173,5285510.0,New building,Котельники,17.0,Moscow region,0.0,19.7,9.4,5.1,12.0,17,Cosmetic
+1174,8022810.0,New building,Жулебино,14.0,Moscow region,3.0,58.39,38.6,6.4,2.0,14,Cosmetic
+1175,5514098.0,New building,Жулебино,14.0,Moscow region,2.0,35.62,21.5,6.6,13.0,14,Cosmetic
