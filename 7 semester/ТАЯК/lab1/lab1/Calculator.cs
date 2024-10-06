@@ -18,9 +18,8 @@ namespace lab1
         {
             try
             {
-                GetRPN();
                 TryParse(_term, out _rpn);
-                double result = CalculateRPN(_rpn);
+                var result = CalculateRPN(_rpn);
                 return result;
             }
             catch (Exception ex)
@@ -37,21 +36,21 @@ namespace lab1
                 TryParse(_term, out _rpn);
             }
 
-            string result = string.Join(" ", _rpn);
+            var result = string.Join(" ", _rpn);
             return result;
         }
 
         static double CalculateRPN(List<string> term)
         {
-            string[] OPERATORS = { "+", "-", "*", "/", "log", "pow", "!" };
-            Stack<double> operands = new Stack<double>();
+            string[] OPERATORS = { "+", "-", "*", "/", "log", "pow", "!"};
+            var operands = new Stack<double>();
 
             foreach (var item in term)
             {
                 if (OPERATORS.Contains(item))
                 {
-                    double o1 = operands.Pop();
-                    operands.TryPop(out double o2);
+                    var o1 = operands.Pop();
+                    operands.TryPop(out var o2);
 
                     switch (item)
                     {
@@ -110,25 +109,23 @@ namespace lab1
         {
             Validate(str);
             str = ClearSpace(str);
-            string[] operators = { "+", "-", "*", "/", "log", "pow", "!" };
+            string[] operators = { "+", "-", "*", "/", "log", "pow", "!", "," };
             var parsedStr = SplitTerm(str);
             outputStr = new List<string>();
             string op;
 
-            Stack<string> operatorsStack = new Stack<string>();
+            var operatorsStack = new Stack<string>();
 
-            for (int i = 0; i < parsedStr.Count; i++)
+            foreach (var t in parsedStr)
             {
-                op = parsedStr[i];
+                op = t;
                 if (op == "(")
                 {
                     operatorsStack.Push(op);
                 }
                 else if (operators.Contains(op))
                 {
-                    string newOp;
-
-                    while (operatorsStack.TryPop(out newOp))
+                    while (operatorsStack.TryPop(out var newOp))
                     {
                         if (GetRank(op) <= GetRank(newOp) && (op != "!" || newOp != "!") && (op != "log" || newOp != "!") && (op != "pow" || newOp != "!"))
                         {
@@ -172,12 +169,13 @@ namespace lab1
                 outputStr.Add(op);
             }
 
+            outputStr.RemoveAll(x => x == ",");
             return true;
         }
 
         static void Validate(string str)
         {
-            string changeStr = Regex.Replace(str, "\\(\\-+\\d\\)|^\\-+\\d", "");
+            var changeStr = Regex.Replace(str, @"\(\-+\d\)|^\-+\d", "");
             if (string.IsNullOrEmpty(str))
             {
                 throw new Exception("Выражение не может быть пустым");
@@ -193,12 +191,12 @@ namespace lab1
                 throw new Exception("Выражение в скобках некорректно");
             }
 
-            if (Regex.IsMatch(str, "\\d\\(|\\)\\d"))
+            if (Regex.IsMatch(str, "\\d\\(|\\)\\d|(\\)(log|pow))"))
             {
                 throw new Exception("Между числом и скобкой отсутствует знак умножения");
             }
 
-            if (Regex.IsMatch(changeStr, "([/*+]|pow|log){2,}|([/*+]|pow|log){0,}-([/*+]){1,}"))
+            if (Regex.IsMatch(changeStr, "([/*+]){2,}|([/*+]|pow|log){0,}-([/*+]){1,}"))
             {
                 throw new Exception("Несколько действий не могут идти подряд");
             }
@@ -223,19 +221,16 @@ namespace lab1
                 throw new Exception("Функция pow имеет вид log(a,b), где a и b - вещественные положительные числа");
             }
 
-            Stack<char> s = new Stack<char>();
+            var s = new Stack<char>();
             foreach (var item in str)
             {
-                if (item == '(')
+                switch (item)
                 {
-                    s.Push(item);
-                }
-                if (item == ')')
-                {
-                    if (!s.TryPop(out _))
-                    {
+                    case '(':
+                        s.Push(item);
+                        break;
+                    case ')' when !s.TryPop(out _):
                         throw new Exception("Неверный порядок скобок");
-                    }
                 }
             }
             if (s.Count > 0)
@@ -247,15 +242,15 @@ namespace lab1
         static List<string> SplitTerm(string str)
         {
             string[] OPERATORS = { "+", "-", "*", "/", "log", "pow", "(", ")", "," };
-            string[] OPERATORS_2 = { "+", "-", "*", "/" };
+            string[] OPERATORS_2 = { "+", "-", "*", "/", "," };
             string[] OPERATORS_3 = { "log", "pow" };
             string op;
 
             var operands = str.Split(OPERATORS, StringSplitOptions.RemoveEmptyEntries);
-            List<string> result = new List<string>();
+            var result = new List<string>();
 
             var skiped = 0;
-            int elem = 0;
+            var elem = 0;
             while (true)
             {
                 if (skiped == 0)
@@ -298,10 +293,6 @@ namespace lab1
                 else
                 {
                     op = string.Join("", str.Skip(skiped).Take(1));
-                }
-                if (op == ",")
-                {
-                    skiped++;
                 }
                 op = string.Join("", str.Skip(skiped).Take(1));
                 if (OPERATORS_2.Contains(op))
@@ -375,13 +366,14 @@ namespace lab1
             {
                 "(" => 1,
                 ")" => 1,
-                "+" => 2,
-                "-" => 2,
-                "*" => 3,
-                "/" => 3,
-                "log" => 4,
-                "pow" => 4,
-                "!" => 5,
+                "," => 2,
+                "+" => 3,
+                "-" => 3,
+                "*" => 4,
+                "/" => 4,
+                "log" => 5,
+                "pow" => 5,
+                "!" => 6,
                 _ => -1,
             };
         }
