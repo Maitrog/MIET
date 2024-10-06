@@ -127,7 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="rgbaBoxFilter.cpp" />
+    <ClCompile Include="rgbaBoxFilterArray.cpp" />
+    <ClCompile Include="rgbaGausianFilter.cpp" />
     <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rgbaBoxFilter.h" />
+    <ClInclude Include="rgbaBoxFilterArray.h" />
+    <ClInclude Include="rgbaGausianFilter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

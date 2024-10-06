@@ -1,0 +1,7 @@
+Тема л/р: использование Docker для разработки и разворачивания распределенных систем.
+
+Теоретический материал: https://youtu.be/S3iKweF41Cc
+Практический материал: https://training.play-with-docker.com/dev-stage1
+В качестве результатов по л/р 6.1 прислать лог выполнения задач: https://training.play-with-docker.com/beginner-linux/
+В качестве результатов по л/р 6.2 прислать лог выполнения задач: https://training.play-with-docker.com/microservice-orchestration/
+Для тех, кому интересно: https://training.play-with-docker.com/swarm-stack-intro/
